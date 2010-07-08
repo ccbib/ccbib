@@ -5,7 +5,7 @@
  * rearrange pages in conforming PS file for printing in signatures
  *
  * Usage:
- *       psbook [-q] [-s<signature>] [infile [outfile]]
+ *       psbook [-q] [-s<signature> | -g<groupsize>] [infile [outfile]]
  */
 
 #include "psutil.h"
@@ -24,9 +24,10 @@ static void usage(void)
 {
    fprintf(stderr, "%s release %d patchlevel %d\n", program, RELEASE, PATCHLEVEL);
    fprintf(stderr, "Copyright (C) Angus J. C. Duggan, 1991-1995. See file LICENSE for details.\n");
-   fprintf(stderr, "Usage: %s [-q] [-s<signature>] [infile [outfile]]\n",
+   fprintf(stderr, "Usage: %s [-q] [-s<signature> | -g<groupsize>] [infile [outfile]]\n",
 	   program);
    fprintf(stderr, "       <signature> must be positive and divisible by 4\n");
+   fprintf(stderr, "       <groupsize> must be positive\n");
    fflush(stderr);
    exit(1);
 }
@@ -35,6 +36,7 @@ static void usage(void)
 void main(int argc, char *argv[])
 {
    int signature = 0;
+   int groupsize = 0;
    int currentpg, maxpage;
 
    infile = stdin;
@@ -44,8 +46,14 @@ void main(int argc, char *argv[])
       if (argv[0][0] == '-') {
 	 switch (argv[0][1]) {
 	 case 's':	/* signature size */
+	    if (groupsize) usage();
 	    signature = atoi(*argv+2);
 	    if (signature < 1 || signature % 4) usage();
+	    break;
+	 case 'g':	/* group size */
+            if (signature) usage();
+	    groupsize = atoi(*argv+2);
+	    if (groupsize < 1) usage();
 	    break;
 	 case 'q':	/* quiet */
 	    verbose = 0;
@@ -79,26 +87,36 @@ void main(int argc, char *argv[])
 
    scanpages();
 
-   if (!signature)
+   if (groupsize)
+      maxpage = pages+(groupsize-pages%groupsize)%groupsize;
+   else if (!signature)
       signature = maxpage = pages+(4-pages%4)%4;
    else
       maxpage = pages+(signature-pages%signature)%signature;
+
 
    /* rearrange pages */
    writeheader(maxpage);
    writeprolog();
    writesetup();
    for (currentpg = 0; currentpg < maxpage; currentpg++) {
-      int actualpg = currentpg - currentpg%signature;
-      switch(currentpg%4) {
-      case 0:
-      case 3:
-	 actualpg += signature-1-(currentpg%signature)/2;
-	 break;
-      case 1:
-      case 2:
-	 actualpg += (currentpg%signature)/2;
-	 break;
+      int actualpg;
+      if (groupsize) {
+         actualpg = currentpg/groupsize + 
+		(currentpg%groupsize)*(maxpage/groupsize);
+      }      
+      else {
+	 actualpg = currentpg - currentpg%signature;
+         switch(currentpg%4) {
+         case 0:
+         case 3:
+	    actualpg += signature-1-(currentpg%signature)/2;
+	    break;
+         case 1:
+         case 2:
+	    actualpg += (currentpg%signature)/2;
+	    break;
+         }
       }
       if (actualpg < pages)
 	 writepage(actualpg);
