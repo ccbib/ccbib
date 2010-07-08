@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ -z "$2" ]; then 
+  output=demo_$(basename $1)
+else
+  output=$2
+fi
+
+psselect -p 2-,1 $1 | psnup -2 -s1 >$output
