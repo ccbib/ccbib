@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ -z "$2" ]; then 
+  output=$(basename $1)
+else
+  output=$2
+fi
+
+psselect -o $1 | mypsbook -g2 | psnup -2 -s1 >v_$output
+psselect -e $1 | mypsbook -g2 | psnup -2 -s1 >h_$output
+
