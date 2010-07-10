@@ -1,0 +1,13 @@
+#!/bin/sh
+
+offset=485  #a4hoehe-b6breite
+offset2=130 #a4hoehe-2xb6breite
+
+if [ -z "$2" ]; then 
+  output=$(basename $1)
+else
+  output=$2
+fi
+
+psselect -o $1 | mypsbook -g2 | pstops -pb5 "2:0L(1w,0)+1L(1w,0.5h)" | strippagesize >v_$output
+psselect -e $1 | mypsbook -g2 | pstops -pb5 "2:0L(1w,$offset)+1L(1w,$offset2)" | strippagesize >h_$output
