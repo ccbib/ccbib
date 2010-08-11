@@ -1,0 +1,52 @@
+# Wie funktioniert die Creative Commons Bibliothek?
+
+Im einfachsten Fall steht das Buch, das du lesen willst, bereits bei
+uns im Regal. Du kannst es sofort ausborgen. 
+Wir erwarten dafür keine Spende und du musst auch
+keine Daten hergeben. Du bekommst also einen großen Vertrauensvorschuss,
+bitte geh' damit verantwortungsvoll um und bring' das Buch sobald wie
+möglich zurück
+
+
+## Wenn alle Exemplare entlehnt sind oder du das Buch selbst drucken willst
+
+Es kann passieren, dass alle Exemplare verborgt sind, und wir wissen in
+diesem Fall auch nicht, wann wir das nächste Exemplar zurückbekommen. Es 
+ist deine Entscheidung, ob du warten willst oder ob du ein neues Exemplar
+drucken willst.
+
+Wenn du dich für das Drucken entscheidest, dann helfen wir dir natürlich
+beim Drucken und Binden. Besonders beim ersten Mal brauchst du also
+nichts außer das Interesse zu lernen wie Bücher hergestellt werden können.
+Außerdem kannst du die Gestaltung des Buchs - also Format, Schriftgröße,
+Layout, Cover, etc. selbst bestimmen. Wir haben dafür auch schon einige
+Standardvorlagen vorbereitet. Ob du das Buch, das du produzierst, der
+Creative Commons Bibliothek gibst oder lieber ins eigene Regal stellst,
+bleibt natürlich dir überlassen.
+
+In allen Fällen - also auch wenn du ein Buch für die Bibliothek
+druckst - erwarten wir, dass du die Materialkosten (für Papier,
+Druckerfarbe, etc.) ersetzt.
+
+
+## Ein neues Buch in die CCBib aufnehmen
+
+Bevor ein Buch das erste Mal gedruckt werden kann, sind einige
+Vorbereitungsarbeiten nötig: Im Internet sind Texte typischerweise
+als HTML-Datei vorhanden. Um daraus einen Druck von hocher Qualität
+zu bekommen muss der Text in ein Dateiformat, das sich für Computersatz
+eignet, umgewandelt werden. Wir versuchen das, so gut es geht zu
+automatisieren, aber die Erfahrung zeigt, dass ein gewisses Maß an
+manueller Arbeit notwendig ist. Außerdem muss das Ergebnis dieses
+Umwandlungsprozess nocheinmal gesichtet werden bevor es Sinn macht
+zu drucken.
+
+Grundsätzlich können alle legal druckbaren Texte in die Bibliothek
+aufgenommen werden, sobald jemand die oben genannten Vorbereitungsarbeiten
+erledigt hat. Leider ist dafür ein gewisses Maß an Arbeit, Wissen
+und Erfahrung notwendig. Wir bemühen uns, dieses Wissen zu vermitteln,
+aber es ist klar, dass wir in den meisten Fällen helfen müssen. Wir
+versuchen diesen Prozess künftig einfacher und unkomplizierter zu machen.
+Es ist unser Anspruch, dass nicht wir entscheiden welche Texte
+durch die Bibliothek verfügbar sind, sondern jene, die diese
+Texte tatsächlich lesen bzw. drucken wollen.
