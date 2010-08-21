@@ -27,7 +27,7 @@ filterTags :: [String] -> [Tag String] -> [[Tag String]]
 filterTags _ [] = []
 filterTags tags (t:ts) 
 	| isStartTag tags t = 
-		let (good, rest) = breakAfter (TagClose (tagStr t)) (t:ts)
+		let (good, rest) = breakAfter (isStopTag (tagStr t)) (t:ts)
 		in good:(filterTags tags rest)
 	| otherwise = filterTags tags ts
 
@@ -35,7 +35,12 @@ isStartTag :: [String] -> Tag String -> Bool
 isStartTag tags (TagOpen str _) = elem str tags
 isStartTag _ _ = False
 
--- isStopTag :: String -> Tag String -> Bool
--- isStopTag tag (TagClose str) = (tag == str)
--- isStopTag _ _ = False
+tagStr :: Tag String -> String
+tagStr (TagOpen s _) = s
+tagStr (TagClose s)  = s
+tagStr _             = []
+
+isStopTag :: String -> Tag String -> Bool
+isStopTag tag (TagClose str) = (tag == str)
+isStopTag _ _ = False
 
