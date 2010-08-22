@@ -6,6 +6,7 @@ import Text.HTML.TagSoup
 import System.IO
 import System.Environment (getArgs)
 import Data.List.HT (breakAfter)
+import Data.List (foldl')
 
 import Data.Map (Map)
 import qualified Data.Map as Map
@@ -52,9 +53,9 @@ reportLines m = map fmt (Map.toAscList m)
         where fmt ((Entry l t), n) = show l ++ "\t" ++ show n ++ "\t" ++ show t
 
 scan :: [Tag String] -> (Map Entry Int)
-scan = stateGetMap . foldr update (State 0 Map.empty)
+scan = stateGetMap . foldl' update (State 0 Map.empty)
 	where 
-	update t (State lev m)
+	update (State lev m) t
 		| isStartTag t = State (lev+1) (insert t lev m) 
 		| isStopTag t  = State (lev-1) (insert t (lev-1) m)
 		| isHtmlTag t = State lev (insert t lev m)
