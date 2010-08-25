@@ -50,7 +50,8 @@ report = reportLines . scan . canonicalizeTags . parseTags
 
 reportLines :: (Map Entry Int) -> [String]
 reportLines m = map fmt (Map.toAscList m)
-        where fmt ((Entry l t), n) = show l ++ "\t" ++ show n ++ "\t" ++ show t
+        where fmt ((Entry l t), n) = 
+                show l ++ "\t" ++ show n ++ "\t" ++ renderTags [t]
 
 scan :: [Tag String] -> (Map Entry Int)
 scan = stateGetMap . foldl' update (State 0 Map.empty)
