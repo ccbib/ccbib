@@ -33,7 +33,6 @@ stateGetMap :: State -> (Map Entry Int)
 stateGetMap (State lev m) = m
 
 checkArgs :: [String] -> Bool
-checkArgs [] = True
 checkArgs x = any (elem '-') x
 
 helpstring = "Bad Arguments!\n"
@@ -81,6 +80,7 @@ isHtmlTag _             = False
 leveltags = ["html", "head", "title", "body", 
 	"h1", "h2", "h3", "h4", "h5", "h6", "a", 
 	"b", "strong", "i", "tt", "em", "font", "u", "small", "strike",
-	"sub", "sup", "big",
-	"code", "pre", "cite", "blockquote", "center", 
-	"table"]
+	"sub", "sup", "big", "span",
+	"code", "pre", "cite", "blockquote", "center", "div", 
+	"table", "li"]
+-- Not sure about, "p", "ol", "ul", ...
