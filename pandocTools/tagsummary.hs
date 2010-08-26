@@ -82,5 +82,5 @@ leveltags = ["html", "head", "title", "body",
 	"b", "strong", "i", "tt", "em", "font", "u", "small", "strike",
 	"sub", "sup", "big", "span",
 	"code", "pre", "cite", "blockquote", "center", "div", 
-	"table", "li"]
--- Not sure about, "p", "ol", "ul", ...
+	"table", "ol", "ul"]
+-- Not sure about, "p", ...
