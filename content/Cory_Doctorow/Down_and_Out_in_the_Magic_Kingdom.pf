@@ -1,0 +1,23 @@
+input Down_and_Out_in_the_Magic_Kingdom.html
+report1 down.r1
+output down.html
+report2 down.r2
+ignore       <div id="about" dir="LTR">
+ignore       <div id="aboutnew" dir="LTR">
+ignore       <div id="ack" dir="LTR">
+ignore       <div id="alsoby" dir="LTR">
+ignore       <div id="ata" dir="LTR">
+ignore       <div id="blurbs" dir="LTR">
+ignore       <div id="ch1" dir="LTR">
+ignore       <div id="ch10" dir="LTR">
+ignore       <div id="ch2" dir="LTR">
+ignore       <div id="ch3" dir="LTR">
+ignore       <div id="ch4" dir="LTR">
+ignore       <div id="ch5" dir="LTR">
+ignore       <div id="ch6" dir="LTR">
+ignore       <div id="ch7" dir="LTR">
+ignore       <div id="ch8" dir="LTR">
+ignore       <div id="ch9" dir="LTR">
+ignore       <div id="prologue" dir="LTR">
+ignore       <div id="titlepage" dir="LTR">
+remove <div id="toc" dir="LTR" style="background: #eeff77">
