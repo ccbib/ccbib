@@ -1,0 +1,13 @@
+#!/bin/sh
+
+SIZES="-w21.0cm -h29.7cm -W 10.5cm -H14.82cm"
+
+if [ -z "$2" ]; then 
+  output=$(basename $1)
+else
+  output=$2
+fi
+
+psselect -o $1 | mypsbook -g4 | psnup -s1.0 $SIZES -4 >v_$output
+psselect -e $1 | mypsbook -g4 | pstops "2:1,0" | psnup -s1.0 $SIZES -4 >h_$output
+

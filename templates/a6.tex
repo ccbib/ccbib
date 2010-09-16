@@ -1,0 +1,17 @@
+\documentclass[paper=a6,fontsize=9pt,pagesize=dvips,DIV=15,BCOR=1cm]{scrbook}
+
+\usepackage[utf8]{inputenc}
+\usepackage{fancyvrb}
+
+\newcommand{\href}[2]{#2\footnote{\texttt{#1}}}
+\newcommand{\dash}{\discretionary{}{}{}---}
+
+\setcounter{secnumdepth}{-1}
+\pagestyle{plain}
+
+\addtolength{\textheight}{\baselineskip}
+\addtolength{\footskip}{-\baselineskip}
+
+
+\input{content.tex}
+
