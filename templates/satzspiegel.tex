@@ -1,20 +1,29 @@
+\usepackage[cross]{crop}
+
+\newlength{\realoutermargin}
+\setlength{\realoutermargin}{1in}
+\addtolength{\realoutermargin}{\evensidemargin}
+
+\newlength{\realinnermargin}
+\setlength{\realinnermargin}{1in}
+\addtolength{\realinnermargin}{\oddsidemargin}
+
+
 \newcommand{\spiegel}
-{\noindent \hrule \noindent
+{\noindent XXXX \hrulefill XXXX \\ \noindent
    x \hfill x \\ \vfill \noindent
 %Super blah foo da. Super blah foo da. Super blah foo da. Super blah foo da.
 %Super blah foo da. \vfill Super blah foo da. Super blah foo da. 
 %Super blah foo da. Super blah foo da. Super blah foo da. Super blah foo da.
-   x \hfill x \\ \vfill \noindent
-   x \hfill x \\ \vfill \noindent
-   x \hfill x \\ \vfill \noindent
-   x \hfill x \\ \vfill \noindent
-   x \hfill x \\ \vfill \noindent
-   x \hfill x \\ \vfill \noindent
-   x \hfill x \\ \vfill \noindent
-   x \hfill x \\ \vfill \noindent
-   x \hfill x \\ \vfill \noindent
-   x \hfill x \\ \vfill \noindent
-   x \hfill x \\ \vfill \noindent
+   x \hfill 1\,cm = 28.35\,pt \hfill 1\,pt = 0.3528\,mm \hfill x \\
+     \vfill \noindent
+   x \hfill \hfill x \\ \vfill \noindent
+   x \hfill Papierhöhe: \the\paperheight \hfill x \\ \noindent
+   x \hfill Papierbreite: \the\paperwidth \hfill x \\ \vfill \noindent
+   x \hfill Textbreite: \the\textwidth \hfill x \\ \vfill \noindent
+   x \hfill Grundlinienabstand: \the\baselineskip \hfill x \\ \vfill \noindent
+   x \hfill Außenrand: \the\realoutermargin \hfill x \\ \vfill \noindent
+   x \hfill Innenrand: \the\realinnermargin \hfill x \\ \vfill \noindent
    x \hfill x \\ \vfill \noindent
    x \hfill x \\ \vfill \noindent
    x \hfill x \\ \vfill \noindent
