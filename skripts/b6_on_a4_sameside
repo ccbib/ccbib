@@ -10,5 +10,5 @@ else
   output=$2
 fi
 
-psselect -o $1 | mypsbook -g2 | pstops -pb5 "2:0L(1w,0)+1L(1w,$b6w)" | strippagesize >v_$output
-psselect -e $1 | mypsbook -g2 | pstops -pb5 "2:0L(1w,$offset)+1L(1w,$offset2)" | strippagesize >h_$output
+pstops 2:0 $1 | mypsbook -g2 | pstops -pb5 "2:0L(1w,0)+1L(1w,$b6w)" | strippagesize >v_$output
+pstops 2:1 $1 | mypsbook -g2 | pstops -pb5 "2:0L(1w,$offset)+1L(1w,$offset2)" | strippagesize >h_$output
