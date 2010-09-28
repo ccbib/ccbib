@@ -1,0 +1,6 @@
+input Content.xhtml
+report1 con.r1
+output con.html
+report2 con.r2
+ignore <cite>
+remove <div id="meta_section_5">
