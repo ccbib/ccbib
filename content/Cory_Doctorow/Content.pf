@@ -4,3 +4,4 @@ output con.html
 report2 con.r2
 ignore <cite>
 remove <div id="meta_section_5">
+# Not implemented: replace <strong> <em>
