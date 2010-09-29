@@ -1,0 +1,15 @@
+#!/bin/sh
+
+
+bbox () {
+  x=$1
+  y=$2
+  w=$3
+  h=$4
+}
+
+while [ -n "$1" ]; do
+  bbox $(sed -n -e "s/^%%BoundingBox: //p" $1)
+  ps2pdf -dDEVICEWIDTHPOINTS=$w -dDEVICEHEIGHTPOINTS=$h $1
+  shift
+done
