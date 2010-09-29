@@ -1,0 +1,25 @@
+#!/bin/sh
+
+offset=485  #a4hoehe-b6breite
+offset2=130 #a4hoehe-2xb6breite
+b6w=355
+
+if [ -z "$2" ]; then 
+  output=$(basename $1)
+else
+  output=$2
+fi
+
+bbox () {
+  x=$1
+  y=$2
+  w=$3
+  h=$4
+}
+
+bbox $(sed -n -e "s/^%%BoundingBox: //p" $1) 
+
+new_bb="0 0 $w $((2*$h))"
+
+pstops 2:0 $1 | mypsbook -g2 | pstops "2:0(0,$h)+1" | strippagesize "$new_bb" >v_$output
+pstops 2:1 $1 | mypsbook -g2 | pstops "2:0(0,$h)+1" | strippagesize "$new_bb" >h_$output
