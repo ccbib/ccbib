@@ -1,10 +1,49 @@
+\newcommand{\linkbreak}[1]{\hskip 0pt plus 1fil
+  \discretionary{}{}{}
+  {#1} \hskip 0pt plus 1fill
+  \vrule width 0pt}
+\renewcommand{\chapter}[1]{}
+\renewcommand{\contentsname}{}
+\newenvironment{parlist}{
+  \setlength{\parindent}{0pt}
+  \setlength{\parskip}{0.5\baselineskip plus 0.2\baselineskip} 
+}{}
+
+\hyphenation{mo-no-poly car-ne-gie pro-ject pro-gress mo-dem rou-lette
+  browse-wrap Use-net mon-as-tery mo-dems}
+
+\raggedbottom
+
 \begin{document}
 
-\section{CONTENT: Selected Essays on Technology, Creativity, Copyright and the Future of the Future}
+%\title{Content}
+%\subject{Selected Essays on Technology, Creativity, Copyright and the Future of the Future}
+%\author{By Cory Doctorow, doctorow@craphound.com}
+%\date{}
+%\maketitle
 
-By Cory Doctorow, doctorow@craphound.com
+\begin{center}
+\thispagestyle{empty}
+~
+\bigskip
 
-\subsection{A word about this downloadable file:}
+{\Huge \textsf{\textbf{Content}}}
+
+\bigskip
+
+\textbf{\Large Selected Essays on Technology, Creativity, Copyright
+  and the Future of the Future}
+
+\bigskip\bigskip
+
+{\Large By Cory Doctorow, doctorow@craphound.com}
+\end{center}
+
+\bigskip\bigskip
+
+\tableofcontents
+
+\section{A word about this downloadable file:}
 
 I've been releasing my books online for free since my first novel,
 Down and Out in the Magic Kingdom, came out in 2003, and with every
@@ -31,11 +70,15 @@ you to do, in order of preference:
 
 \begin{itemize}
 \item
-  Buy a copy:
-  \href{http://craphound.com/content/buy}{http://craphound.com/content/buy}
+  Buy a copy: {\hskip 0pt plus 1fil
+  \discretionary{}{}{}
+  \texttt{http://craphound.com/content/buy} \hskip 0pt plus 1fill}
+  \vrule width 0pt
 \item
-  Donate a copy to a school or library:
-  \href{http://craphound.com/content/donate}{http://craphound.com/content/donate}
+  Donate a copy to a school or library: \hskip 0pt plus 1fil
+  \discretionary{}{}{}
+  \texttt{http://craphound.com/content/donate} \hskip 0pt plus 1fill
+  \vrule width 0pt
 \item
   Send the ebook to five friends and tell them why you liked it
 \item
@@ -44,37 +87,37 @@ you to do, in order of preference:
 \end{itemize}
 Now, on to the book!
 
-\subsection{Copyright notice:}
+\section{Copyright notice:}
 
 This entire work (with the exception of the introduction by John
 Perry Barlow) is copyright 2008 by Cory Doctorow and released under
 the terms of a Creative Commons US
-Attribution-NonCommercial-ShareAlike license
-(\href{http://creativecommons.org/licenses/by-nc-sa/3.0/us}{http://creativecommons.org/licenses/by-nc-sa/3.0/us}/).
+Attribution-NonCommercial-ShareAlike
+\href{http://creativecommons.org/licenses/by-nc-sa/3.0/us}{license}.
 Some Rights Reserved.
 
 The introduction is copyright 2008 by John Perry Barlow and
 released under the terms of a Creative Commons US
-Attribution-NonCommercial-ShareAlike license
-(\href{http://creativecommons.org/licenses/by-nc-sa/3.0/us}{http://creativecommons.org/licenses/by-nc-sa/3.0/us}/).
+Attribution-NonCommercial-ShareAlike
+\href{http://creativecommons.org/licenses/by-nc-sa/3.0/us}{license}.
 Some Rights Reserved.
 
-\subsection{Publication history and acknowledgments:}
-
+\section{Publication history and acknowledgments:}
+\begin{parlist}
 Introduction: 2008, John Perry Barlow
 
 Microsoft Research DRM Talk (This talk was originally given to
 Microsoft's Research Group and other interested parties from within
 the company at their Redmond offices on June 17, 2004.)
 
-The DRM Sausage Factory (Originally published as "A
-Behind-The-Scenes Look At How DRM Becomes Law," InformationWeek,
+The DRM Sausage Factory (Originally published as ``A
+Behind-The-Scenes Look At How DRM Becomes Law,'' InformationWeek,
 July 11, 2007)
 
 Happy Meal Toys versus Copyright: How America chose Hollywood and
 Wal-Mart, and why it's doomed us, and how we might survive anyway
-(Originally published as "How Hollywood, Congress, And DRM Are
-Beating Up The American Economy," InformationWeek, June 11, 2007)
+(Originally published as ``How Hollywood, Congress, And DRM Are
+Beating Up The American Economy,'' InformationWeek, June 11, 2007)
 
 Why Is Hollywood Making A Sequel To The Napster Wars? (Originally
 published in InformationWeek, August 14, 2007)
@@ -83,18 +126,18 @@ You DO Like Reading Off a Computer Screen (Originally published in
 Locus Magazine, March 2007)
 
 How Do You Protect Artists? (Originally published in The Guardian
-as "Online censorship hurts us all," Tuesday, Oct 2, 2007)
+as ``Online censorship hurts us all,'' Tuesday, Oct 2, 2007)
 
 It's the Information Economy, Stupid (Originally published in The
-Guardian as "Free data sharing is here to stay," September 18,
+Guardian as ``Free data sharing is here to stay,'' September 18,
 2007)
 
 Downloads Give Amazon Jungle Fever (Originally published in The
 Guardian, December 11, 2007)
 
 What's the Most Important Right Creators Have? (Originally
-published as "How Big Media's Copyright Campaigns Threaten Internet
-Free Expression," InformationWeek, November 5, 2007)
+published as ``How Big Media's Copyright Campaigns Threaten Internet
+Free Expression,'' InformationWeek, November 5, 2007)
 
 Giving it Away (Originally published on Forbes.com, December 2006)
 
@@ -112,8 +155,9 @@ Metacrap: Putting the torch to seven straw-men of the meta-utopia
 (Self-published, 26 August 2001)
 
 Amish for QWERTY (Originally published on the O'Reilly Network,
-07/09/2003,
-\texttt{http://www.oreillynet.com/pub/a/wireless/2003/07/09/amish\_qwerty.html})
+07/09/2003)\\
+\texttt{http://www.oreillynet.com/pub/a/wireless/ \ldots \\
+\vrule width 0pt \hfill \ldots 2003/07/09/amish\_qwerty.html}
 
 Ebooks: Neither E, Nor Books (Paper for the O'Reilly Emerging
 Technologies Conference, San Diego, February 12, 2004)
@@ -138,8 +182,8 @@ Guardian, November 13, 2007)
 The Future of Ignoring Things (Originally published on
 InformationWeek's Internet Evolution, October 3, 2007)
 
-Facebook's Faceplant (Originally published as "How Your Creepy
-Ex-Co-Workers Will Kill Facebook," in InformationWeek, November 26,
+Facebook's Faceplant (Originally published as ``How Your Creepy
+Ex-Co-Workers Will Kill Facebook,'' in InformationWeek, November 26,
 2007)
 
 The Future of Internet Immune Systems (Originally published on
@@ -149,17 +193,18 @@ All Complex Ecosystems Have Parasites (Paper delivered at the
 O'Reilly Emerging Technology Conference, San Diego, California, 16
 March 2005)
 
-READ CAREFULLY (Originally published as "Shrinkwrap Licenses: An
-Epidemic Of Lawsuits Waiting To Happen" in InformationWeek,
+READ CAREFULLY (Originally published as ``Shrinkwrap Licenses: An
+Epidemic Of Lawsuits Waiting To Happen'' in InformationWeek,
 February 3, 2007)
 
-World of Democracycraft (Originally published as "Why Online Games
-Are Dictatorships," InformationWeek, April 16, 2007)
+World of Democracycraft (Originally published as ``Why Online Games
+Are Dictatorships,'' InformationWeek, April 16, 2007)
 
 Snitchtown (Originally published in Forbes.com, June 2007)
+\end{parlist}
 
-\subsection{Dedication:}
-
+\section{Dedication:}
+\begin{parlist}
 For the founders of the Electronic Frontier Foundation: John Perry
 Barlow, Mitch Kapor and John Gilmore
 
@@ -167,21 +212,21 @@ For the staff -- past and present -- of the Electronic Frontier
 Foundation
 
 For the supporters of the Electronic Frontier Foundation
+\end{parlist}
 
-\subsection{Introduction by John Perry Barlow}
+\section{Introduction by John Perry Barlow}
 
-San Francisco - Seattle - Vancouver - San Francisco
-
+San Francisco -- Seattle -- Vancouver -- San Francisco\\
 Tuesday, April 1, 2008
 
-"Content," huh? Ha! Where's the container?
+``Content,'' huh? Ha! Where's the container?
 
 Perhaps these words appear to you on the pages of a book, a
-physical object that might be said to have "contained" the thoughts
+physical object that might be said to have ``contained'' the thoughts
 of my friend and co-conspirator Cory Doctorow as they were
 transported in boxes and trucks all the way from his marvelous mind
 into yours. If that is so, I will concede that you might be
-encountering "content". (Actually, if that's the case, I'm
+encountering ``content''. (Actually, if that's the case, I'm
 delighted on Cory's behalf, since that means that you have also
 paid him for these thoughts. We still know how to pay creators
 directly for the works they embed in stuff.)
@@ -189,7 +234,7 @@ directly for the works they embed in stuff.)
 But the chances are excellent that you're reading these liquid
 words as bit-states of light on a computer screen, having taken
 advantage of his willingness to let you have them in that form for
-free. In such an instance, what "contains" them? Your hard disk?
+free. In such an instance, what ``contains'' them? Your hard disk?
 His? The Internet and all the servers and routers in whose caches
 the ghosts of their passage might still remain? Your mind? Cory's?
 
@@ -197,7 +242,7 @@ To me, it doesn't matter. Even if you're reading this from a book,
 I'm still not convinced that what you have in your hands is its
 container, or that, even if we agreed on that point, that a little
 ink in the shape of, say, the visual pattern you're trained to
-interpret as meaning "a little ink" in whatever font the publisher
+interpret as meaning ``a little ink'' in whatever font the publisher
 chooses, is not, as Magritte would remind us, the same thing as a
 little ink, even though it is.
 
@@ -207,10 +252,10 @@ that Cory is really cool and interesting, you might be motivated to
 learn English so that you could read this book, but even then it
 wouldn't be a container so much as a conduit.
 
-The real "container" would be process of thought that began when I
-compressed my notion of what is meant by the word "ink" - which,
+The real ``container'' would be process of thought that began when I
+compressed my notion of what is meant by the word ``ink'' -- which,
 when it comes to the substances that can be used to make marks on
-paper, is rather more variable than you might think - and would
+paper, is rather more variable than you might think -- and would
 kind of end when you decompressed it in your own mind as whatever
 you think it is.
 
@@ -226,12 +271,12 @@ that, when you sell it or have it stolen, ceases to remain in your
 possession. It doesn't have a market value that can be objectively
 determined. It is not, for example, much like a 2004 Ducati ST4S
 motorcycle, for which I'm presently in the market, and which seems
-- despite variabilities based on, I must admit, informationally-
-based conditions like mileage and whether it's been dropped - to
+-- despite variabilities based on, I must admit, informationally-
+based conditions like mileage and whether it's been dropped -- to
 have a value that is pretty consistent among the specimens I can
 find for a sale on the Web.
 
-Such economic clarity could not be established for anything "in"
+Such economic clarity could not be established for anything ``in''
 this book, which you either obtained for free or for whatever price
 the publisher eventually puts on it. If it's a book you're reading
 from, then presumably Cory will get paid some percentage of
@@ -242,13 +287,13 @@ royalties nor upfront. I am, however, getting some intangible
 value, as one generally does whenever he does a favor for a friend.
 For me, the value being retrieved from going to the trouble of
 writing these words is not so different from the value you retrieve
-from reading them. We are both mining a deeply intangible "good,"
+from reading them. We are both mining a deeply intangible ``good,''
 which lies in interacting with The Mind of Cory Doctorow. I mention
 this because it demonstrates the immeasurable role of relationship
 as the driving force in an information economy.
 
 But neither am I creating content at the moment nor are you
-"consuming" it (since, unlike a hamburger, these words will remain
+``consuming'' it (since, unlike a hamburger, these words will remain
 after you're done with them, and, also unlike a hamburger you won't
 subsequently, well\ldots never mind.) Unlike real content, like the
 stuff in a shipping container, these words have neither grams nor
@@ -257,7 +302,7 @@ bucks worth of this stuff will get some people a lot further than
 others, depending on their interest and my eloquence, neither of
 which can be quantified.
 
-It's this simple: the new meaning of the word "content," is plain
+It's this simple: the new meaning of the word ``content,'' is plain
 wrong. In fact, it is intentionally wrong. It's a usage that only
 arose when the institutions that had fattened on their ability to
 bottle and distribute the genius of human expression began to
@@ -269,7 +314,7 @@ to call the mysterious ghosts of thought that were attached to
 them.
 
 Thus, when not applied to something you can put in a bucket (of
-whatever size), "content" actually represents a plot to make you
+whatever size), ``content'' actually represents a plot to make you
 think that meaning is a thing. It isn't. The only reason they want
 you to think that it is because they know how to own things, how to
 give them a value based on weight or quantity, and, more to the
@@ -280,11 +325,11 @@ That, and the fact that after a good 25 years of advance warning,
 they still haven't done much about the Economy of Ideas besides
 trying to stop it from happening.
 
-As I get older, I become less and less interested in saying "I told
-you so." But in this case, I find it hard to resist. Back during
+As I get older, I become less and less interested in saying ``I told
+you so.'' But in this case, I find it hard to resist. Back during
 the Internet equivalent of the Pleistocene. I wrote a piece for an
 ancestor of Wired magazine called Wired magazine that was titled,
-variously, "The Economy of Ideas" or "Wine without Bottles." In
+variously, ``The Economy of Ideas'' or ``Wine without Bottles.'' In
 this essay, I argued that it would be deucedly difficult to
 continue to apply the Adam Smithian economic principles regarding
 the relationship between scarcity and value to any products that
@@ -296,9 +341,9 @@ invisibility would be a bad strategy for increasing attention.
 That, in other words, familiarity might convey more value to
 information that scarcity would.
 
-I did my best to tell the folks in what is now called "The Content
-Industry" - the institutions that once arose for the useful purpose
-of conveying creative expression from one mind to many - that this
+I did my best to tell the folks in what is now called ``The Content
+Industry'' -- the institutions that once arose for the useful purpose
+of conveying creative expression from one mind to many -- that this
 would be a good time to change their economic model. I proposed
 that copyright had worked largely because it had been difficult, as
 a practical matter, to make a book or a record or motion picture
@@ -306,10 +351,10 @@ film spool.
 
 It was my theory that as soon as all human expression could be
 reduced into ones and zeros, people would begin to realize what
-this "stuff" really was and come up with an economic paradigm for
+this ``stuff'' really was and come up with an economic paradigm for
 rewarding its sources that didn't seem as futile as claiming to own
 the wind. Organizations would adapt. The law would change. The
-notion of "intellectual property," itself only about 35 years old,
+notion of ``intellectual property,'' itself only about 35 years old,
 would be chucked immediately onto the magnificent ash-heap of
 Civilization's idiotic experiments.
 
@@ -322,16 +367,16 @@ humans. But institutions, having the legal system a fundamental
 part of their genetic code, are not so readily ductile.
 
 This is particularly true in America, where some combination of
-certainty and control is the actual "deity" before whose altar we
+certainty and control is the actual ``deity'' before whose altar we
 worship, and where we have a regular practice of spawning large and
 inhuman collective organisms that are a kind of meta-parasite.
-These critters - let's call them publicly-held corporations - may
+These critters -- let's call them publicly-held corporations -- may
 be made out of humans, but they are not human. Given human folly,
 that characteristic might be semi-ok if they were actually as
-cold-bloodedly expedient as I once fancied them - yielding only to
+cold-bloodedly expedient as I once fancied them -- yielding only to
 the will of the markets and the raw self-interest of their
 shareholders. But no. They are also symbiotically subject to the
-"religious beliefs" of those humans who feed in their upper
+``religious beliefs'' of those humans who feed in their upper
 elevations.
 
 Unfortunately, the guys (and they mostly are guys) who've been
@@ -342,11 +387,11 @@ listening to a song and shop-lifting a toaster.
 
 Moreover, they dwell in such a sublime state of denial that they
 think they are stewarding the creative process as it arises in the
-creative humans they exploit savagely - knowing, as they do, that a
-creative human would rather be heard than paid - and that they, a
+creative humans they exploit savagely -- knowing, as they do, that a
+creative human would rather be heard than paid -- and that they, a
 bunch of sated old scoundrels nearing retirement would be able to
-find technological means for wrapping "containers" around "their"
-"content" that the adolescent electronic Hezbollah they've inspired
+find technological means for wrapping ``containers'' around ``their''
+``content'' that the adolescent electronic Hezbollah they've inspired
 by suing their own customers will neither be smart nor motivated
 enough to shred whatever pathetic digital bottles their lackeys
 design.
@@ -360,9 +405,9 @@ in court. They created digital rights management software schemes
 that behaved rather like computer viruses.
 
 Indeed, they did about everything they could short of seriously
-examining the actual economics of the situation - it has never been
+examining the actual economics of the situation -- it has never been
 proven to me that illegal downloads are more like shoplifted goods
-than viral marketing - or trying to come up with a business model
+than viral marketing -- or trying to come up with a business model
 that the market might embrace.
 
 Had it been left to the stewardship of the usual suspects, there
@@ -388,7 +433,7 @@ Had nature not provided us with a Cory Doctorow when we needed one,
 it would have been necessary for us to invent a time machine and go
 into the future to fetch another like him. That would be about the
 only place I can imagine finding such a creature. Cory, as you will
-learn from his various rants "contained" herein was perfectly
+learn from his various rants ``contained'' herein was perfectly
 suited to the task of subduing the dinosaurs of content.
 
 He's a little like the guerilla plumber Tuttle in the movie Brazil.
@@ -409,9 +454,9 @@ social when they're staring at the other person's shoes.
 
 This was a necessary ability. One of the problems that EFF has to
 contend with is that even though most of our yet-unborn
-constituency would agree heartily with our central mission - giving
+constituency would agree heartily with our central mission -- giving
 everybody everywhere the right to both address and hear everybody
-everywhere else - the decisions that will determine the eventual
+everywhere else -- the decisions that will determine the eventual
 viability of that right are being made now and generally in
 gatherings invisible to the general public, using terminology,
 whether technical or legal, that would be the verbal equivalent of
@@ -424,8 +469,8 @@ the EFF, coincides with the appearance of his first-born child,
 about whom he is a shameless sentimental gusher.
 
 I would like to think that by the time this newest prodigy, Poesy
-Emmeline Fibonacci Nautilus Taylor Doctorow - you see what I mean
-about paternal enthusiasm - has reached Cory's age of truly
+Emmeline Fibonacci Nautilus Taylor Doctorow -- you see what I mean
+about paternal enthusiasm -- has reached Cory's age of truly
 advanced adolescence, the world will have recognized that there are
 better ways to regulate the economy of mind than pretending that
 its products are something like pig iron. But even if it hasn't, I
@@ -433,9 +478,9 @@ am certain that the global human discourse will be less encumbered
 than it would have been had not Cory Doctorow blessed our current
 little chunk of space/time with his fierce endeavors.
 
-And whatever it is that might be "contained" in the following.
+And whatever it is that might be ``contained'' in the following.
 
-\subsection{Microsoft Research DRM Talk}
+\section{Microsoft Research DRM Talk}
 
 (This talk was originally given to Microsoft's Research Group and
 other interested parties from within the company at their Redmond
@@ -485,7 +530,7 @@ all our asses.
 
 Let's dive into it.
 
-\subsubsection{1. DRM systems don't work}
+\subsection{1. DRM systems don't work}
 
 This bit breaks down into two parts:
 
@@ -524,8 +569,8 @@ algorithm, your secret is g0nez0red.
 So if you're Caesar, you spend a lot of time worrying about keeping
 the existence of your messengers and their payloads secret. Get
 that? You're Augustus and you need to send a message to Brad
-without Caceous (a word I'm reliably informed means "cheese-like,
-or pertaining to cheese") getting his hands on it. You give the
+without Caceous (a word I'm reliably informed means ``cheese-like,
+or pertaining to cheese'') getting his hands on it. You give the
 message to Diatomaceous, the fleetest runner in the empire, and you
 encipher it with ROT-13 and send him out of the garrison in the
 pitchest hour of the night, making sure no one knows that you've
@@ -566,8 +611,8 @@ Enter keys: a cipher that uses a key is still more secure. Even if
 the cipher is disclosed, even if the ciphertext is intercepted,
 without the key (or a break), the message is secret. Post-war, this
 is doubly important as we begin to realize what I think of as
-Schneier's Law: "any person can invent a security system so clever
-that she or he can't think of how to break it." This means that the
+Schneier's Law: ``any person can invent a security system so clever
+that she or he can't think of how to break it.'' This means that the
 only experimental methodology for discovering if you've made
 mistakes in your cipher is to tell all the smart people you can
 about it and ask them to think of ways to break it. Without this
@@ -616,11 +661,11 @@ all DRM systems share a common vulnerability: they provide their
 attackers with ciphertext, the cipher and the key. At this point,
 the secret isn't a secret anymore.
 
-\subsubsection{2. DRM systems are bad for society}
+\subsection{2. DRM systems are bad for society}
 
-Raise your hand if you're thinking something like, "But DRM doesn't
+Raise your hand if you're thinking something like, ``But DRM doesn't
 have to be proof against smart attackers, only average individuals!
-It's like a speedbump!"
+It's like a speedbump!''
 
 Put your hand down.
 
@@ -632,9 +677,9 @@ your DRM. I only need to know how to search Google, or Kazaa, or
 any of the other general-purpose search tools for the cleartext
 that someone smarter than me has extracted.
 
-Raise your hand if you're thinking something like, "But NGSCB can
+Raise your hand if you're thinking something like, ``But NGSCB can
 solve this problem: we'll lock the secrets up on the logic board
-and goop it all up with epoxy."
+and goop it all up with epoxy.''
 
 Put your hand down.
 
@@ -687,7 +732,7 @@ Except she fails. There's a DRM system called Macrovision embedded
 interval in the signal and causes any tape made in this fashion to
 fail. Macrovision can be defeated for about \$10 with a gadget
 readily available on eBay. But our infringer doesn't know that.
-She's "honest." Technically unsophisticated. Not stupid, mind you
+She's ``honest.'' Technically unsophisticated. Not stupid, mind you
 -- just naive.
 
 The Darknet paper addresses this possibility: it even predicts what
@@ -731,19 +776,19 @@ illegal.
 
 Anticircumvention is a powerful tool for people who want to exclude
 competitors. If you claim that your car engine firmware is a
-"copyrighted work," you can sue anyone who makes a tool for
+``copyrighted work,'' you can sue anyone who makes a tool for
 interfacing with it. That's not just bad news for mechanics --
 think of the hotrodders who want to chip their cars to tweak the
 performance settings. We have companies like Lexmark claiming that
 their printer cartridges contain copyrighted works -- software that
-trips an "I am empty" flag when the toner runs out, and have sued a
+trips an ``I am empty'' flag when the toner runs out, and have sued a
 competitor who made a remanufactured cartridge that reset the flag.
 Even garage-door opener companies have gotten in on the act,
 claiming that their receivers' firmware are copyrighted works.
 Copyrighted cars, print carts and garage-door openers: what's next,
 copyrighted light-fixtures?
 
-Even in the context of legitimate -- excuse me, "traditional" --
+Even in the context of legitimate -- excuse me, ``traditional'' --
 copyrighted works like movies on DVDs, anticircumvention is bad
 news. Copyright is a delicate balance. It gives creators and their
 assignees some rights, but it also reserves some rights to the
@@ -752,7 +797,7 @@ transcoding his books into assistive formats for the blind. More
 importantly, though, a creator has a very limited say over what you
 can do once you lawfully acquire her works. If I buy your book,
 your painting, or your DVD, it belongs to me. It's my property. Not
-my "intellectual property" -- a whacky kind of pseudo-property
+my ``intellectual property'' -- a whacky kind of pseudo-property
 that's swiss-cheesed with exceptions, easements and limitations --
 but real, no-fooling, actual tangible \emph{property} -- the kind
 of thing that courts have been managing through property law for
@@ -770,14 +815,14 @@ and read it wherever I am: I can even buy books in America and
 bring them to the UK, where the author may have an exclusive
 distribution deal with a local publisher who sells them for double
 the US shelf-price. When I'm done with it, I can sell it on or give
-it away in the UK. Copyright lawyers call this "First Sale," but it
-may be simpler to think of it as "Capitalism."
+it away in the UK. Copyright lawyers call this ``First Sale,'' but it
+may be simpler to think of it as ``Capitalism.''
 
 The keys to decrypt a DVD are controlled by an org called DVD-CCA,
 and they have a bunch of licensing requirements for anyone who gets
 a key from them. Among these is something called region-coding: if
-you buy a DVD in France, it'll have a flag set that says, "I am a
-European DVD." Bring that DVD to America and your DVD player will
+you buy a DVD in France, it'll have a flag set that says, ``I am a
+European DVD.'' Bring that DVD to America and your DVD player will
 compare the flag to its list of permitted regions, and if they
 don't match, it will tell you that it's not allowed to play your
 disc.
@@ -785,7 +830,7 @@ disc.
 Remember: there is no copyright that says that an author gets to do
 this. When we wrote the copyright statutes and granted authors the
 right to control display, performance, duplication, derivative
-works, and so forth, we didn't leave out "geography" by accident.
+works, and so forth, we didn't leave out ``geography'' by accident.
 That was on-purpose.
 
 So when your French DVD won't play in America, that's not because
@@ -801,15 +846,15 @@ some pals wrote some code to break the CSS so that he could do so.
 He's a wanted man here in America; in Norway the studios put the
 local fuzz up to bringing him up on charges of
 \emph{unlawfully trespassing upon a computer system.} When his
-defense asked, "Which computer has Jon trespassed upon?" the answer
-was: "His own."
+defense asked, ``Which computer has Jon trespassed upon?'' the answer
+was: ``His own.''
 
 His no-fooling, real and physical property has been expropriated by
 the weird, notional, metaphorical intellectual property on his DVD:
 DRM only works if your record player becomes the property of
 whomever's records you're playing.
 
-\subsubsection{3. DRM systems are bad for biz}
+\subsection{3. DRM systems are bad for biz}
 
 This is the worst of all the ideas embodied by DRM: that people who
 make record-players should be able to spec whose records you can
@@ -851,7 +896,7 @@ licensees for its proprietary format and therefore you'd have a
 richer ecosystem of devices to choose from when you were shopping
 for gizmos to play your virtual records on.
 
-What a weird idea: that we should evaluate our record-purchases on
+What a weird idea: that we should evaluate our record-pur\-chases on
 the basis of which recording company will allow the greatest
 diversity of record-players to play its discs! That's like telling
 someone to buy the Betamax instead of the Edison Kinetoscope
@@ -870,15 +915,15 @@ jukebox, a thing that holds 100 movies, and they're charging
 thousand dollars' worth of components -- all that other cost is the
 cost of anticompetition.
 
-\subsubsection{4. DRM systems are bad for artists}
+\subsection{4. DRM systems are bad for artists}
 
 But what of the artist? The hardworking filmmaker, the ink-stained
 scribbler, the heroin-cured leathery rock-star? We poor slobs of
 the creative class are everyone's favorite poster-children here:
-the RIAA and MPAA hold us up and say, "Won't someone please think
-of the children?" File-sharers say, "Yeah, we're thinking about the
+the RIAA and MPAA hold us up and say, ``Won't someone please think
+of the children?'' File-sharers say, ``Yeah, we're thinking about the
 artists, but the labels are The Man, who cares what happens to
-you?"
+you?''
 
 To understand what DRM does to artists, you need to understand how
 copyright and technology interact. Copyright is inherently
@@ -927,10 +972,10 @@ and no one had to hire a lawyer at \$200 an hour to argue about
 whether the payment should be two cents or a nickel.
 
 This compulsory license is still in place today: when Joe Cocker
-sings "With a Little Help from My Friends," he pays a fixed fee to
+sings ``With a Little Help from My Friends,'' he pays a fixed fee to
 the Beatles' publisher and away he goes -- even if Ringo hates the
 idea. If you ever wondered how Sid Vicious talked Anka into letting
-him get a crack at "My Way," well, now you know.
+him get a crack at ``My Way,'' well, now you know.
 
 That compulsory license created a world where a thousand times more
 money was made by a thousand times more creators who made a
@@ -968,15 +1013,15 @@ non-transformative use of 100 percent of a creative work in a way
 that directly undercut the Discovision licensing stream.
 
 Jack Valenti, the mouthpiece for the motion-picture industry, told
-Congress in 1982 that the VCR was to the American film industry "as
-the Boston Strangler is to a woman home alone."
+Congress in 1982 that the VCR was to the American film industry ``as
+the Boston Strangler is to a woman home alone.''
 
 But the Supreme Court ruled against Hollywood in 1984, when it
 determined that any device capable of a substantial non-infringing
-use was legal. In other words, "We don't buy this Boston Strangler
+use was legal. In other words, ``We don't buy this Boston Strangler
 business: if your business model can't survive the emergence of
 this general-purpose tool, it's time to get another business-model
-or go broke."
+or go broke.''
 
 Hollywood found another business model, as the broadcasters had, as
 the Vaudeville artists had, as the music publishers had, and they
@@ -1005,7 +1050,7 @@ get it aimed correctly than could pack into even the largest
 Vaudeville house. MP3s don't come with liner notes, they aren't
 sold to you by a hipper-than-thou record store clerk who can help
 you make your choice, bad rips and truncated files abound: I once
-downloaded a twelve-second copy of "Hey Jude" from the original
+downloaded a twelve-second copy of ``Hey Jude'' from the original
 Napster. Yet MP3 is outcompeting the CD. I don't know what to do
 with CDs anymore: I get them, and they're like the especially nice
 garment bag they give you at the fancy suit shop: it's nice and you
@@ -1068,7 +1113,7 @@ technological fetter: publishers like Baen Books and my own, Tor,
 who are making some or all of their catalogs available in ASCII and
 HTML and PDF.
 
-The hardware-dependent ebooks, the DRM use-and-copy-restricted
+The hardware-dependent ebooks, the DRM use-and-copy-re\-stricted
 ebooks, they're cratering. Sales measured in the tens, sometimes
 the hundreds. Science fiction is a niche business, but when you're
 selling copies by the ten, that's not even a business, it's a
@@ -1128,7 +1173,7 @@ abandon invention now robs tomorrow's artists of the new businesses
 and new reach and new audiences that the Internet and the PC can
 give them.
 
-\subsubsection{5. DRM is a bad business-move for MSFT}
+\subsection{5. DRM is a bad business-move for MSFT}
 
 When Sony brought out the VCR, it made a record player that could
 play Hollywood's records, even if Hollywood didn't like the idea.
@@ -1146,7 +1191,7 @@ walkman customers were clamoring for a solid-state MP3 player, Sony
 let its music business-unit run its show: instead of making a
 high-capacity MP3 walkman, Sony shipped its Music Clips,
 low-capacity devices that played brain-damaged DRM formats like
-Real and OpenMG. They spent good money engineering "features" into
+Real and OpenMG. They spent good money engineering ``features'' into
 these devices that kept their customers from freely moving their
 music back and forth between their devices. Customers stayed away
 in droves.
@@ -1158,9 +1203,9 @@ it got borged by its entertainment unit -- and PC companies like
 Apple.
 
 That's because Sony shipped a product that there was no market
-demand for. No Sony customer woke up one morning and said, "Damn, I
+demand for. No Sony customer woke up one morning and said, ``Damn, I
 wish Sony would devote some expensive engineering effort in order
-that I may do less with my music." Presented with an alternative,
+that I may do less with my music.'' Presented with an alternative,
 Sony's customers enthusiastically jumped ship.
 
 The same thing happened to a lot of people I know who used to rip
@@ -1174,7 +1219,7 @@ discovered that after they restored their music that they could no
 longer play it. The player saw the new OS as a different machine,
 and locked them out of their own music.
 
-There is no market demand for this "feature." None of your
+There is no market demand for this ``feature.'' None of your
 customers want you to make expensive modifications to your products
 that make backing up and restoring even harder. And there is no
 moment when your customers will be less forgiving than the moment
@@ -1261,7 +1306,7 @@ CD doesn't mean that you should expect to have the ability to
 listen to it on your MP3 player, and just because it plays on your
 MP3 player is no reason to expect it to run as a ringtone. I wonder
 how they feel about alarm clocks that will play a CD to wake you up
-in the morning? Is that strangling the nascent "alarm tone"
+in the morning? Is that strangling the nascent ``alarm tone''
 market?
 
 The phone companies' customers want Symbian phones and for now, at
@@ -1278,12 +1323,12 @@ burner that works with a PC.
 Maybe they won't buy into his BS, but they're also not much
 interested in what you have to sell. At the Broadcast Protection
 Discussion Group meetings where the Broadcast Flag was hammered
-out, the studios' position was, "We'll take anyone's DRM except
-Microsoft's and Philips'." When I met with UK broadcast wonks about
+out, the studios' position was, ``We'll take anyone's DRM except
+Microsoft's and Philips'.'' When I met with UK broadcast wonks about
 the European version of the Broadcast Flag underway at the Digital
-Video Broadcasters' forum, they told me, "Well, it's different in
+Video Broadcasters' forum, they told me, ``Well, it's different in
 Europe: mostly they're worried that some American company like
-Microsoft will get their claws into European television."
+Microsoft will get their claws into European television.''
 
 American film studios didn't want the Japanese electronics
 companies to get a piece of the movie pie, so they fought the VCR.
@@ -1295,22 +1340,22 @@ player that can play everyone's records.
 
 Because if you don't do it, someone else will.
 
-\subsection{The DRM Sausage Factory}
+\section{The DRM Sausage Factory}
 
-(Originally published as "A Behind-The-Scenes Look At How DRM
-Becomes Law," InformationWeek, July 11, 2007)
+(Originally published as ``A Behind-The-Scenes Look At How DRM
+Becomes Law,'' InformationWeek, July 11, 2007)
 
-Otto von Bismarck quipped, "Laws are like sausages, it is better
-not to see them being made." I've seen sausages made. I've seen
+Otto von Bismarck quipped, ``Laws are like sausages, it is better
+not to see them being made.'' I've seen sausages made. I've seen
 laws made. Both pale in comparison to the process by which
 anti-copying technology agreements are made.
 
-This technology, usually called "Digital Rights Management" (DRM)
+This technology, usually called ``Digital Rights Management'' (DRM)
 proposes to make your computer worse at copying some of the files
 on its hard-drive or on other media. Since all computer operations
 involve copying, this is a daunting task -- as security expert
-Bruce Schneier has said, "Making bits harder to copy is like making
-water that's less wet."
+Bruce Schneier has said, ``Making bits harder to copy is like making
+water that's less wet.''
 
 At root, DRMs are technologies that treat the owner of a computer
 or other device as an attacker, someone against whom the system
@@ -1332,9 +1377,9 @@ that treat them as presumptive criminals. DRM technologies limit
 more than copying: they limit ranges of uses, such as viewing a
 movie in a different country, copying a song to a different
 manufacturer's player, or even pausing a movie for too long.
-Surely, this stuff hurts sales: who goes into a store and asks, "Do
+Surely, this stuff hurts sales: who goes into a store and asks, ``Do
 you have any music that's locked to just one company's player? I'm
-in the market for some lock-in."
+in the market for some lock-in.''
 
 So why do manufacturers do it? As with many strange behaviors,
 there's a carrot at play here, and a stick.
@@ -1370,9 +1415,9 @@ video cassette when they could amass all the video they needed with
 a home recorder and a set of rabbit-ears?
 
 The Supreme Court threw out these arguments in a 1984 5-4 decision,
-the "Betamax Decision." This decision held that the VCR was legal
-because it was "capable of sustaining a substantially
-non-infringing use." That means that if you make a technology that
+the ``Betamax Decision.'' This decision held that the VCR was legal
+because it was ``capable of sustaining a substantially
+non-infringing use.'' That means that if you make a technology that
 your customers \emph{can} use legally, you're not on the hook for
 the illegal stuff they do.
 
@@ -1385,7 +1430,7 @@ principle.
 Unfortunately, the Supremes shot the Betamax principle in the gut
 two years ago, with the Grokster decision. This decision says that
 a company can be found liable for its customers' bad acts if they
-can be shown to have "induced" copyright infringement. So, if your
+can be shown to have ``induced'' copyright infringement. So, if your
 company advertises your product for an infringing use, or if it can
 be shown that you had infringement in mind at the design stage, you
 can be found liable for your customers' copying. The studios and
@@ -1426,19 +1471,19 @@ encrypted form.
 
 The Broadcast Flag was hammered out in a group called the Broadcast
 Protection Discussion Group (BPDG) a sub-group from the MPAA's
-"Content Protection Technology Working Group," which also included
+``Content Protection Technology Working Group,'' which also included
 reps from all the big IT companies (Microsoft, Apple, Intel, and so
 on), consumer electronics companies (Panasonic, Philips, Zenith),
 cable companies, satellite companies, and anyone else who wanted to
-pay \$100 to attend the "public" meetings, held every six weeks or
+pay \$100 to attend the ``public'' meetings, held every six weeks or
 so (you can attend these meetings yourself if you find yourself
 near LAX on one of the upcoming dates).
 
 CPTWG (pronounced Cee-Pee-Twig) is a venerable presence in the DRM
 world. It was at CPTWG that the DRM for DVDs was hammered out.
-CPTWG meetings open with a "benediction," delivered by a lawyer,
-who reminds everyone there that what they say might be quoted "on
-the front page of the New York Times," (though journalists are
+CPTWG meetings open with a ``benediction,'' delivered by a lawyer,
+who reminds everyone there that what they say might be quoted ``on
+the front page of the New York Times,'' (though journalists are
 barred from attending CPTWG meetings and no minutes are published
 by the organization) and reminding all present not to do anything
 that would raise eyebrows at the FTC's anti-trust division (I could
@@ -1456,21 +1501,21 @@ off at this point).
 
 Then comes the working group meetings, like the BPDG. The BPDG was
 nominally set up to set up the rules for the Broadcast Flag. Under
-the Flag, manufacturers would be required to limit their "outputs
-and recording methods" to a set of "approved technologies."
+the Flag, manufacturers would be required to limit their ``outputs
+and recording methods'' to a set of ``approved technologies.''
 Naturally, every manufacturer in the room showed up with a
 technology to add to the list of approved technologies -- and the
 sneakier ones showed up with reasons why their competitors'
 technologies \emph{shouldn't} be approved. If the Broadcast Flag
-became law, a spot on the "approved technologies" list would be a
+became law, a spot on the ``approved technologies'' list would be a
 license to print money: everyone who built a next-gen digital TV
 would be required, by law, to buy only approved technologies for
 their gear.
 
-The CPTWG determined that there would be three "chairmen" of the
+The CPTWG determined that there would be three ``chairmen'' of the
 meetings: a representative from the broadcasters, a representative
 from the studios, and a representative from the IT industry (note
-that no "consumer rights" chair was contemplated -- we proposed one
+that no ``consumer rights'' chair was contemplated -- we proposed one
 and got laughed off the agenda). The IT chair was filled by an
 Intel representative, who seemed pleased that the MPAA chair, Fox
 Studios's Andy Setos, began the process by proposing that the
@@ -1494,34 +1539,34 @@ growing impatient. The warnings were delivered in quackspeak,
 urgent and crackling, whenever the discussions dragged, like the
 crack of the commissars' pistols, urging us forward.
 
-You'd think that a "technology working group" would concern itself
+You'd think that a ``technology working group'' would concern itself
 with technology, but there was precious little discussion of bits
 and bytes, ciphers and keys. Instead, we focused on what amounted
 to contractual terms: if your technology got approved as a DTV
-"output," what obligations would you have to assume? If a TiVo
-could serve as an "output" for a receiver, what outputs would the
+``output,'' what obligations would you have to assume? If a TiVo
+could serve as an ``output'' for a receiver, what outputs would the
 TiVo be allowed to have?
 
 The longer we sat there, the more snarled these contractual terms
-became: winning a coveted spot on the "approved technology" list
+became: winning a coveted spot on the ``approved technology'' list
 would be quite a burden! Once you were in the club, there were all
 sorts of rules about whom you could associate with, how you had to
 comport yourself and so on.
 
-One of these rules of conduct was "robustness." As a condition of
+One of these rules of conduct was ``robustness.'' As a condition of
 approval, manufacturers would have to harden their technologies so
 that their customers wouldn't be able to modify, improve upon, or
 even understand their workings. As you might imagine, the people
 who made open source TV tuners were not thrilled about this, as
-"open source" and "non-user-modifiable" are polar opposites.
+``open source'' and ``non-user-modifiable'' are polar opposites.
 
-Another was "renewability:" the ability of the studios to revoke
+Another was ``renewability:'' the ability of the studios to revoke
 outputs that had been compromised in the field. The studios
-expected the manufacturers to make products with remote "kill
-switches" that could be used to shut down part or all of their
+expected the manufacturers to make products with remote ``kill
+switches'' that could be used to shut down part or all of their
 device if someone, somewhere had figured out how to do something
 naughty with it. They promised that we'd establish criteria for
-renewability later, and that it would all be "fair."
+renewability later, and that it would all be ``fair.''
 
 But we soldiered on. The MPAA had a gift for resolving the worst
 snarls: when shouting failed, they'd lead any recalcitrant player
@@ -1529,8 +1574,8 @@ out of the room and negotiate in secret with them, leaving the rest
 of us to cool our heels. Once, they took the Microsoft team out of
 the room for \emph{six hours}, then came back and announced that
 digital video would be allowed to output on non-DRM monitors at a
-greatly reduced resolution (this "feature" appears in Vista as
-"fuzzing").
+greatly reduced resolution (this ``feature'' appears in Vista as
+``fuzzing'').
 
 The further we went, the more nervous everyone became. We were
 headed for the real meat of the negotiations: the \emph{criteria}
@@ -1541,7 +1586,7 @@ features would and wouldn't be allowed?
 Then the MPAA dropped the other shoe: the sole criteria for
 inclusion on the list would be the approval of one of its
 member-companies, or a quorum of broadcasters. In other words, the
-Broadcast Flag wouldn't be an "objective standard," describing the
+Broadcast Flag wouldn't be an ``objective standard,'' describing the
 technical means by which video would be locked away -- it would be
 purely subjective, up to the whim of the studios. You could have
 the best product in the world, and they wouldn't approve it if your
@@ -1549,7 +1594,7 @@ business-development guys hadn't bought enough drinks for their
 business-development guys at a CES party.
 
 To add insult to injury, the only technologies that the MPAA were
-willing to consider for initial inclusion as "approved" were the
+willing to consider for initial inclusion as ``approved'' were the
 two that Intel was involved with. The Intel co-chairman had a hard
 time hiding his grin. He'd acted as Judas goat, luring in Apple,
 Microsoft, and the rest, to legitimize a process that would force
@@ -1571,7 +1616,7 @@ HD-DVD). Intel's technologies were held through two consortia, the
 The single-vendor manufacturers were livid at being locked out of
 the digital TV market. The final report of the consortium reflected
 this -- a few sheets written by the chairmen describing the
-"consensus" and hundreds of pages of angry invective from
+``consensus'' and hundreds of pages of angry invective from
 manufacturers and consumer groups decrying it as a sham.
 
 Tauzin washed his hands of the process: a canny, sleazy Hill
@@ -1581,8 +1626,8 @@ televisions (Tauzin found a better industry to shill for, the
 pharmaceutical firms, who rewarded him with a \$2,000,000/year job
 as chief of PHARMA, the pharmaceutical lobby).
 
-Even Representative Ernest "Fritz" Hollings ("The Senator from
-Disney," who once proposed a bill requiring entertainment industry
+Even Representative Ernest ``Fritz'' Hollings (``The Senator from
+Disney,'' who once proposed a bill requiring entertainment industry
 oversight of all technologies capable of copying) backed away from
 proposing a bill that would turn the Broadcast Flag into law.
 Instead, Hollings sent a memo to Michael Powell, then-head of the
@@ -1611,11 +1656,11 @@ Hollings's memos, memos that Hollings then signed and mailed off to
 the heads of major governmental agencies.
 
 The best part was that the legal eagles at the MPAA were wrong. The
-FCC took "Hollings's" advice and enacted a Broadcast Flag
+FCC took ``Hollings's'' advice and enacted a Broadcast Flag
 regulation that was almost identical to the proposal from the BPDG,
-turning themselves into America's "device czars," able to burden
-any digital technology with "robustness," "compliance" and
-"revocation rules." The rule lasted just long enough for the DC
+turning themselves into America's ``device czars,'' able to burden
+any digital technology with ``robustness,'' ``compliance'' and
+``revocation rules.'' The rule lasted just long enough for the DC
 Circuit Court of Appeals to strike it down and slap the FCC for
 grabbing unprecedented jurisdiction over the devices in our living
 rooms.
@@ -1636,8 +1681,8 @@ Video Broadcasters Forum (DVB) has just shipped a proposed standard
 for digital TV DRM that makes the Broadcast Flag look like the work
 of patchouli-scented infohippies. The DVB proposal would give DRM
 consortium the ability to define what is and isn't a valid
-"household" for the purposes of sharing your video within your
-"household's devices." It limits how long you're allowed to pause a
+``household'' for the purposes of sharing your video within your
+``household's devices.'' It limits how long you're allowed to pause a
 video for, and allows for restrictions to be put in place for
 hundreds of years, longer than any copyright system in the world
 would protect any work for.
@@ -1664,10 +1709,10 @@ them up, making them account for themselves to the public. And so
 long as you, the technology-buying public, pay attention to what's
 going on, the activists will continue to hold back the tide.
 
-\subsection{Happy Meal Toys versus Copyright: How America chose Hollywood and Wal-Mart, and why it's doomed us, and how we might survive anyway}
+\section{Happy Meal Toys versus Copyright: How America chose Hollywood and Wal-Mart, and why it's doomed us, and how we might survive anyway}
 
-(Originally published as "How Hollywood, Congress, And DRM Are
-Beating Up The American Economy," InformationWeek, June 11, 2007)
+(Originally published as ``How Hollywood, Congress, And DRM Are
+Beating Up The American Economy,'' InformationWeek, June 11, 2007)
 
 Back in 1985, the Senate was ready to clobber the music industry
 for exposing America's impressionable youngsters to sex, drugs and
@@ -1682,13 +1727,13 @@ its CD presses (savor the irony: post-Soviet Russia forgoes its
 hard-won freedom of the press to protect Disney and Universal!).
 
 How did entertainment go from trenchcoat pervert to top trade
-priority? I blame the "Information Economy."
+priority? I blame the ``Information Economy.''
 
-No one really knows what "Information Economy" means, but by the
+No one really knows what ``Information Economy'' means, but by the
 early 90s, we knew it was coming. America deployed her least
-reliable strategic resource to puzzle out what an "information
-economy" was and to figure out how to ensure America stayed atop
-the "new economy" -- America sent in the futurists.
+reliable strategic resource to puzzle out what an ``information
+economy'' was and to figure out how to ensure America stayed atop
+the ``new economy'' -- America sent in the futurists.
 
 We make the future in much the same way as we make the past. We
 don't remember everything that happened to us, just selective
@@ -1708,7 +1753,7 @@ present into the holes. That's why our pictures of the future
 always seem to resemble the present, only moreso.
 
 So the futurists told us about the Information Economy: they took
-all the "information-based" businesses (music, movies and
+all the ``information-based'' businesses (music, movies and
 microcode, in the neat coinage of Neal Stephenson's 1992 novel Snow
 Crash) and projected a future in which these would grow to dominate
 the world's economies.
@@ -1782,7 +1827,7 @@ hextuples the cost of WiFi cards, brassieres, iPods, staplers, yoga
 mats, and spatulas by cutting off trade with China). The Chinese
 can just sit tight.
 
-The futurists were just plain wrong. An "information economy" can't
+The futurists were just plain wrong. An ``information economy'' can't
 be based on selling information. Information technology makes
 copying information easier and easier. The more IT you have, the
 less control you have over the bits you send out into the world. It
@@ -1835,7 +1880,7 @@ but not if Hollywood gets to call the shots. Where IT managers are
 expected to police their networks and systems for unauthorized
 copying -- no matter what that does to productivity -- they cannot
 co-exist. Where our operating systems are rendered inoperable by
-"copy protection," they cannot co-exist. Where our educational
+``copy protection,'' they cannot co-exist. Where our educational
 institutions are turned into conscript enforcers for the record
 industry, they cannot co-exist.
 
@@ -1847,7 +1892,7 @@ bottom of the pile.
 
 What country do you want to live in?
 
-\subsection{Why Is Hollywood Making A Sequel To The Napster Wars?}
+\section{Why Is Hollywood Making A Sequel To The Napster Wars?}
 
 (Originally published in InformationWeek, August 14, 2007)
 
@@ -1921,7 +1966,7 @@ Sony isn't even a name in the portable audio market anymore --
 today's walkman is an iPod.
 
 Of course, Sony still has a record-label -- for now. But sales are
-falling, and the company is reeling from the 2005 "rootkit"
+falling, and the company is reeling from the 2005 ``rootkit''
 debacle, where in deliberately infected eight million music CDs
 with a hacker tool called a rootkit, compromising over 500,000 US
 computer networks, including military and government networks, all
@@ -1957,7 +2002,7 @@ The sue-em-all-and-let-God-sort-em-out plan was a flop in the box
 office, a flop in home video, and a flop overseas. So why is
 Hollywood shooting a remake?
 
-\begin{center}\rule{3in}{0.4pt}\end{center}
+\bigskip
 
 YouTube, 2007, bears some passing similarity to Napster, 2001.
 Founded by a couple guys in a garage, rocketed to popular success,
@@ -1986,7 +2031,7 @@ keeping it. They want to sit down with A/V rightsholders and do a
 deal. Six years after the Napster verdict, that kind of willingness
 is in short supply.
 
-Most of the tech "companies" with an interest in commercializing
+Most of the tech ``companies'' with an interest in commercializing
 Internet AV have no interest in sitting down with the studios.
 They're either nebulous open source projects (like mythtv, a free
 hyper-TiVo that skips commercials, downloads and shares videos and
@@ -2003,13 +2048,13 @@ recorder, is feeling the squeeze, being systematically locked out
 of the digital cable and satellite market. Their efforts to add a
 managed TiVoToGo service were attacked by the rightsholders who
 fought at the FCC to block them. Cable/satellite operators and the
-studios would much prefer the public to transition to "bundled"
+studios would much prefer the public to transition to ``bundled''
 PVRs that come with your TV service.
 
 These boxes are owned by the cable/satellite companies, who have
 absolute control over them. Time-Warner has been known to remotely
 delete stored episodes of shows just before the DVD ships, and many
-operators have started using "flags" that tell recorders not to
+operators have started using ``flags'' that tell recorders not to
 allow fast-forwarding, or to prevent recording altogether.
 
 The reason that YouTube and TiVo are more popular than ThePirateBay
@@ -2031,7 +2076,7 @@ the legit competitors of these services are killed, look out.
 The thing is, the public doesn't want managed services with limited
 rights. We don't want to be stuck using approved devices in
 approved ways. We never have -- we are the spiritual descendants of
-the customers for "illegal" record albums and "illegal" cable TV.
+the customers for ``illegal'' record albums and ``illegal'' cable TV.
 The demand signal won't go away.
 
 There's no good excuse for going into production on a sequel to The
@@ -2049,13 +2094,13 @@ companies, not sued.
 (Thanks to Bruce Nash and The-Numbers.com for research assistance
 with this article)
 
-\subsection{You DO Like Reading Off a Computer Screen}
+\section{You DO Like Reading Off a Computer Screen}
 
 (Originally published in Locus Magazine, March 2007)
 
-"I don't like reading off a computer screen" -- it's a cliché of
-the e-book world. It means "I don't read novels off of computer
-screens" (or phones, or PDAs, or dedicated e-book readers), and
+``I don't like reading off a computer screen'' -- it's a cliché of
+the e-book world. It means ``I don't read novels off of computer
+screens'' (or phones, or PDAs, or dedicated e-book readers), and
 often as not the person who says it is someone who, in fact, spends
 every hour that Cthulhu sends reading off a computer screen. It's
 like watching someone shovel Mars Bars into his gob while telling
@@ -2101,7 +2146,7 @@ again. In the nightmare version, this leads to runaway piracy, and
 no one ever gets to sell a novel again.
 
 I think they're both wrong. The infinitely divisible copyright
-ignores the "decision cost" borne by users who have to decide, over
+ignores the ``decision cost'' borne by users who have to decide, over
 and over again, whether they want to spend a millionth of a cent on
 a millionth of a word -- no one buys newspapers by the paragraph,
 even though most of us only read a slim fraction of any given
@@ -2172,7 +2217,7 @@ existence (I'd like to be able to get rid of the objects after my
 first reading, but keep the e-books around for reference), but
 they're in a tiny minority.
 
-There's a generation of web writers who produce "pleasure reading"
+There's a generation of web writers who produce ``pleasure reading''
 on the web. Some are funny. Some are touching. Some are enraging.
 Most dwell in Sturgeon's 90th percentile and below. They're not
 writing novels. If they were, they wouldn't be web writers.
@@ -2185,14 +2230,14 @@ enticement, not replacement.
 
 Sorry, got to go -- eight more e-mails.
 
-\subsection{How Do You Protect Artists?}
+\section{How Do You Protect Artists?}
 
-(Originally published in The Guardian as "Online censorship hurts
-us all," Tuesday, Oct 2, 2007)
+(Originally published in The Guardian as ``Online censorship hurts
+us all,'' Tuesday, Oct 2, 2007)
 
 Artists have lots of problems. We get plagiarized, ripped off by
 publishers, savaged by critics, counterfeited -- and we even get
-our works copied by "pirates" who give our stuff away for free
+our works copied by ``pirates'' who give our stuff away for free
 online.
 
 But no matter how bad these problems get, they're a distant second
@@ -2206,7 +2251,7 @@ law surrounding the creation and use of internet publishing tools.
 
 Since 1995, every single legislative initiative on this subject in
 the UK's parliament, the European parliament and the US Congress
-has focused on making it easier to suppress "illegitimate" material
+has focused on making it easier to suppress ``illegitimate'' material
 online. From libel to copyright infringement, from child porn to
 anti-terror laws, our legislators have approached the internet with
 a single-minded focus on seeing to it that bad material is
@@ -2238,8 +2283,8 @@ uploaded it again.
 Even these takedown notices were sloppily constructed: they
 included videos of friends eating at barbecue restaurants and
 videos of independent bands performing their own work. As a
-Recording Industry Association of America spokesman quipped, "When
-you go trawling with a net, you catch a few dolphins."
+Recording Industry Association of America spokesman quipped, ``When
+you go trawling with a net, you catch a few dolphins.''
 
 Viacom and others want hosting companies and online service
 providers to preemptively evaluate all the material that their
@@ -2249,8 +2294,8 @@ copyright before they release it.
 This notion is impractical in the extreme, for at least two
 reasons. First, an exhaustive list of copyrighted works would be
 unimaginably huge, as every single creative work is copyrighted
-from the instant that it is created and "fixed in a tangible
-medium".
+from the instant that it is created and ``fixed in a tangible
+medium''.
 
 Second, even if such a list did exist, it would be trivial to
 defeat, simply by introducing small changes to the infringing
@@ -2289,24 +2334,24 @@ It would be a great Sovietisation of the world's digital printing
 presses, a contraction of a glorious anarchy of expression into a
 regimented world of expensive and narrow venues for art.
 
-It would be a death knell for the kind of focused, non-commercial
-material whose authors couldn't fit the bill for a "managed"
+It would be a death knell for the kind of focused, non-com\-mercial
+material whose authors couldn't fit the bill for a ``managed''
 service's legion of lawyers, who would be replaced by more of the
 same -- the kind of lowest common denominator rubbish that fills
 the cable channels today.
 
-And the worst of it is, we're marching toward this "solution" in
+And the worst of it is, we're marching toward this ``solution'' in
 the name of protecting artists. Gee, thanks.
 
-\subsection{It's the Information Economy, Stupid}
+\section{It's the Information Economy, Stupid}
 
-(Originally published in The Guardian as "Free data sharing is here
-to stay," September 18, 2007)
+(Originally published in The Guardian as ``Free data sharing is here
+to stay,'' September 18, 2007)
 
 Since the 1970s, pundits have predicted a transition to an
-"information economy." The vision of an economy based on
+``information economy.'' The vision of an economy based on
 information seized the imaginations of the world's governments. For
-decades now, they have been creating policies to "protect"
+decades now, they have been creating policies to ``protect''
 information -- stronger copyright laws, international treaties on
 patents and trademarks, treaties to protect anti-copying
 technology.
@@ -2327,9 +2372,9 @@ seems to be true: the more IT we have, the easier it is to access
 any given piece of information -- for better or for worse.
 
 It used to be that copy-prevention companies' strategies went like
-this: "We'll make it easier to buy a copy of this data than to make
+this: ``We'll make it easier to buy a copy of this data than to make
 an unauthorized copy of it. That way, only the uber-nerds and the
-cash-poor/time-rich classes will bother to copy instead of buy."
+cash-poor/time-rich classes will bother to copy instead of buy.''
 But every time a PC is connected to the Internet and its owner is
 taught to use search tools like Google (or The Pirate Bay), a third
 option appears: you can just download a copy from the Internet.
@@ -2365,8 +2410,8 @@ To see the evidence of the real information economy, look to all
 the economic activity that the Internet enables -- not the stuff
 that it impedes. All the commerce conducted by salarymen who can
 book their own flights with Expedia instead of playing blind-man's
-bluff with a travel agent ("Got any flights after 4PM to
-Frankfurt?"). All the garage crafters selling their goods on
+bluff with a travel agent (``Got any flights after 4PM to
+Frankfurt?''). All the garage crafters selling their goods on
 Etsy.com. All the publishers selling obscure books through Amazon
 that no physical bookstore was willing to carry. The salwar kameez
 tailors in India selling bespoke clothes to westerners via eBay,
@@ -2374,7 +2419,7 @@ without intervention by a series of skimming intermediaries. The
 Internet-era musicians who use the net to pack venues all over the
 world by giving away their recordings on social services like
 MySpace. Hell, look at my last barber, in Los Angeles: the man
-doesn't use a PC, but I found him by googling for "barbers" with my
+doesn't use a PC, but I found him by googling for ``barbers'' with my
 postcode -- the information economy is driving his cost of customer
 acquisition to zero, and he doesn't even have to actively
 participate in it.
@@ -2395,7 +2440,7 @@ The world's governments might have bought into the old myth of the
 information economy, but not so much that they're willing to ban
 the PC and the Internet.
 
-\subsection{Downloads Give Amazon Jungle Fever}
+\section{Downloads Give Amazon Jungle Fever}
 
 (Originally published in The Guardian, December 11, 2007)
 
@@ -2410,15 +2455,15 @@ As a novelist, I couldn't be happier about Amazon's existence. Not
 only does Amazon have a set of superb recommendation tools that
 help me sell books, but it also has an affiliate program that lets
 me get up to 8.5\% in commissions for sales of my books through the
-site - nearly doubling my royalty rate.
+site -- nearly doubling my royalty rate.
 
 As a consumer advocate and activist, I'm delighted by almost every
 public policy initiative from Amazon. When the Author's Guild tried
 to get Amazon to curtail its used-book market, the company refused
 to back down. Founder Jeff Bezos (who is a friend of mine) even
-wrote, "when someone buys a book, they are also buying the right to
+wrote, ``when someone buys a book, they are also buying the right to
 resell that book, to loan it out, or to even give it away if they
-want. Everyone understands this."
+want. Everyone understands this.''
 
 More recently, Amazon stood up to the US government, who'd gone on
 an illegal fishing expedition for terrorists (TERRORISTS!
@@ -2427,7 +2472,7 @@ purchasing history of 24,000 Amazon customers. The company spent a
 fortune fighting for our rights, and won.
 
 It also has a well-deserved reputation for taking care over
-copyright "takedown" notices for the material that its customers
+copyright ``takedown'' notices for the material that its customers
 post on its site, discarding ridiculous claims rather than blindly
 acting on every single notice, no matter how frivolous.
 
@@ -2438,17 +2483,17 @@ the web.
 Take the Kindle, the \$400 handheld ebook reader that Amazon
 shipped recently, to vast, ringing indifference.
 
-The device is cute enough - in a clumsy, overpriced, generation-one
-kind of way - but the early adopter community recoiled in horror at
+The device is cute enough -- in a clumsy, overpriced, generation-one
+kind of way -- but the early adopter community recoiled in horror at
 the terms of service and anti-copying technology that infected it.
 Ebooks that you buy through the Kindle can't be lent or resold
-(remember, "when someone buys a book, they are also buying the
-right to resell that book...Everyone understands this.")
+(remember, ``when someone buys a book, they are also buying the
+right to resell that book...Everyone understands this.'')
 
-Mark Pilgrim's "The Future of Reading" enumerates five other Kindle
+Mark Pilgrim's ``The Future of Reading'' enumerates five other Kindle
 showstoppers: Amazon can change your ebooks without notifying you
 or getting your permission; and if you violate any of the
-"agreement", it can delete your ebooks, even if you've paid for
+``agreement'', it can delete your ebooks, even if you've paid for
 them, and you get no appeal.
 
 It's not just the Kindle, either. Amazon Unbox, the semi-abortive
@@ -2464,22 +2509,22 @@ Even Amazon's much-vaunted MP3 store comes with terms of service
 that prevent lending and reselling.
 
 I am mystified by this. Amazon is the kind of company that every
-etailer should study and copy - the gold standard for e-commerce.
+etailer should study and copy -- the gold standard for e-commerce.
 You'd think that if there was any company that would intuitively
 get the web, it would be Amazon.
 
 What's more, this is a company that stands up to rightsholder
-groups, publishers and the US government - but only when it comes
+groups, publishers and the US government -- but only when it comes
 to physical goods. Why is it that whenever a digital sale is in the
 offing, Amazon rolls over on its back and wets itself?
 
-\subsection{What's the Most Important Right Creators Have?}
+\section{What's the Most Important Right Creators Have?}
 
-(Originally published as "How Big Media's Copyright Campaigns
-Threaten Internet Free Expression," InformationWeek, November 5,
+(Originally published as ``How Big Media's Copyright Campaigns
+Threaten Internet Free Expression,'' InformationWeek, November 5,
 2007)
 
-Any discussion of "creator's rights" is likely to be limited to
+Any discussion of ``creator's rights'' is likely to be limited to
 talk about copyright, but copyright is just a side-dish for
 creators: the most important right we have is the right to free
 expression. And these two rights are always in tension.
@@ -2523,7 +2568,7 @@ Scientology to Diebold's voting machines division).
 The proposal for online hosts to figure out what infringes and what
 doesn't is wildly impractical. Under most countries' copyright
 laws, creative works receive a copyright from the moment that they
-are "fixed in a tangible medium" (hard drives count), and this
+are ``fixed in a tangible medium'' (hard drives count), and this
 means that the pool of copyrighted works is so large as to be
 practically speaking infinite. Knowing whether a work is
 copyrighted, who holds the copyright, and whether a posting is made
@@ -2547,8 +2592,8 @@ them.
 It would be the end of any publication that couldn't foot the legal
 bills to get off the ground. The multi-billion-page Internet would
 collapse into the homogeneous world of cable TV (remember when we
-thought that a "500-channel universe" would be unimaginably broad?
-Imagine an Internet with only 500 "channels!"). From Amazon to Ask
+thought that a ``500-channel universe'' would be unimaginably broad?
+Imagine an Internet with only 500 ``channels!''). From Amazon to Ask
 A Ninja, from Blogger to The Everlasting Blort, every bit of online
 content is made possible by removing the cost of paying lawyers to
 act as the Internet's gatekeepers.
@@ -2560,7 +2605,7 @@ owners to movie studios to record labels to New York publishers.
 That's why artists have such a hard time negotiating a decent deal
 for themselves (for example, most beginning recording artists have
 to agree to have money deducted from their royalty statements for
-"breakage" of records en route to stores -- and these deductions
+``breakage'' of records en route to stores -- and these deductions
 are also levied against digital sales through the iTunes Store!).
 
 But, thanks to the web, artists have more options than ever. The
@@ -2577,7 +2622,7 @@ ways of promoting their work.
 And it's not just the indies who benefit: the existence of
 successful independent artists creates fantastic leverage for
 artists who negotiate with the majors. More and more, the big media
-companies' "like it or leave it" bargaining stance is being
+companies' ``like it or leave it'' bargaining stance is being
 undermined by the possibility that the next big star will shrug,
 turn on her heel, and make her fortune without the big companies'
 help. This has humbled the bigs, making their deals better and more
@@ -2591,12 +2636,12 @@ limited-liability Web is a Web where anyone can post anything and
 reach \emph{everyone}.
 
 What's more, this privilege isn't limited to artists. All manner of
-communication, from the personal introspection in public "diaries"
+communication, from the personal introspection in public ``diaries''
 to social chatter on MySpace and Facebook, are now possible. Some
-artists have taken the bizarre stance that this "trivial" matter is
+artists have taken the bizarre stance that this ``trivial'' matter is
 unimportant and thus a poor excuse for allowing hosted services to
 exist in the first place. This is pretty arrogant: a society where
-only artists are allowed to impart "important" messages and where
+only artists are allowed to impart ``important'' messages and where
 the rest of us are supposed to shut up about our loves, hopes,
 aspirations, jokes, family and wants is hardly a democratic
 paradise.
@@ -2608,7 +2653,7 @@ has a duty to speak out. Our ability to make our art is
 inextricably linked with the billions of Internet users who use the
 network to talk about their lives.
 
-\subsection{Giving it Away}
+\section{Giving it Away}
 
 (Originally published in Forbes.com, December 2006)
 
@@ -2643,7 +2688,7 @@ into a mailing list. It begs to be converted to witty signatures at
 the bottom of e-mails. It is so fluid and intangible that it can
 spread itself over your whole life. Nothing sells books like a
 personal recommendation--when I worked in a bookstore, the sweetest
-words we could hear were "My friend suggested I pick up...." The
+words we could hear were ``My friend suggested I pick up....'' The
 friend had made the sale for us, we just had to consummate it. In
 an age of online friendship, e-books trump dead trees for word of
 mouth.
@@ -2690,18 +2735,18 @@ would be about science fiction. The online norms of idle chatter,
 fannish organizing, publishing and leisure are descended from SF
 fandom, and if any literature has a natural home in cyberspace,
 it's science fiction, the literature that coined the very word
-"cyberspace."
+``cyberspace.''
 
 Indeed, science fiction was the first form of widely pirated
-literature online, through "bookwarez" channels that contained
+literature online, through ``bookwarez'' channels that contained
 books that had been hand-scanned, a page at a time, converted to
 digital text and proof-read. Even today, the mostly widely pirated
 literature online is SF.
 
 Nothing could make me more sanguine about the future. As publisher
 Tim O'Reilly wrote in his seminal essay, Piracy is Progressive
-Taxation, "being well-enough known to be pirated [is] a crowning
-achievement." I'd rather stake my future on a literature that
+Taxation, ``being well-enough known to be pirated [is] a crowning
+achievement.'' I'd rather stake my future on a literature that
 people care about enough to steal than devote my life to a form
 that has no home in the dominant medium of the century.
 
@@ -2750,7 +2795,7 @@ serious. They've got even more riding on the future of publishing
 than me. So when I approached my publisher with this plan to give
 away books to sell books, it was a no-brainer for them.
 
-It's good business for me, too. This "market research" of giving
+It's good business for me, too. This ``market research'' of giving
 away e-books sells printed books. What's more, having my books more
 widely read opens many other opportunities for me to earn a living
 from activities around my writing, such as the Fulbright Chair I
@@ -2770,7 +2815,7 @@ There has never been a time when more people were reading more
 words by more authors. The Internet is a literary world of written
 words. What a fine thing that is for writers.
 
-\subsection{Science Fiction is the Only Literature People Care Enough About to Steal on the Internet}
+\section{Science Fiction is the Only Literature People Care Enough About to Steal on the Internet}
 
 (Originally published in Locus Magazine, July 2006)
 
@@ -2795,16 +2840,16 @@ terrible news for charismatics. It put them out on the street,
 stuck them with flipping burgers and driving taxis. They knew it,
 too. Performers lobbied to have the Marconi radio banned, to send
 Marconi back to the drawing board, charged with inventing a radio
-they could charge admission to. "We're charismatics, we do
+they could charge admission to. ``We're charismatics, we do
 something as old and holy as the first story told before the first
 fire in the first cave. What right have you to insist that we
 should become mere clerks, working in an obscure back-room, leaving
-you to commune with our audiences on our behalf?"
+you to commune with our audiences on our behalf?''
 
 Technology giveth and technology taketh away. Seventy years later,
-Napster showed us that, as William Gibson noted, "We may be at the
+Napster showed us that, as William Gibson noted, ``We may be at the
 end of the brief period during which it is possible to charge for
-recorded music." Surely we're at the end of the period where it's
+recorded music.'' Surely we're at the end of the period where it's
 possible to exclude those who don't wish to pay. Every song
 released can be downloaded gratis from a peer-to-peer network (and
 will shortly get easier to download, as hard-drive
@@ -2829,13 +2874,13 @@ worked great for jam bands like the Grateful Dead and Phish. It's
 also a model that won't work for many of today's artists; 70 years
 of evolutionary pressure has selected for artists who are more
 virtuoso than charismatic, artists optimized for recording-based
-income instead of performance-based income. "How dare you tell us
+income instead of performance-based income. ``How dare you tell us
 that we are to be trained monkeys, capering on a stage for your
 amusement? We're not charismatics, we're white-collar workers. We
 commune with our muses behind closed doors and deliver up our work
 product when it's done, through plastic, laser-etched discs. You
 have no right to demand that we convert to a live-performance
-economy."
+economy.''
 
 Technology giveth and technology taketh away. As bands on MySpace
 -- who can fill houses and sell hundreds of thousands of discs
@@ -2861,8 +2906,8 @@ important question is: will it let more people participate in
 cultural production? Will it further decentralize decision-making
 for artists?
 
-And for SF writers and fans, the further question is, "Will it be
-any good to our chosen medium?" Like I said, science fiction is the
+And for SF writers and fans, the further question is, ``Will it be
+any good to our chosen medium?'' Like I said, science fiction is the
 only literature people care enough about to steal on the Internet.
 It's the only literature that regularly shows up, scanned and run
 through optical character recognition software and lovingly
@@ -2908,7 +2953,7 @@ Scalzi's blogs. J. Michael Straczynski's presence on Usenet --
 while in production on Babylon 5, no less -- breeding an army of
 rabid fans ready to fax-bomb recalcitrant TV execs into submission
 and syndication. See also the MySpace bands selling a million units
-of their CDs by adding each buyer to their "friends lists." Watch
+of their CDs by adding each buyer to their ``friends lists.'' Watch
 Eric Flint manage the Baen Bar, and Warren Ellis's good-natured
 growling on his sites, lists, and so forth.
 
@@ -2928,7 +2973,7 @@ friends, we'd call you a sociopath. Science fiction writers who can
 insert themselves into their readers' conversations will be set for
 life.
 
-\subsection{How Copyright Broke}
+\section{How Copyright Broke}
 
 (Originally published in Locus Magazine, September, 2006)
 
@@ -2961,7 +3006,7 @@ silent on the rights that the copyright holder had in respect of
 his customers: the readers. Publishers got a legal tool to fight
 their competitors, a legal tool that made a distinction between the
 corpus -- a physical book -- and the spirit -- the novel writ on
-its pages. But this legal nicety was not "customer-facing." As far
+its pages. But this legal nicety was not ``customer-facing.'' As far
 as a reader was concerned, once she bought a book, she got the same
 rights to it as she got to any other physical object, like a potato
 or a shovel. Of course, the reader couldn't print a new edition,
@@ -2992,11 +3037,11 @@ workplaces don't pay for the music their employees enjoy while they
 work. An ad agency that produces a demo reel of recent commercials
 to use as part of a creative briefing to a designer doesn't pay for
 this extremely commercial use. A film company whose set-designer
-clips and copies from magazines and movies to produce a "mood book"
+clips and copies from magazines and movies to produce a ``mood book''
 never secures permission nor offers compensation for these uses.
 
 Theoretically, the contours of what you may and may not do without
-permission are covered under a legal doctrine called "fair use,"
+permission are covered under a legal doctrine called ``fair use,''
 which sets out the factors a judge can use to weigh the question of
 whether an infringement should be punished. While fair use is a
 vital part of the way that works get made and used, it's very rare
@@ -3036,7 +3081,7 @@ rent things, like cars, we recoil from the idea that Hertz might
 track our movements, or stick a camera in the steering wheel.
 
 When the Internet and the PC made it possible to sell a lot of
-purely digital "goods" -- software, music, movies and books
+purely digital ``goods'' -- software, music, movies and books
 delivered as pure digits over the wire, without a physical good
 changing hands, the copyright lawyers groped about for a way to
 take account of this. It's in the nature of a computer that it
@@ -3056,11 +3101,11 @@ more than one employee review a journal at a time.
 
 Regular customers didn't have lawyers or negotiating leverage. They
 were a natural for licensing regimes. Have a look at the next
-click-through "agreement" you're provided with on purchasing a
+click-through ``agreement'' you're provided with on purchasing a
 piece of software or an electronic book or song. The terms set out
 in those agreements are positively Dickensian in their marvelous
 idiocy. Sony BMG recently shipped over eight million music CDs with
-an "agreement" that bound its purchasers to destroy their music if
+an ``agreement'' that bound its purchasers to destroy their music if
 they left the country or had a house-fire, and to promise not to
 listen to their tunes while at work.
 
@@ -3068,8 +3113,8 @@ But customers understand property -- you bought it, you own it --
 and they don't understand copyright. Practically no one understands
 copyright. I know editors at multibillion-dollar publishing houses
 who don't know the difference between copyright and trademark (if
-you've ever heard someone say, "You need to defend a copyright or
-you lose it," you've found one of these people who confuse
+you've ever heard someone say, ``You need to defend a copyright or
+you lose it,'' you've found one of these people who confuse
 copyright and trademark; what's more, this statement isn't
 particularly true of trademark, either). I once got into an
 argument with a senior Disney TV exec who truly believed that if
@@ -3125,16 +3170,16 @@ subject for a future column).
 Science fiction is a genre of clear-eyed speculation about the
 future. It should have no place for wishful thinking about a world
 where readers willingly put up with the indignity of being treated
-as "licensees" instead of customers.
+as ``licensees'' instead of customers.
 
-\subsection{And now a brief commercial interlude:}
+\section{And now a brief commercial interlude:}
 
 If you're enjoying this book and have been thinking of buying a
 copy, here's a chance to do so:
 
-\href{http://craphound.com/content/buy}{http://craphound.com/content/buy}
+\texttt{http://craphound.com/content/buy}
 
-\subsection{In Praise of Fanfic}
+\section{In Praise of Fanfic}
 
 (Originally published in Locus Magazine, May 2007)
 
@@ -3203,7 +3248,7 @@ from a different point of view, or to snatch a victorious happy
 ending from the tragic defeat the writer ended her book with.
 
 Other writers insist that fans who take without asking -- or
-against the writer's wishes -- are part of an "entitlement culture"
+against the writer's wishes -- are part of an ``entitlement culture''
 that has decided that it has the moral right to lift scenarios and
 characters without permission, that this is part of our larger
 postmodern moral crisis that is making the world a worse place.
@@ -3252,10 +3297,10 @@ Fantasy Award-winning Was (L. Frank Baum).
 
 The question of respect is, perhaps, a little thornier. The
 dominant mode of criticism in fanfic circles is to compare a work
-to the canon -- "Would Spock ever say that, in 'real' life?" What's
+to the canon -- ``Would Spock ever say that, in 'real' life?'' What's
 more, fanfic writers will sometimes apply this test to works that
-are of the canon, as in "Spock never would have said that, and Gene
-Roddenberry has no business telling me otherwise."
+are of the canon, as in ``Spock never would have said that, and Gene
+Roddenberry has no business telling me otherwise.''
 
 This is a curious mix of respect and disrespect. Respect because
 it's hard to imagine a more respectful stance than the one that
@@ -3296,13 +3341,13 @@ writing practice. Let's stop treating them like thieves and start
 treating them like honored guests at a table that we laid just for
 them.
 
-\subsection{Metacrap: Putting the torch to seven straw-men of the meta-utopia}
+\section{Metacrap: Putting the torch to seven straw-men of the meta-utopia}
 
 (Self-published, 26 August 2001)
 
-\subsubsection{1. Introduction}
+\subsection{1. Introduction}
 
-Metadata is "data about data" -- information like keywords,
+Metadata is ``data about data'' -- information like keywords,
 page-length, title, word-count, abstract, location, SKU, ISBN, and
 so on. Explicit, human-generated metadata has enjoyed recent
 trendiness, especially in the world of XML. A typical scenario goes
@@ -3329,12 +3374,12 @@ A world of exhaustive, reliable metadata would be a utopia. It's
 also a pipe-dream, founded on self-delusion, nerd hubris and
 hysterically inflated market opportunities.
 
-\subsubsection{2. The problems}
+\subsection{2. The problems}
 
 There are at least seven insurmountable obstacles between the world
 as we know it and meta-utopia. I'll enumerate them below:.
 
-\subsubsection{2.1 People lie}
+\subsection{2.1 People lie}
 
 Metadata exists in a competitive world. Suppliers compete to sell
 their goods, cranks compete to convey their crackpot theories (mea
@@ -3349,11 +3394,11 @@ That's why:
   Altavista will often turn up at least one porn link in the first
   ten results.
 \item
-  Your mailbox is full of spam with subject lines like "Re: The
-  information you requested."
+  Your mailbox is full of spam with subject lines like ``Re: The
+  information you requested.''
 \item
   Publisher's Clearing House sends out advertisements that holler
-  "You may already be a winner!"
+  ``You may already be a winner!''
 \item
   Press-releases have gargantuan lists of empty buzzwords attached to
   them.
@@ -3362,7 +3407,7 @@ Meta-utopia is a world of reliable metadata. When poisoning the
 well confers benefits to the poisoners, the meta-waters get awfully
 toxic in short order.
 
-\subsubsection{2.2 People are lazy}
+\subsection{2.2 People are lazy}
 
 You and me are engaged in the incredibly serious business of
 creating information. Here in the Info-Ivory-Tower, we understand
@@ -3371,22 +3416,22 @@ our information.
 
 But info-civilians are remarkably cavalier about their information.
 Your clueless aunt sends you email with no subject line, half the
-pages on Geocities are called "Please title this page" and your
+pages on Geocities are called ``Please title this page'' and your
 boss stores all of his files on his desktop with helpful titles
-like "UNTITLED.DOC."
+like ``UNTITLED.DOC.''
 
 This laziness is bottomless. No amount of ease-of-use will end it.
 To understand the true depths of meta-laziness, download ten random
 MP3 files from Napster. Chances are, at least one will have no
 title, artist or track information -- this despite the fact that
-adding in this info merely requires clicking the "Fetch Track Info
-from CDDB" button on every MP3-ripping application.
+adding in this info merely requires clicking the ``Fetch Track Info
+from CDDB'' button on every MP3-ripping application.
 
 Short of breaking fingers or sending out squads of vengeful
 info-ninjas to add metadata to the average user's files, we're
 never gonna get there.
 
-\subsubsection{2.3 People are stupid}
+\subsection{2.3 People are stupid}
 
 Even when there's a positive benefit to creating good metadata,
 people steadfastly refuse to exercise care and diligence in their
@@ -3394,8 +3439,8 @@ metadata creation.
 
 Take eBay: every seller there has a damned good reason for
 double-checking their listings for typos and misspellings. Try
-searching for "plam" on eBay. Right now, that turns up nine typoed
-listings for "Plam Pilots." Misspelled listings don't show up in
+searching for ``plam'' on eBay. Right now, that turns up nine typoed
+listings for ``Plam Pilots.'' Misspelled listings don't show up in
 correctly-spelled searches and hence garner fewer bids and lower
 sale-prices. You can almost always get a bargain on a Plam Pilot at
 eBay.
@@ -3407,7 +3452,7 @@ spell and punctuate -- let alone accurately categorize their
 information according to whatever hierarchy they're supposed to be
 using -- is self-delusion of the first water.
 
-\subsubsection{2.4 Mission: Impossible -- know thyself}
+\subsection{2.4 Mission: Impossible -- know thyself}
 
 In meta-utopia, everyone engaged in the heady business of
 describing stuff carefully weighs the stuff in the balance and
@@ -3420,7 +3465,7 @@ Masterpiece Theater and Sesame Street. Replacing the journals with
 set-top boxes that reported what the set was actually tuned to
 showed what the average American family was really watching: naked
 midget wrestling, America's Funniest Botched Cosmetic Surgeries and
-Jerry Springer presents: "My daughter dresses like a slut!"
+Jerry Springer presents: ``My daughter dresses like a slut!''
 
 Ask a programmer how long it'll take to write a given module, or a
 contractor how long it'll take to fix your roof. Ask a laconic
@@ -3434,7 +3479,7 @@ better; therapists rake in billions working for this very end.
 Why should we believe that using metadata will help J. Random User
 get in touch with her Buddha nature?
 
-\subsubsection{2.5 Schemas aren't neutral}
+\subsection{2.5 Schemas aren't neutral}
 
 In meta-utopia, the lab-coated guardians of epistemology sit down
 and rationally map out a hierarchy of ideas, something like this:
@@ -3465,13 +3510,13 @@ Nuclear fission
 
 Nuclear fusion
 
-"Mean Devil Woman" Louisiana Hot-Sauce
+``Mean Devil Woman'' Louisiana Hot-Sauce
 
 In a given sub-domain, say, Washing Machines, experts agree on
 sub-hierarchies, with classes for reliability, energy consumption,
 color, size, etc.
 
-This presumes that there is a "correct" way of categorizing ideas,
+This presumes that there is a ``correct'' way of categorizing ideas,
 and that reasonable people, given enough time and incentive, can
 agree on the proper means for building a hierarchy.
 
@@ -3505,7 +3550,7 @@ The conceit that competing interests can come to easy accord on a
 common vocabulary totally ignores the power of organizing
 principles in a marketplace.
 
-\subsubsection{2.6 Metrics influence results}
+\subsection{2.6 Metrics influence results}
 
 Agreeing to a common yardstick for measuring the important stuff in
 any domain necessarily privileges the items that score high on that
@@ -3529,13 +3574,13 @@ to advance their agendas will be universally pleased with any
 hierarchy of knowledge. The best that we can hope for is a detente
 in which everyone is equally miserable.
 
-\subsubsection{2.7 There's more than one way to describe something}
+\subsection{2.7 There's more than one way to describe something}
 
-"No, I'm not watching cartoons! It's cultural anthropology."
+``No, I'm not watching cartoons! It's cultural anthropology.''
 
-"This isn't smut, it's art."
+``This isn't smut, it's art.''
 
-"It's not a bald spot, it's a solar panel for a sex-machine."
+``It's not a bald spot, it's a solar panel for a sex-machine.''
 
 Reasonable people can disagree forever on how to describe
 something. Arguably, your Self is the collection of associations
@@ -3545,7 +3590,7 @@ landscape, enforces homogeneity in ideas.
 
 And that's just not right.
 
-\subsubsection{3. Reliable metadata}
+\subsection{3. Reliable metadata}
 
 Do we throw out metadata, then?
 
@@ -3575,7 +3620,7 @@ times gone by? This kind of implicit endorsement of information is
 a far better candidate for an information-retrieval panacea than
 all the world's schema combined.
 
-\subsection{Amish for QWERTY}
+\section{Amish for QWERTY}
 
 (Originally published on the O'Reilly Network, 07/09/2003)
 
@@ -3597,7 +3642,8 @@ who can't get his wireless network to work, must feel. Like a
 creaking dino. Like history was passing me by. I'm 31, and I'm
 obsolete. Or at least Amish.
 
-People think the Amish are technophobes. Far from it. They're
+People think the Amish are technophobes. Far from it.
+\discretionary{They}{are}{They're}
 ideologues. They have a concept of what right-living consists of,
 and they'll use any technology that serves that ideal -- and
 mercilessly eschew any technology that would subvert it. There's
@@ -3607,7 +3653,7 @@ kitchen. On the other hand, there's nothing right about your
 livestock dying for lack of care, so a cellphone that can call the
 veterinarian can certainly find a home in the horse barn.
 
-For me, right-living is the 101-key, QWERTY, computer-centric
+For me, right-living is the 101-key, QWERTY, computer-cen\-tric
 mediated lifestyle. It's having a bulky laptop in my bag, crouching
 by the toilets at a strange airport with my AC adapter plugged into
 the always-awkwardly-placed power source, running software that I
@@ -3650,17 +3696,17 @@ it implies -- carefully, then, before you wed your thought
 processes to your fingers' dance. It may be the one you're stuck
 with.
 
-\subsection{Ebooks: Neither E, Nor Books}
+\section{Ebooks: Neither E, Nor Books}
 
 (Paper for the O'Reilly Emerging Technologies Conference, San
 Diego, February 12, 2004)
 
 Forematter:
 
-This talk was initially given at the O'Reilly Emerging Technology
-Conference [
-\href{http://conferences.oreillynet.com/et2004}{http://conferences.oreillynet.com/et2004}/
-], along with a set of slides that, for copyright reasons (ironic!)
+This talk was initially given at the
+\href{http://conferences.oreillynet.com/et2004}{O'Reilly Emerging
+  Technology Conference},
+along with a set of slides that, for copyright reasons (ironic!)
 can't be released alongside of this file. However, you will find,
 interspersed in this text, notations describing the places where
 new slides should be loaded, in [square-brackets].
@@ -3669,12 +3715,12 @@ For starters, let me try to summarize the lessons and intuitions
 I've had about ebooks from my release of two novels and most of a
 short story collection online under a Creative Commons license. A
 parodist who published a list of alternate titles for the
-presentations at this event called this talk, "eBooks Suck Right
-Now," [eBooks suck right now] and as funny as that is, I don't
+presentations at this event called this talk, ``eBooks Suck Right
+Now,'' [eBooks suck right now] and as funny as that is, I don't
 think it's true.
 
 No, if I had to come up with another title for this talk, I'd call
-it: "Ebooks: You're Soaking in Them." [Ebooks: You're Soaking in
+it: ``Ebooks: You're Soaking in Them.'' [Ebooks: You're Soaking in
 Them] That's because I think that the shape of ebooks to come is
 almost visible in the way that people interact with text today, and
 that the job of authors who want to become rich and famous is to
@@ -3694,8 +3740,8 @@ them with you:
   the hell out of the new book -- and the backlist. And the number of
   people who wrote to me to tell me about how much they dug the ebook
   and so bought the paper-book far exceeds the number of people who
-  wrote to me and said, "Ha, ha, you hippie, I read your book for
-  free and now I'm not gonna buy it." But ebooks *shouldn't* be just
+  wrote to me and said, ``Ha, ha, you hippie, I read your book for
+  free and now I'm not gonna buy it.'' But ebooks *shouldn't* be just
   about marketing: ebooks are a goal unto themselves. In the final
   analysis, more people will read more words off more screens and
   fewer words off fewer pages and when those two lines cross, ebooks
@@ -3714,8 +3760,8 @@ them with you:
 \item
   Unless you own the ebook, you don't 0wn the book [Unless you own
   the ebook, you don't 0wn the book]. I take the view that the book
-  is a "practice" -- a collection of social and economic and artistic
-  activities -- and not an "object." Viewing the book as a "practice"
+  is a ``practice'' -- a collection of social and economic and artistic
+  activities -- and not an ``object.'' Viewing the book as a ``practice''
   instead of an object is a pretty radical notion, and it begs the
   question: just what the hell is a book? Good question. I write all
   of my books in a text-editor [TEXT EDITOR SCREENGRAB] (BBEdit, from
@@ -3765,7 +3811,7 @@ them with you:
   to \emph{not} sell a book. Today, the trolls are still with us,
   but now, the readers get to decide for themselves. Here's a bit of
   a review of Down and Out in the Magic Kingdom that was recently
-  posted to Amazon by "A reader from Redwood City, CA":
+  posted to Amazon by ``A reader from Redwood City, CA'':
   
   [QUOTED TEXT]
   
@@ -3793,17 +3839,17 @@ them with you:
   You see that? Hell, this guy is \emph{working for me}!
   [ADDITIONAL PULL QUOTES] Someone accuses a writer I'm thinking of
   reading of paying off Entertainment Weekly to say nice things about
-  his novel, "a surprisingly bad writer," no less, whose writing is
-  "stiff, amateurish, and uninspired!" I wanna check that writer out.
+  his novel, ``a surprisingly bad writer,'' no less, whose writing is
+  ``stiff, amateurish, and uninspired!'' I wanna check that writer out.
   And I can. In one click. And then I can make up my own mind.
   
   You don't get far in the arts without healthy doses of both ego and
   insecurity, and the downside of being able to google up all the
   things that people are saying about your book is that it can play
-  right into your insecurities -- "all these people will have it in
+  right into your insecurities -- ``all these people will have it in
   their minds not to bother with my book because they've read the
-  negative interweb reviews!" But the flipside of that is the ego:
-  "If only they'd give it a shot, they'd see how good it is." And the
+  negative interweb reviews!'' But the flipside of that is the ego:
+  ``If only they'd give it a shot, they'd see how good it is.'' And the
   more scathing the review is, the more likely they are to give it a
   shot. Any press is good press, so long as they spell your URL right
   (and even if they spell your name wrong!).
@@ -3850,8 +3896,8 @@ them with you:
   In other words, if my book is too boring, it's because you're not
   paying enough attention. Writers say this stuff all the time, but
   this quote isn't from this century or the last. [Nietzsche quote
-  with attribution] It's from the preface to Nietzsche's "Genealogy
-  of Morals," published in \emph{1887.}
+  with attribution] It's from the preface to Nietzsche's ``Genealogy
+  of Morals,'' published in \emph{1887.}
   
   Yeah, our attention-spans are \emph{different} today, but they
   aren't necessarily \emph{shorter}. Warren Ellis's fans managed to
@@ -3884,7 +3930,7 @@ them with you:
   or hang out in a chatroom, that's because we're not looking closely
   enough. The shared-ness of our experience is only present at a
   coarse level of measurement: once you get into really granular
-  observation, there are as many differences in our "shared"
+  observation, there are as many differences in our ``shared''
   experience as there are similarities.
   
   More than that, though, is the way that a large collection of
@@ -3917,7 +3963,7 @@ them with you:
   having to come into contact with the residual DNA and burger king
   left behind by everyone else who browsed the book before you). Some
   writers are horrified at the idea that three hundred thousand
-  copies of my first novel were downloaded and "only" ten thousand or
+  copies of my first novel were downloaded and ``only'' ten thousand or
   so were sold so far. If it were the case that for ever copy sold,
   thirty were taken home from the store, that would be a horrifying
   outcome, for sure. But look at it another way: if one out of every
@@ -3994,7 +4040,7 @@ inherently ephemeral. [ACE DOUBLES]
 Now, as much as I love books, I love computers, too. Computers are
 fundamentally different from modern books in the same way that
 printed books are different from monastic Bibles: they are
-malleable. Time was, a "book" was something produced by many
+malleable. Time was, a ``book'' was something produced by many
 months' labor by a scribe, usually a monk, on some kind of durable
 and sexy substrate like foetal lambskin. [ILLUMINATED BIBLE]
 Gutenberg's xerox machine changed all that, changed a book into
@@ -4016,20 +4062,20 @@ This all starts with my first novel, Down and Out in the Magic
 Kingdom [COVER], which came out on January 9, 2003. At that time,
 there was a lot of talk in my professional circles about, on the
 one hand, the dismal failure of ebooks, and, on the other, the new
-and scary practice of ebook "piracy." [alt.binaries.e-books
+and scary practice of ebook ``piracy.'' [alt.binaries.e-books
 screengrab] It was strikingly weird that no one seemed to notice
-that the idea of ebooks as a "failure" was at strong odds with the
-notion that electronic book "piracy" was worth worrying about: I
+that the idea of ebooks as a ``failure'' was at strong odds with the
+notion that electronic book ``piracy'' was worth worrying about: I
 mean, if ebooks are a failure, then who gives a rats if intarweb
 dweebs are trading them on Usenet?
 
-A brief digression here, on the double meaning of "ebooks." One
-meaning for that word is "legitimate" ebook ventures, that is to
+A brief digression here, on the double meaning of ``ebooks.'' One
+meaning for that word is ``legitimate'' ebook ventures, that is to
 say, rightsholder-authorized editions of the texts of books,
 released in a proprietary, use-restricted format, sometimes for use
 on a general-purpose PC and sometimes for use on a special-purpose
 hardware device like the nuvoMedia Rocketbook [ROCKETBOOK]. The
-other meaning for ebook is a "pirate" or unauthorized electronic
+other meaning for ebook is a ``pirate'' or unauthorized electronic
 edition of a book, usually made by cutting the binding off of a
 book and scanning it a page at a time, then running the resulting
 bitmaps through an optical character recognition app to convert
@@ -4037,14 +4083,14 @@ them into ASCII text, to be cleaned up by hand. These books are
 pretty buggy, full of errors introduced by the OCR. A lot of my
 colleagues worry that these books also have deliberate errors,
 created by mischievous book-rippers who cut, add or change text in
-order to "improve" the work. Frankly, I have never seen any
+order to ``improve'' the work. Frankly, I have never seen any
 evidence that any book-ripper is interested in doing this, and
 until I do, I think that this is the last thing anyone should be
 worrying about.
 
 Back to Down and Out in the Magic Kingdom [COVER]. Well, not yet. I
 want to convey to you the depth of the panic in my field over ebook
-piracy, or "bookwarez" as it is known in book-ripper circles.
+piracy, or ``bookwarez'' as it is known in book-ripper circles.
 Writers were joining the discussion on alt.binaries.ebooks using
 assumed names, claiming fear of retaliation from scary hax0r kids
 who would presumably screw up their credit-ratings in retaliation
@@ -4064,7 +4110,7 @@ of small-time hand-level piracy). Instantly going to Defcon One
 over it and claiming it's morally tantamount to mugging little old
 ladies in the street will make it kind of difficult to move forward
 from that position when it doesn't work. In the 1970s, the record
-industry shrieked that "home taping is killing music." It's hard
+industry shrieked that ``home taping is killing music.'' It's hard
 for ordinary folks to avoid noticing that music didn't die. But the
 record industry's credibility on the subject wasn't exactly
 enhanced.
@@ -4139,7 +4185,7 @@ These two certainties begged a lot of questions.
 \item
   File-formats go obsolete, paper has lasted for a long time
 \end{itemize}
-None of these seemed like very good explanations for the "failure"
+None of these seemed like very good explanations for the ``failure''
 of ebooks to me. If screen resolutions are too low to replace
 paper, then how come everyone I know spends more time reading off a
 screen every year, up to and including my sainted grandmother
@@ -4254,10 +4300,10 @@ to do with the reasons to love paper books.
   top-40 tracks, like 90 percent or so, and I believe it. We all want
   to popular music. That's why it's popular. But the interesting
   thing is the other ten percent. Bill Gates told the New York Times
-  that Microsoft lost the search wars by doing "a good job on the 80
+  that Microsoft lost the search wars by doing ``a good job on the 80
   percent of common queries and ignor[ing] the other stuff. But it's
   the remaining 20 percent that counts, because that's where the
-  quality perception is." Why did Napster captivate so many of us?
+  quality perception is.'' Why did Napster captivate so many of us?
   Not because it could get us the top-40 tracks that we could hear
   just by snapping on the radio: it was because 80 percent of the
   music ever recorded wasn't available for sale anywhere in the
@@ -4282,7 +4328,7 @@ to do with the reasons to love paper books.
   salty.
 \end{itemize}
 Tool-makers and software designers are increasingly aware of the
-notion of "affordances" in design. You can bash a nail into the
+notion of ``affordances'' in design. You can bash a nail into the
 wall with any heavy, heftable object from a rock to a hammer to a
 cast-iron skillet. However, there's something about a hammer that
 cries out for nail-bashing, it has affordances that tilt its holder
@@ -4341,7 +4387,7 @@ This is a huge problem. The biggest possible problem. Here's why:
   of copyright law is going to be terribly risk-averse: publishers
   non-negotiably force their authors to indemnify them from
   infringement claims and go one better, forcing writers to prove
-  that they have "cleared" any material they quote, even in the case
+  that they have ``cleared'' any material they quote, even in the case
   of brief fair-use quotations, like song-titles at the opening of
   chapters. The result is that authors end up assuming potentially
   life-destroying liability, are chilled from quoting material around
@@ -4361,7 +4407,7 @@ This is a huge problem. The biggest possible problem. Here's why:
   Poe, Jules Verne, HG Wells -- are still known, their work still a
   part of the discourse. Their spiritual descendants from Hugo
   Gernsback onward may not be so lucky -- if their work continues to
-  be "protected" by copyright, it might just vanish from the face of
+  be ``protected'' by copyright, it might just vanish from the face of
   the earth before it reverts to the public domain.
 \end{itemize}
 This isn't to say that copyright is bad, but that there's such a
@@ -4371,7 +4417,7 @@ little goes a long way, and too much spoils the broth.
 
 From the Luther Bible to the first phonorecords, from radio to the
 pulps, from cable to MP3, the world has shown that its first
-preference for new media is its "democratic-ness" -- the ease with
+preference for new media is its ``democratic-ness'' -- the ease with
 which it can reproduced.
 
 (And please, before we get any farther, forget all that business
@@ -4425,7 +4471,7 @@ cable-operators access to programming at a fixed rate.
 Copyright is perennially out of date, because its latest rev was
 generated in response to the last generation of technology. The
 temptation to treat copyright as though it came down off the
-mountain on two stone tablets (or worse, as "just like" real
+mountain on two stone tablets (or worse, as ``just like'' real
 property) is deeply flawed, since, by definition, current copyright
 only considers the last generation of tech.
 
@@ -4434,13 +4480,11 @@ end of the world? \emph{Duh}. If the Catholic church can survive
 the printing press, science fiction will certainly weather the
 advent of bookwarez.
 
-\begin{center}\rule{3in}{0.4pt}\end{center}
-
-Lagniappe [Lagniappe]
+\minisec{Lagniappe}
 
 We're almost done here, but there's one more thing I'd like to do
 before I get off the stage. [Lagniappe: an unexpected bonus or
-extra] Think of it as a "lagniappe" -- a little something extra to
+extra] Think of it as a ``lagniappe'' -- a little something extra to
 thank you for your patience.
 
 About a year ago, I released my first novel, Down and Out in the
@@ -4452,7 +4496,7 @@ plunge.
 
 Now I'm going to take a plunge. Today, I will re-license the text
 of Down and Out in the Magic Kingdom under a Creative Commons
-"Attribution-ShareAlike-Derivs-Noncommercial" license [HUMAN
+``Attribution-ShareAlike-Derivs-Noncommercial'' license [HUMAN
 READABLE LICENSE], which means that as of today, you have my
 blessing to create derivative works from my first book. You can
 make movies, audiobooks, translations, fan-fiction, slash fiction
@@ -4473,13 +4517,13 @@ Commons Public Domain dedication, [Public domain dedication] giving
 it away to the world to do with as it see fits. It'll be linked off
 my blog, Boing Boing, before the day is through.
 
-\subsection{Free(konomic) E-books}
+\section{Free(konomic) E-books}
 
 (Originally published in Locus Magazine, September 2007)
 
 Can giving away free electronic books really sell printed books? I
-think so. As I explained in my March column ("You Do Like Reading
-Off a Computer Screen"), I don't believe that most readers want to
+think so. As I explained in my March column (``You Do Like Reading
+Off a Computer Screen''), I don't believe that most readers want to
 read long-form works off a screen, and I don't believe that they
 will ever want to read long-form works off a screen. As I say in
 the column, the problem with reading off a screen isn't resolution,
@@ -4490,17 +4534,17 @@ concentrating on a long-form work impractical.
 Sure, some readers have the cognitive quirk necessary to read
 full-length works off screens, or are motivated to do so by other
 circumstances (such as being so broke that they could never hope to
-buy the printed work). The rational question isn't, "Will giving
-away free e-books cost me sales?" but rather, "Will giving away
-free e-books win me more sales than it costs me?"
+buy the printed work). The rational question isn't, ``Will giving
+away free e-books cost me sales?'' but rather, ``Will giving away
+free e-books win me more sales than it costs me?''
 
 This is a very hard proposition to evaluate in a quantitative way.
 Books aren't lattes or cable-knit sweaters: each book sells (or
 doesn't) due to factors that are unique to that title. It's hard to
-imagine an empirical, controlled study in which two "equivalent"
+imagine an empirical, controlled study in which two ``equivalent''
 books are published, and one is also available as a free download,
 the other not, and the difference calculated as a means of
-"proving" whether e-books hurt or help sales in the long run.
+``proving'' whether e-books hurt or help sales in the long run.
 
 I've released all of my novels as free downloads simultaneous with
 their print publication. If I had a time machine, I could
@@ -4531,13 +4575,13 @@ that:
   e-book releases of previous and current volumes
 \item
   David Blackburn, a Harvard PhD candidate in economics, published a
-  paper in 2004 in which he calculated that, for music, "piracy"
+  paper in 2004 in which he calculated that, for music, ``piracy''
   results in a net increase in sales for all titles in the 75th
-  percentile and lower; negligible change in sales for the "middle
-  class" of titles between the 75th percentile and the 97th
-  percentile; and a small drag on the "super-rich" in the 97th
+  percentile and lower; negligible change in sales for the ``middle
+  class'' of titles between the 75th percentile and the 97th
+  percentile; and a small drag on the ``super-rich'' in the 97th
   percentile and higher. Publisher Tim O'Reilly describes this as
-  "piracy's progressive taxation," apportioning a small
+  ``piracy's progressive taxation,'' apportioning a small
   wealth-redistribution to the vast majority of works, no net change
   to the middle, and a small cost on the richest few
 \item
@@ -4570,11 +4614,11 @@ that:
   more money in these secondary markets than I have in royalties
 \item
   More anecdotes: I've had literally thousands of people approach me
-  by e-mail and at signings and cons to say, "I found your work
-  online for free, got hooked, and started buying it." By contrast,
-  I've had all of five e-mails from people saying, "Hey, idiot,
+  by e-mail and at signings and cons to say, ``I found your work
+  online for free, got hooked, and started buying it.'' By contrast,
+  I've had all of five e-mails from people saying, ``Hey, idiot,
   thanks for the free book, now I don't have to buy the print
-  edition, ha ha!"
+  edition, ha ha!''
 \end{itemize}
 Many of us have assumed, a priori, that electronic books substitute
 for print books. While I don't have controlled, quantitative data
@@ -4591,7 +4635,7 @@ fetish objects and carry books around on their electronic
 devices).
 
 I started giving away e-books after I witnessed the early days of
-the "bookwarez" scene, wherein fans cut the binding off their
+the ``bookwarez'' scene, wherein fans cut the binding off their
 favorite books, scanned them, ran them through optical character
 recognition software, and manually proofread them to eliminate the
 digitization errors. These fans were easily spending 80 hours to
@@ -4626,7 +4670,7 @@ My next column will go into more detail on what CC is, what
 licenses it offers, and how to use them -- but for now, check them
 out online at creativecommons.org.
 
-\subsection{The Progressive Apocalypse and Other Futurismic Delights}
+\section{The Progressive Apocalypse and Other Futurismic Delights}
 
 (Originally published in Locus Magazine, July 2007)
 
@@ -4643,7 +4687,7 @@ social interventionism.
 
 Bold SF writers eschew the future altogether, embracing a
 futuristic account of the present day. William Gibson's forthcoming
-Spook Country is an act of "speculative presentism," a book so
+Spook Country is an act of ``speculative presentism,'' a book so
 futuristic it could only have been set in 2006, a book that
 exploits retrospective historical distance to let us glimpse just
 how alien and futuristic our present day is.
@@ -4659,7 +4703,7 @@ users, ubiquitous RFID tags, radically democratic political
 processes dominated by bloggers, massively multiplayer games whose
 virtual economies dwarf the physical economy.
 
-There's a lovely neologism to describe these visions: "futurismic."
+There's a lovely neologism to describe these visions: ``futurismic.''
 Futurismic media is that which depicts futurism, not the future. It
 is often self-serving -- think of the antigrav Nikes in Back to the
 Future III -- and it generally doesn't hold up well to scrutiny.
@@ -4704,7 +4748,7 @@ We make the future in much the same way: we use reasoning and
 evidence to predict what we can, and whenever we bump up against
 uncertainty, we fill the void with the present day. Hence the
 injunction on women soldiers in the future of Starship Troopers, or
-the bizarre, glassed-over "Progressland" city diorama at the end of
+the bizarre, glassed-over ``Progressland'' city diorama at the end of
 the 1964 World's Fair exhibit The Carousel of Progress, which
 Disney built for GE.
 
@@ -4735,7 +4779,7 @@ ideal of a world of great people standing on the shoulders of
 giants. Each of us contributes to improving the world's storehouse
 of knowledge (and thus its capacity for bringing joy to all of us),
 and our descendants and proteges take our work and improve on it.
-The very idea of "progress" runs counter to the idea of
+The very idea of ``progress'' runs counter to the idea of
 Lapsarianism and the fall: it is the idea that we, as a species,
 are falling in reverse, combing back the wild tangle of entropy
 into a neat, tidy braid.
@@ -4748,7 +4792,7 @@ bound of progress, a name for the progressive apocalypse:
 We call it the Singularity.
 
 Vernor Vinge's Singularity takes place when our technology reaches
-a stage that allows us to "upload" our minds into software, run
+a stage that allows us to ``upload'' our minds into software, run
 them at faster, hotter speeds than our neurological wetware
 substrate allows for, and create multiple, parallel instances of
 ourselves. After the Singularity, nothing is predictable because
@@ -4758,7 +4802,7 @@ the title of Rudy Rucker's next novel would have it) Postsingular.
 The Singularity is what happens when we have so much progress that
 we run out of progress. It's the apocalypse that ends the human
 race in rapture and joy. Indeed, Ken MacLeod calls the Singularity
-"the rapture of the nerds," an apt description for the mirror-world
+``the rapture of the nerds,'' an apt description for the mirror-world
 progressive version of the Lapsarian apocalypse.
 
 At the end of the day, both progress and the fall from grace are
@@ -4778,7 +4822,7 @@ is the only era that we can hope to understand, because it's the
 only era that lets us check our observations and predictions
 against reality.
 
-\subsection{When the Singularity is More Than a Literary Device: An Interview with Futurist-Inventor Ray Kurzweil}
+\section{When the Singularity is More Than a Literary Device: An Interview with Futurist-Inventor Ray Kurzweil}
 
 (Originally published in Asimov's Science Fiction Magazine, June
 2005)
@@ -4791,7 +4835,7 @@ whose most articulate in-genre spokesmodel is Vernor Vinge --
 describes the black hole in history that will be created at the
 moment when human intelligence can be digitized. When the speed and
 scope of our cognition is hitched to the price-performance curve of
-microprocessors, our "progress" will double every eighteen months,
+microprocessors, our ``progress'' will double every eighteen months,
 and then every twelve months, and then every ten, and eventually,
 every five seconds.
 
@@ -4828,8 +4872,8 @@ embarking on a quest to bring his maverick ideas to the public
 despite the dismissals of the establishment, getting rich in the
 process.
 
-Kurzweil believes in the Singularity. In his 1990 manifesto, "The
-Age of Intelligent Machines," Kurzweil persuasively argued that we
+Kurzweil believes in the Singularity. In his 1990 manifesto, ``The
+Age of Intelligent Machines,'' Kurzweil persuasively argued that we
 were on the brink of meaningful machine intelligence. A decade
 later, he continued the argument in a book called The Age of
 Spiritual Machines, whose most audacious claim is that the world's
@@ -4871,7 +4915,7 @@ backup?
 The traditional AI answer is the Turing Test, invented by Alan
 Turing, the gay pioneer of cryptography and artificial intelligence
 who was forced by the British government to take hormone treatments
-to "cure" him of his homosexuality, culminating in his suicide in
+to ``cure'' him of his homosexuality, culminating in his suicide in
 1954. Turing cut through the existentialism about measuring whether
 a machine is intelligent by proposing a parlor game: a computer
 sits behind a locked door with a chat program, and a person sits
@@ -4887,13 +4931,13 @@ same way that you do, you're talking to a faithful copy of
 yourself.
 
 Sounds good. But the me who sent his first story into Asimov's
-seventeen years ago couldn't answer the question, "Write a story
-for Asimov's" the same way the me of today could. Does that mean
+seventeen years ago couldn't answer the question, ``Write a story
+for Asimov's'' the same way the me of today could. Does that mean
 I'm not me anymore?
 
 Kurzweil has the answer.
 
-"If you follow that logic, then if you were to take me ten years
+``If you follow that logic, then if you were to take me ten years
 ago, I could not pass for myself in a Ray Kurzweil Turing Test. But
 once the requisite uploading technology becomes available a few
 decades hence, you could make a perfect-enough copy of me, and it
@@ -4904,7 +4948,7 @@ none of the quantum states in my brain would be the same. There are
 quite a few changes that each of us undergo from day to day, we
 don't examine the assumption that we are the same person closely.
 
-"We gradually change our pattern of atoms and neurons but we very
+``We gradually change our pattern of atoms and neurons but we very
 rapidly change the particles the pattern is made up of. We used to
 think that in the brain -- the physical part of us most closely
 associated with our identity -- cells change very slowly, but it
@@ -4912,13 +4956,13 @@ turns out that the components of the neurons, the tubules and so
 forth, turn over in only days. I'm a completely different set of
 particles from what I was a week ago.
 
-"Consciousness is a difficult subject, and I'm always surprised by
+``Consciousness is a difficult subject, and I'm always surprised by
 how many people talk about consciousness routinely as if it could
 be easily and readily tested scientifically. But we can't postulate
 a consciousness detector that does not have some assumptions about
 consciousness built into it.
 
-"Science is about objective third party observations and logical
+``Science is about objective third party observations and logical
 deductions from them. Consciousness is about first-person,
 subjective experience, and there's a fundamental gap there. We live
 in a world of assumptions about consciousness. We share the
@@ -4930,8 +4974,8 @@ behavior in an animal and consider the animal conscious, but even
 these observers don't generally attribute consciousness to animals
 that aren't humanlike.
 
-"When machines are complex enough to have responses recognizable as
-emotions, those machines will be more humanlike than animals."
+``When machines are complex enough to have responses recognizable as
+emotions, those machines will be more humanlike than animals.''
 
 The Kurzweil Singularity goes like this: computers get better and
 smaller. Our ability to measure the world gains precision and grows
@@ -4948,7 +4992,7 @@ bit that makes us us.
 But brains aren't that complex, Kurzweil says. Already, we're
 starting to unravel their mysteries.
 
-"We seem to have found one area of the brain closely associated
+``We seem to have found one area of the brain closely associated
 with higher-level emotions, the spindle cells, deeply embedded in
 the brain. There are tens of thousands of them, spanning the whole
 brain (maybe eighty thousand in total), which is an incredibly
@@ -4957,14 +5001,14 @@ and they likely only evolved over the last million years or so.
 Some of the high-level emotions that are deeply human come from
 these.
 
-"Turing had the right insight: base the test for intelligence on
+``Turing had the right insight: base the test for intelligence on
 written language. Turing Tests really work. A novel is based on
 language: with language you can conjure up any reality, much more
 so than with images. Turing almost lived to see computers doing a
 good job of performing in fields like math, medical diagnosis and
 so on, but those tasks were easier for a machine than demonstrating
 even a child's mastery of language. Language is the true embodiment
-of human intelligence."
+of human intelligence.''
 
 If we're not so complex, then it's only a matter of time until
 computers are more complex than us. When that comes, our brains
@@ -4982,8 +5026,8 @@ But there are also a nearly infinite number of ways of modeling a
 brain in a computer, and only a finite (or possibly nonexistent)
 fraction of that space will yield a conscious copy of the original
 meat-brain. Science fiction writers usually hand-wave this step: in
-Heinlein's "Man Who Sold the Moon," the gimmick is that once the
-computer becomes complex enough, with enough "random numbers," it
+Heinlein's ``Man Who Sold the Moon,'' the gimmick is that once the
+computer becomes complex enough, with enough ``random numbers,'' it
 just wakes up.
 
 Computer programmers are a little more skeptical. Computers have
@@ -5006,15 +5050,15 @@ software that performs as well or better than the code written by
 human authors.
 
 Indeed, evolutionary computing is a promising and exciting field
-that's realizing real returns through cool offshoots like "ant
-colony optimization" and similar approaches that are showing good
+that's realizing real returns through cool offshoots like ``ant
+colony optimization'' and similar approaches that are showing good
 results in fields as diverse as piloting military UAVs and
 efficiently provisioning car-painting robots at automotive plants.
 
 So if you buy Kurzweil's premise that computation is getting
 cheaper and more plentiful than ever, then why not just use
 evolutionary algorithms to evolve the best way to model a
-scanned-in human brain such that it "wakes up" like Heinlein's Mike
+scanned-in human brain such that it ``wakes up'' like Heinlein's Mike
 computer?
 
 Indeed, this is the crux of Kurzweil's argument in Spiritual
@@ -5037,21 +5081,21 @@ evolutionary system. Without it, there's no pressure for the system
 to achieve the desired goal: merely mutation and more mutation.
 
 But how can a machine evaluate which of a trillion models of a
-human brain is "most like" a conscious mind? Or better still: which
+human brain is ``most like'' a conscious mind? Or better still: which
 one is most like the individual whose brain is being modeled?
 
-"It is a sleight of hand in Spiritual Machines," Kurzweil admits.
-"But in The Singularity Is Near, I have an in-depth discussion
+``It is a sleight of hand in Spiritual Machines,'' Kurzweil admits.
+``But in The Singularity Is Near, I have an in-depth discussion
 about what we know about the brain and how to model it. Our tools
 for understanding the brain are subject to the Law of Accelerating
 Returns, and we've made more progress in reverse-engineering the
-human brain than most people realize." This is a tasty Kurzweilism
+human brain than most people realize.'' This is a tasty Kurzweilism
 that observes that improvements in technology yield tools for
 improving technology, round and round, so that the thing that
 progress begets more than anything is more and yet faster
 progress.
 
-"Scanning resolution of human tissue -- both spatial and temporal
+``Scanning resolution of human tissue -- both spatial and temporal
 -- is doubling every year, and so is our knowledge of the workings
 of the brain. The brain is not one big neural net, the brain is
 several hundred different regions, and we can understand each
@@ -5060,21 +5104,21 @@ have some nexus with chaos and self-organizing systems. This has
 already been done for a couple dozen regions out of the several
 hundred.
 
-"We have a good model of a dozen or so regions of the auditory and
+``We have a good model of a dozen or so regions of the auditory and
 visual cortex, how we strip images down to very low-resolution
 movies based on pattern recognition. Interestingly, we don't
 actually see things, we essentially hallucinate them in detail from
 what we see from these low resolution cues. Past the early phases
 of the visual cortex, detail doesn't reach the brain.
 
-"We are getting exponentially more knowledge. We can get detailed
+``We are getting exponentially more knowledge. We can get detailed
 scans of neurons working in vivo, and are beginning to understand
 the chaotic algorithms underlying human intelligence. In some
 cases, we are getting comparable performance of brain regions in
 simulation. These tools will continue to grow in detail and
 sophistication.
 
-"We can have confidence of reverse-engineering the brain in twenty
+``We can have confidence of reverse-engineering the brain in twenty
 years or so. The reason that brain reverse engineering has not
 contributed much to artificial intelligence is that up until
 recently we didn't have the right tools. If I gave you a computer
@@ -5084,24 +5128,24 @@ file is saved, but you'd never get at the instruction set. Once you
 reverse-engineer the computer fully, however, you can express its
 principles of operation in just a few dozen pages.
 
-"Now there are new tools that let us see the interneuronal
+``Now there are new tools that let us see the interneuronal
 connections and their signaling, in vivo, and in real-time. We're
 just now getting these tools and there's very rapid application of
 the tools to obtain the data.
 
-"Twenty years from now we will have realistic simulations and
+``Twenty years from now we will have realistic simulations and
 models of all the regions of the brain and [we will] understand how
 they work. We won't blindly or mindlessly copy those methods, we
 will understand them and use them to improve our AI toolkit. So
 we'll learn how the brain works and then apply the sophisticated
 tools that we will obtain, as we discover how the brain works.
 
-"Once we understand a subtle science principle, we can isolate,
+``Once we understand a subtle science principle, we can isolate,
 amplify, and expand it. Air goes faster over a curved surface: from
 that insight we isolated, amplified, and expanded the idea and
 invented air travel. We'll do the same with intelligence.
 
-"Progress is exponential -- not just a measure of power of
+``Progress is exponential -- not just a measure of power of
 computation, number of Internet nodes, and magnetic spots on a hard
 disk -- the rate of paradigm shift is itself accelerating, doubling
 every decade. Scientists look at a problem and they intuitively
@@ -5112,28 +5156,28 @@ power of the information tools (in price-performance, resolution,
 bandwidth, and so on) doubles every year. People, even scientists,
 don't grasp exponential growth. During the first decade of the
 human genome project, we only solved 2 percent of the problem, but
-we solved the remaining 98 percent in five years."
+we solved the remaining 98 percent in five years.''
 
 But Kurzweil doesn't think that the future will arrive in a rush.
-As William Gibson observed, "The future is here, it's just not
-evenly distributed."
+As William Gibson observed, ``The future is here, it's just not
+evenly distributed.''
 
-"Sure, it'd be interesting to take a human brain, scan it,
+``Sure, it'd be interesting to take a human brain, scan it,
 reinstantiate the brain, and run it on another substrate. That will
-ultimately happen."
+ultimately happen.''
 
-"But the most salient scenario is that we'll gradually merge with
+``But the most salient scenario is that we'll gradually merge with
 our technology. We'll use nanobots to kill pathogens, then to kill
 cancer cells, and then they'll go into our brain and do benign
 things there like augment our memory, and very gradually they'll
 get more and more sophisticated. There's no single great leap, but
 there is ultimately a great leap comprised of many small steps.
 
-"In The Singularity Is Near, I describe the radically different
+``In The Singularity Is Near, I describe the radically different
 world of 2040, and how we'll get there one benign change at a time.
 The Singularity will be gradual, smooth.
 
-"Really, this is about augmenting our biological thinking with
+``Really, this is about augmenting our biological thinking with
 nonbiological thinking. We have a capacity of 1026 to 1029
 calculations per second (cps) in the approximately 1010 biological
 human brains on Earth and that number won't change much in fifty
@@ -5142,10 +5186,10 @@ years, but nonbiological thinking will just crash through that. By
 billion times that. We'll get to the point where bio thinking is
 relatively insignificant.
 
-"People didn't throw their typewriters away when word-processing
+``People didn't throw their typewriters away when word-pro\-cessing
 started. There's always an overlap -- it'll take time before we
 realize how much more powerful nonbiological thinking will
-ultimately be."
+ultimately be.''
 
 It's well and good to talk about all the stuff we can do with
 technology, but it's a lot more important to talk about the stuff
@@ -5168,29 +5212,29 @@ reactionary forces be justified in razing the whole ecosystem to
 eliminate a few parasites who are doing negative things with the
 new tools?
 
-"Complex ecosystems will always have parasites. Malware [malicious
+``Complex ecosystems will always have parasites. Malware [malicious
 software] is the most important battlefield today.
 
-"Everything will become software -- objects will be malleable,
+``Everything will become software -- objects will be malleable,
 we'll spend lots of time in VR, and computhought will be orders of
 magnitude more important than biothought.
 
-"Software is already complex enough that we have an ecological
+``Software is already complex enough that we have an ecological
 terrain that has emerged just as it did in the bioworld.
 
-"That's partly because technology is unregulated and people have
+``That's partly because technology is unregulated and people have
 access to the tools to create malware and the medicine to treat it.
 Today's software viruses are clever and stealthy and not
 simpleminded. Very clever.
 
-"But here's the thing: you don't see people advocating shutting
+``But here's the thing: you don't see people advocating shutting
 down the Internet because malware is so destructive. I mean,
 malware is potentially more than a nuisance -- emergency systems,
 air traffic control, and nuclear reactors all run on vulnerable
 software. It's an important issue, but the potential damage is
 still a tiny fraction of the benefit we get from the Internet.
 
-"I hope it'll remain that way -- that the Internet won't become a
+``I hope it'll remain that way -- that the Internet won't become a
 regulated space like medicine. Malware's not the most important
 issue facing human society today. Designer bioviruses are. People
 are concerted about WMDs, but the most daunting WMD would be a
@@ -5198,21 +5242,21 @@ designed biological virus. The means exist in college labs to
 create destructive viruses that erupt and spread silently with long
 incubation periods.
 
-"Importantly, a would-be bio-terrorist doesn't have to put malware
+``Importantly, a would-be bio-terrorist doesn't have to put malware
 through the FDA's regulatory approval process, but scientists
 working to fix bio-malware do.
 
-"In Huxley's Brave New World, the rationale for the totalitarian
+``In Huxley's Brave New World, the rationale for the totalitarian
 system was that technology was too dangerous and needed to be
 controlled. But that just pushes technology underground where it
 becomes less stable. Regulation gives the edge of power to the
 irresponsible who won't listen to the regulators anyway.
 
-"The way to put more stones on the defense side of the scale is to
+``The way to put more stones on the defense side of the scale is to
 put more resources into defensive technologies, not create a
 totalitarian regime of Draconian control.
 
-"I advocate a one hundred billion dollar program to accelerate the
+``I advocate a one hundred billion dollar program to accelerate the
 development of anti-biological virus technology. The way to combat
 this is to develop broad tools to destroy viruses. We have tools
 like RNA interference, just discovered in the past two years to
@@ -5220,27 +5264,28 @@ block gene expression. We could develop means to sequence the genes
 of a new virus (SARS only took thirty-one days) and respond to it
 in a matter of days.
 
-"Think about it. There's no FDA for software, no certification for
+``Think about it. There's no FDA for software, no certification for
 programmers. The government is thinking about it, though! The
-reason the FCC is contemplating Trusted Computing mandates," -- a
+reason the FCC is contemplating Trusted Computing mandates,'' -- a
 system to restrict what a computer can do by means of hardware
-locks embedded on the motherboard -- "is that computing technology
+locks embedded on the motherboard -- ``is that computing technology
 is broadening to cover everything. So now you have communications
 bureaucrats, biology bureaucrats, all wanting to regulate
 computers.
 
-"Biology would be a lot more stable if we moved away from
-regulation -- which is extremely irrational and onerous and doesn't
+``Biology would be a lot more stable if we moved away from
+regulation -- which is extremely irrational and onerous and 
+\discretionary{does}{not}{doesn't}
 appropriately balance risks. Many medications are not available
 today even though they should be. The FDA always wants to know what
 happens if we approve this and will it turn into a thalidomide
 situation that embarrasses us on CNN?
 
-"Nobody asks about the harm that will certainly accrue from
+``Nobody asks about the harm that will certainly accrue from
 delaying a treatment for one or more years. There's no political
 weight at all, people have been dying from diseases like heart
 disease and cancer for as long as we've been alive. Attributable
-risks get 100-1000 times more weight than unattributable risks."
+risks get 100-1000 times more weight than unattributable risks.''
 
 Is this spirituality or science? Perhaps it is the melding of both
 -- more shades of Heinlein, this time the weird religions founded
@@ -5259,12 +5304,12 @@ the science fiction narrative in these years. Science or
 spirituality, you could hardly ask for a subject better tailored to
 technological speculation and drama.
 
-\subsection{Wikipedia: a genuine Hitchhikers' Guide to the Galaxy -- minus the editors}
+\section{Wikipedia: a genuine Hitchhikers' Guide to the Galaxy -- minus the editors}
 
 (Originally published in The Anthology at the End of the Universe,
 April 2005)
 
-"Mostly Harmless" -- a phrase so funny that Adams actually titled a
+``Mostly Harmless'' -- a phrase so funny that Adams actually titled a
 book after it. Not that there's a lot of comedy inherent in those
 two words: rather, they're the punchline to a joke that anyone
 who's ever written for publication can really get behind.
@@ -5274,26 +5319,26 @@ Galaxy, has been stationed on Earth for years, painstakingly
 compiling an authoritative, insightful entry on Terran geography,
 science and culture, excerpts from which appear throughout the H2G2
 books. His entry improved upon the old one, which noted that Earth
-was, simply, "Harmless."
+was, simply, ``Harmless.''
 
 However, the Guide has limited space, and when Ford submits his
 entry to his editors, it is trimmed to fit:
 
-"What? Harmless? Is that all it's got to say? Harmless! One word!"
+``What? Harmless? Is that all it's got to say? Harmless! One word!''
 
-Ford shrugged. "Well, there are a hundred billion stars in the
+Ford shrugged. ``Well, there are a hundred billion stars in the
 Galaxy, and only a limited amount of space in the book's
-microprocessors," he said, "and no one knew much about the Earth of
-course."
+microprocessors,'' he said, ``and no one knew much about the Earth of
+course.''
 
-"Well for God's sake I hope you managed to rectify that a bit."
+``Well for God's sake I hope you managed to rectify that a bit.''
 
-"Oh yes, well I managed to transmit a new entry off to the editor.
-He had to trim it a bit, but it's still an improvement."
+``Oh yes, well I managed to transmit a new entry off to the editor.
+He had to trim it a bit, but it's still an improvement.''
 
-"And what does it say now?" asked Arthur.
+``And what does it say now?'' asked Arthur.
 
-"Mostly harmless," admitted Ford with a slightly embarrassed
+``Mostly harmless,'' admitted Ford with a slightly embarrassed
 cough.
 
 [fn: My lifestyle is as gypsy and fancy-free as the characters in
@@ -5330,7 +5375,7 @@ organize the labors of casual contributors, piecing together a free
 and open user-generated encyclopedia.
 
 These encyclopedias have one up on Adams's Guide: they have no
-shortage of space on their "microprocessors" (the first volume of
+shortage of space on their ``microprocessors'' (the first volume of
 the Guide was clearly written before Adams became conversant with
 PCs!). The ability of humans to generate verbiage is far
 outstripped by the ability of technologists to generate low-cost,
@@ -5347,17 +5392,17 @@ which runs the largest database in the history of the universe off
 of a collection of white-box commodity PCs stacked up on packing
 skids in the basement of a disused armory in San Francisco's
 Presidio -- there's no reason not to just keep them around. In
-fact, the Archive has just spawned two "mirror" Archives, one
+fact, the Archive has just spawned two ``mirror'' Archives, one
 located under the rebuilt Library of Alexandria and the other in
 Amsterdam. [fn: Brewster Kahle says that he was nervous about
-keeping his only copy of the "repository of all human knowledge" on
+keeping his only copy of the ``repository of all human knowledge'' on
 the San Andreas fault, but keeping your backups in a
 censorship-happy Amnesty International watchlist state and/or in a
 floodplain below sea level is probably not such a good idea
 either!]
 
 So these systems did not see articles trimmed for lack of space;
-for on the Internet, the idea of "running out of space" is
+for on the Internet, the idea of ``running out of space'' is
 meaningless. But they \emph{were} trimmed, by editorial cliques,
 and rewritten for clarity and style. Some entries were rejected as
 being too thin, while others were sent back to the author for
@@ -5373,14 +5418,15 @@ have to answer to an editor.
 
 The early experimental days of the Internet saw much
 experimentation with alternatives to traditional editor/author
-divisions. Slashdot, a nerdy news-site of surpassing popularity
-[fn: Having a link to one's website posted to Slashdot will almost
-inevitably overwhelm your server with traffic, knocking all but the
-best-provisioned hosts offline within minutes; this is commonly
-referred to as "the Slashdot Effect."], has a baroque system for
-"community moderation" of the responses to the articles that are
+divisions. Slashdot, a nerdy news-site of surpassing popularity\footnote{
+  Having a link to one's website posted to Slashdot will almost
+  inevitably overwhelm your server with traffic, knocking all but the
+  best-provisioned hosts offline within minutes; this is commonly
+  referred to as ``the Slashdot Effect.''},
+has a baroque system for
+``community moderation'' of the responses to the articles that are
 posted to its front pages. Readers, chosen at random, are given
-five "moderator points" that they can use to raise or lower the
+five ``moderator points'' that they can use to raise or lower the
 score of posts on the Slashdot message boards. Subsequent readers
 can filter their views of these boards to show only highly ranked
 posts. Other readers are randomly presented with posts and their
@@ -5389,23 +5435,25 @@ moderation. Moderators who moderate fairly are given more
 opportunities to moderate; likewise message-board posters whose
 messages are consistently highly rated.
 
-It is thought that this system rewards good "citizenship" on the
+It is thought that this system rewards good ``citizenship'' on the
 Slashdot boards through checks and balances that reward good
 messages and fair editorial practices. And in the main, the
 Slashdot moderation system works [fn: as do variants on it, like
-the system in place at Kur5hin.org (pronounced "corrosion")]. If
+the system in place at Kur5hin.org (pronounced ``corrosion'')]. If
 you dial your filter up to show you highly scored messages, you
 will generally get well-reasoned, or funny, or genuinely useful
 posts in your browser.
 
 This community moderation scheme and ones like it have been
 heralded as a good alternative to traditional editorship. The
-importance of the Internet to "edit itself" is best understood in
-relation to the old shibboleth, "On the Internet, everyone is a
-slushreader." [fn: "Slush" is the term for generally execrable
-unsolicited manuscripts that fetch up in publishers' offices --
-these are typically so bad that the most junior people on staff are
-drafted into reading (and, usually, rejecting) them]. When the
+importance of the Internet to ``edit itself'' is best understood in
+relation to the old shibboleth, ``On the Internet, everyone is a
+slushreader.''\footnote{
+  ``Slush'' is the term for generally execrable
+  unsolicited manuscripts that fetch up in publishers' offices --
+  these are typically so bad that the most junior people on staff are
+  drafted into reading (and, usually, rejecting) them.}
+When the
 Internet's radical transformative properties were first bandied
 about in publishing circles, many reassured themselves that even if
 printing's importance was de-emphasized, that good editors would
@@ -5439,7 +5487,7 @@ discussion. Imagine if the subtext of every discussion you had in
 the real world was a kind of running, pedantic nitpickery in which
 every point was explicitly weighed and judged and commented upon.
 You'd be an unpleasant, unlikable jerk, the kind of person that is
-sometimes referred to as a "slashdork."
+sometimes referred to as a ``slashdork.''
 
 As radical as Yahoo!'s conceit was, Slashdot's was more radical.
 But as radical as Slashdot's is, it is still inherently
@@ -5451,7 +5499,7 @@ algorithm. Not the kind of algorithm that dominated the early
 search engines like Altavista, in which laughably bad artificial
 intelligence engines attempted to automatically understand the
 content, context and value of every page on the Web so that a
-search for "Dog" would turn up the page more relevant to the
+search for ``Dog'' would turn up the page more relevant to the
 query.
 
 Google's algorithm is predicated on the idea that people are good
@@ -5468,11 +5516,11 @@ performance for a group of ranking peers. [fn: Or at least, it
 \emph{didn't}. Today, dedicated web-writers, such as bloggers,
 are keenly aware of the way that Google will interpret their
 choices about linking and page-structure. One popular sport is
-"googlebombing," in which web-writers collude to link to a given
+``googlebombing,'' in which web-writers collude to link to a given
 page using a humorous keyword so that the page becomes the top
 result for that word -- which is why, for a time, the top result
-for "more evil than Satan" was Microsoft.com. Likewise, the
-practice of "blogspamming," in which unscrupulous spammers post
+for ``more evil than Satan'' was Microsoft.com. Likewise, the
+practice of ``blogspamming,'' in which unscrupulous spammers post
 links to their webpages in the message boards on various blogs, so
 that Google will be tricked into thinking that a wide variety of
 sites have conferred some authority onto their penis-enlargement
@@ -5486,7 +5534,7 @@ single role, fusing our creative and critical selves?
 
 You betcha.
 
-"Wikis" [fn: Hawai'ian for "fast"] are websites that can be edited
+``Wikis''\footnote{Hawai'ian for ``fast''} are websites that can be edited
 by anyone. They were invented by Ward Cunningham in 1995, and they
 have become one of the dominant tools for Internet collaboration in
 the present day. Indeed, there is a sort of Internet geek who
@@ -5499,16 +5547,16 @@ Welcome to my Wiki. It is rad.
 
 There are OtherWikis that inspired me.
 
-Click "publish" and bam, the page is live. The word "OtherWikis"
+Click ``publish'' and bam, the page is live. The word ``OtherWikis''
 will be underlined, having automatically been turned into a link to
-a blank page titled "OtherWikis" (Wiki software recognizes words
+a blank page titled ``OtherWikis'' (Wiki software recognizes words
 with capital letters in the middle of them as links to other pages.
-Wiki people call this "camel-case," because the capital letters in
+Wiki people call this ``camel-case,'' because the capital letters in
 the middle of words make them look like humped camels.) At the
-bottom of it appears this legend: "Edit this page."
+bottom of it appears this legend: ``Edit this page.''
 
-Click on "Edit this page" and the text appears in an editable
-field. Revise the text to your heart's content and click "Publish"
+Click on ``Edit this page'' and the text appears in an editable
+field. Revise the text to your heart's content and click ``Publish''
 and your revisions are live. Anyone who visits a Wiki can edit any
 of its pages, adding to it, improving on it, adding camel-cased
 links to new subjects, or even defacing or deleting it.
@@ -5520,13 +5568,13 @@ spoilers and vandals who deface whatever they can. Wiki pages are
 routinely replaced with obscenities, with links to spammers'
 websites, with junk and crap and flames.
 
-But Wikis have self-defense mechanisms, too. Anyone can "subscribe"
+But Wikis have self-defense mechanisms, too. Anyone can ``subscribe''
 to a Wiki page, and be notified when it is updated. Those who
-create Wiki pages generally opt to act as "gardeners" for them,
+create Wiki pages generally opt to act as ``gardeners'' for them,
 ensuring that they are on hand to undo the work of the spoilers.
 
 In this labor, they are aided by another useful Wiki feature: the
-"history" link. Every change to every Wiki page is logged and
+``history'' link. Every change to every Wiki page is logged and
 recorded. Anyone can page back through every revision, and anyone
 can revert the current version to a previous one. That means that
 vandalism only lasts as long as it takes for a gardener to come by
@@ -5535,9 +5583,9 @@ and, with one or two clicks, set things to right.
 This is a powerful and wildly successful model for collaboration,
 and there is no better example of this than the Wikipedia, a free,
 Wiki-based encyclopedia with more than one million entries, which
-has been translated into 198 languages [fn: That is, one or more
+has been translated into 198 languages.\footnote{That is, one or more
 Wikipedia entries have been translated into 198 languages; more
-than 15 languages have 10,000 or more entries translated]
+than 15 languages have 10,000 or more entries translated}
 
 Wikipedia is built entirely out of Wiki pages created by
 self-appointed experts. Contributors research and write up
@@ -5559,7 +5607,7 @@ still, rewritten with incorrect information. When another
 journalist from the Techdirt website wrote to Fasoldt to correct
 this impression, Fasoldt responded with an increasingly patronizing
 and hysterical series of messages in which he described Wikipedia
-as "outrageous," "repugnant" and "dangerous," insulting the
+as ``outrageous,'' ``repugnant'' and ``dangerous,'' insulting the
 Techdirt writer and storming off in a huff.\footnote{see
 \texttt{http://techdirt.com/articles/20040827/0132238\_F.shtml}
 for more}
@@ -5568,21 +5616,22 @@ Spurred on by this exchange, many of Wikipedia's supporters decided
 to empirically investigate the accuracy and resilience of the
 system. Alex Halavais made changes to 13 different pages, ranging
 from obvious to subtle. Every single change was found and corrected
-within hours. [fn: see
-\href{http://alex.halavais.net/news/index.php?p=794}{http://alex.halavais.net/news/index.php?p=794}
-for more] Then legendary Princeton engineer Ed Felten ran
+within hours.\footnote{
+  see http://alex.halavais.net/news/index.php?p=794 for more}
+Then legendary Princeton engineer Ed Felten ran
 side-by-side comparisons of Wikipedia entries on areas in which he
 had deep expertise with their counterparts in the current
 electronic edition of the Encyclopedia Britannica. His conclusion?
-"Wikipedia's advantage is in having more, longer, and more current
+``Wikipedia's advantage is in having more, longer, and more current
 entries. If it weren't for the Microsoft-case entry, Wikipedia
 would have been the winner hands down. Britannica's advantage is in
-having lower variance in the quality of its entries." [fn: see
-\href{http://www.freedom-to-tinker.com/archives/000675.html}{http://www.freedom-to-tinker.com/archives/000675.html}
-for more] Not a complete win for Wikipedia, but hardly
-"outrageous," "repugnant" and "dangerous." (Poor Fasoldt -- his
+having lower variance in the quality of its entries.''\footnote{
+  see http://www.freedom-to-tinker.com/archives/000675.html
+  for more}
+Not a complete win for Wikipedia, but hardly
+``outrageous,'' ``repugnant'' and ``dangerous.'' (Poor Fasoldt -- his
 idiotic hyperbole will surely haunt him through the whole of his
-career -- I mean, "repugnant?!")
+career -- I mean, ``repugnant?!'')
 
 There has been one very damning and even frightening indictment of
 Wikipedia, which came from Ethan Zuckerman, the founder of the
@@ -5591,7 +5640,7 @@ establish Internet Service Providers and do other good works
 through technology.
 
 Zuckerman, a Harvard Berkman Center Fellow, is concerned with the
-"systemic bias" in a collaborative encyclopedia whose contributors
+``systemic bias'' in a collaborative encyclopedia whose contributors
 must be conversant with technology and in possession of same in
 order to improve on the work there. Zuckerman reasonably observes
 that Internet users skew towards wealth, residence in the world's
@@ -5613,13 +5662,12 @@ these subjects up in the same loving detail given over to science
 fiction novels and contemporary youth culture. His call has been
 answered well. What remains is to infiltrate the Wikipedia into the
 academe so that term papers, Masters and Doctoral theses on these
-subjects find themselves in whole or in part on the Wikipedia. [fn
-See
-\href{http://en.wikipedia.org/wiki/User:Xed/CROSSBOW}{http://en.wikipedia.org/wiki/User:Xed/CROSSBOW}
-for more on this]
+subjects find themselves in whole or in part on the Wikipedia.\footnote{
+  See \texttt{http://en.wikipedia.org/wiki/User:Xed/CROSSBOW}
+  for more on this}
 
 But if Wikipedia is authoritative, how does it get there? What
-alchemy turns the maunderings of "mouth-breathers with modems" into
+alchemy turns the maunderings of ``mouth-breathers with modems'' into
 valid, useful encyclopedia entries?
 
 It all comes down to the way that disputes are deliberated over and
@@ -5640,16 +5688,18 @@ everyone could agree represented as neutral a depiction of Israel
 as was likely to emerge. Whereupon, the joint authors of this
 marvelous document joined forces and fought back to back to resist
 the revisions of other doctrinaires who came later, preserving
-their hard-won peace. [fn: This process was just repeated in
-microcosm in the Wikipedia entry on the author of this paper, which
-was replaced by a rather disparaging and untrue entry that
-characterized his books as critical and commercial failures --
-there ensued several editorial volleys, culminating in an uneasy
-peace that couches the anonymous detractor's skepticism in context
-and qualifiers that make it clear what the facts are and what is
-speculation]
+their hard-won peace.\footnote{
+  This process was just repeated in
+  microcosm in the Wikipedia entry on the author of this paper, which
+  was replaced by a rather disparaging and untrue entry that
+  characterized his books as critical and commercial failures --
+  there ensued several editorial volleys, culminating in an uneasy
+  peace that couches the anonymous detractor's skepticism in context
+  and qualifiers that make it clear what the facts are and what is
+  speculation
+}
 
-What's most fascinating about these entries isn't their "final"
+What's most fascinating about these entries isn't their ``final''
 text as currently present on Wikipedia. It is the history page for
 each, blow-by-blow revision lists that make it utterly transparent
 where the bodies were buried on the way to arriving at whatever
@@ -5659,19 +5709,21 @@ opinions on any controversial subject look like, you need only
 consult its entry's history page for a blistering eyeful of
 thorough debate on the subject.
 
-And here, finally, is the answer to the "Mostly harmless" problem.
+And here, finally, is the answer to the ``Mostly harmless'' problem.
 Ford's editor can trim his verbiage to two words, but they need not
 stay there -- Arthur, or any other user of the Guide as we know it
-today [fn: that is, in the era where we understand enough about
-technology to know the difference between a microprocessor and a
-hard-drive] can revert to Ford's glorious and exhaustive version.
+today\footnote{
+  that is, in the era where we understand enough about
+  technology to know the difference between a microprocessor and a
+  hard-drive}
+can revert to Ford's glorious and exhaustive version.
 
 Think of it: a Guide without space restrictions and without
 editors, where any Vogon can publish to his heart's content.
 
 Lovely.
 
-\subsection{Warhol is Turning in His Grave}
+\section{Warhol is Turning in His Grave}
 
 (Originally published in The Guardian, November 13, 2007)
 
@@ -5701,7 +5753,7 @@ expression is concerned, the rights of the creators of the original
 source material appropriated by the pop school take a back seat.
 
 There is, however, another message about copyright in the National
-Portrait Gallery: it's implicit in the "No Photography" signs
+Portrait Gallery: it's implicit in the ``No Photography'' signs
 prominently placed throughout the halls, including one right by the
 entrance of the POPARTPORTRAITS exhibition. This isn't intended to
 protect the works from the depredations of camera-flashes (it would
@@ -5745,7 +5797,7 @@ infringement while simultaneously taking the view that even the NO
 PHOTOGRAPHY sign is a form of property, not to be reproduced
 without the permission that can never be had.
 
-\subsection{The Future of Ignoring Things}
+\section{The Future of Ignoring Things}
 
 (Originally published on InformationWeek's Internet Evolution,
 October 3, 2007)
@@ -5779,7 +5831,7 @@ computers what we don't want to see.
 
 Rael Dornfest, the former chairman of the O'Reilly Emerging Tech
 conference and founder of the startup IWantSandy, once proposed an
-"ignore thread" feature for mailers: Flag a thread as
+``ignore thread'' feature for mailers: Flag a thread as
 uninteresting, and your mailer will start to hide messages with
 that subject-line or thread-ID for a week, unless those messages
 contain your name. The problem is that threads mutate. Last week's
@@ -5789,8 +5841,8 @@ flow back into your inbox -- and a single click takes you back
 through all the messages you missed.
 
 We need a million measures like this, adaptive systems that create
-a gray zone between "delete on sight" and "show this to me right
-away."
+a gray zone between ``delete on sight'' and ``show this to me right
+away.''
 
 RSS readers are a great way to keep up with the torrent of new
 items posted on high-turnover sites like Digg, but they're even
@@ -5824,17 +5876,17 @@ fewer things vying for our online attention. The only answer is
 better ways and new technology to ignore stuff -- a field that's
 just being born, with plenty of room to grow.
 
-\subsection{Facebook's Faceplant}
+\section{Facebook's Faceplant}
 
-(Originally published as "How Your Creepy Ex-Co-Workers Will Kill
-Facebook," in InformationWeek, November 26, 2007)
+(Originally published as ``How Your Creepy Ex-Co-Workers Will Kill
+Facebook,'' in InformationWeek, November 26, 2007)
 
-Facebook's "platform" strategy has sparked much online debate and
+Facebook's ``platform'' strategy has sparked much online debate and
 controversy. No one wants to see a return to the miserable days of
 walled gardens, when you couldn't send a message to an AOL
 subscriber unless you, too, were a subscriber, and when the only
 services that made it were the ones that AOL management approved.
-Those of us on the "real" Internet regarded AOL with a species of
+Those of us on the ``real'' Internet regarded AOL with a species of
 superstitious dread, a hive of clueless noobs waiting to swamp our
 beloved Usenet with dumb flamewars (we fiercely guarded our erudite
 flamewars as being of a palpably superior grade), the wellspring of
@@ -5843,7 +5895,7 @@ an
 Facebook is no paragon of virtue. It bears the hallmarks of the
 kind of pump-and-dump service that sees us as sticky, monetizable
 eyeballs in need of pimping. The clue is in the steady stream of
-emails you get from Facebook: "So-and-so has sent you a message."
+emails you get from Facebook: ``So-and-so has sent you a message.''
 Yeah, what is it? Facebook isn't telling -- you have to visit
 Facebook to find out, generate a banner impression, and read and
 write your messages using the halt-and-lame Facebook interface,
@@ -5851,11 +5903,11 @@ which lags even end-of-lifed email clients like Eudora for
 composing, reading, filtering, archiving and searching. Emails from
 Facebook aren't helpful messages, they're eyeball bait, intended to
 send you off to the Facebook site, only to discover that Fred wrote
-"Hi again!" on your "wall." Like other "social" apps (cough eVite
+``Hi again!'' on your ``wall.'' Like other ``social'' apps (cough eVite
 cough), Facebook has all the social graces of a nose-picking,
 hyperactive six-year-old, standing at the threshold of your
-attention and chanting, "I know something, I know something, I know
-something, won't tell you what it is!"
+attention and chanting, ``I know something, I know something, I know
+something, won't tell you what it is!''
 
 If there was any doubt about Facebook's lack of qualification to
 displace the Internet with a benevolent dictatorship/walled garden,
@@ -5863,7 +5915,7 @@ it was removed when Facebook unveiled its new advertising campaign.
 Now, Facebook will allow its advertisers use the profile pictures
 of Facebook users to advertise their products, without permission
 or compensation. Even if you're the kind of person who likes the
-sound of a "benevolent dictatorship," this clearly isn't one.
+sound of a ``benevolent dictatorship,'' this clearly isn't one.
 
 Many of my colleagues wonder if Facebook can be redeemed by opening
 up the platform, letting anyone write any app for the service,
@@ -5872,16 +5924,16 @@ kind of thing Google is doing with its OpenSocial Alliance).
 Perhaps if Facebook takes on some of the characteristics that made
 the Web work -- openness, decentralization, standardization -- it
 will become like the Web itself, but with the added pixie dust of
-"social," the indefinable characteristic that makes Facebook into
+``social,'' the indefinable characteristic that makes Facebook into
 pure crack for a significant proportion of Internet users.
 
 The debate about redeeming Facebook starts from the assumption that
 Facebook is snowballing toward critical mass, the point at which it
-begins to define "the Internet" for a large slice of the world's
+begins to define ``the Internet'' for a large slice of the world's
 netizens, growing steadily every day. But I think that this is far
 from a sure thing. Sure, networks generally follow Metcalfe's Law:
-"the value of a telecommunications network is proportional to the
-square of the number of users of the system." This law is best
+``the value of a telecommunications network is proportional to the
+square of the number of users of the system.'' This law is best
 understood through the analogy of the fax machine: a world with one
 fax machine has no use for faxes, but every time you add a fax, you
 square the number of possible send/receive combinations (Alice can
@@ -5890,17 +5942,17 @@ can fax Alice, Bob and Don, etc).
 
 But Metcalfe's law presumes that creating more communications
 pathways increases the value of the system, and that's not always
-true (see Brook's Law: "Adding manpower to a late softer project
-makes it later").
+true (see Brook's Law: ``Adding manpower to a late softer project
+makes it later'').
 
 Having watched the rise and fall of SixDegrees, Friendster, and the
 many other proto-hominids that make up the evolutionary chain
 leading to Facebook, MySpace, et al, I'm inclined to think that
-these systems are subject to a Brook's-law parallel: "Adding more
+these systems are subject to a Brook's-law parallel: ``Adding more
 users to a social network increases the probability that it will
-put you in an awkward social circumstance." Perhaps we can call
-this "boyd's Law" [NOTE TO EDITOR: "boyd" is always lower-case] for
-danah [TO EDITOR: "danah" too!] boyd, the social scientist who has
+put you in an awkward social circumstance.'' Perhaps we can call
+this ``boyd's Law'' [NOTE TO EDITOR: ``boyd'' is always lower-case] for
+danah [TO EDITOR: ``danah'' too!] boyd, the social scientist who has
 studied many of these networks from the inside as a keen-eyed
 net-anthropologist and who has described the many ways in which
 social software does violence to sociability in a series of sharp
@@ -5917,7 +5969,7 @@ profiles, and all is well again until her boss, the school
 principal, signs up to the service and demands to be added to her
 friends list. The fact that she doesn't like her boss doesn't
 really matter: in the social world of Friendster and its progeny,
-it's perfectly valid to demand to be "friended" in an explicit
+it's perfectly valid to demand to be ``friended'' in an explicit
 fashion that most of us left behind in the fourth grade. Now that
 her boss is on her friends list, our teacher-friend's buddies
 naturally assume that she is one of the tribe and begin to send her
@@ -5927,7 +5979,7 @@ funtimes.
 In the real world, we don't articulate our social networks. Imagine
 how creepy it would be to wander into a co-worker's cubicle and
 discover the wall covered with tiny photos of everyone in the
-office, ranked by "friend" and "foe," with the top eight friends
+office, ranked by ``friend'' and ``foe,'' with the top eight friends
 elevated to a small shrine decorated with Post-It roses and hearts.
 And yet, there's an undeniable attraction to corralling all your
 friends and friendly acquaintances, charting them and their
@@ -5942,7 +5994,7 @@ the fruit the rest of us have foraged.
 Keeping track of our social relationships is a serious piece of
 work that runs a heavy cognitive load. It's natural to seek out
 some neural prosthesis for assistance in this chore. My fiancee
-once proposed a "social scheduling" application that would watch
+once proposed a ``social scheduling'' application that would watch
 your phone and email and IM to figure out who your pals were and
 give you a little alert if too much time passed without your
 reaching out to say hello and keep the coals of your relationship
@@ -5959,10 +6011,10 @@ on Facebook, there's a guy who beat me up on a weekly basis through
 the whole seventh grade but now wants to be my buddy; or the crazy
 person who was fun in college but is now kind of sad; or the creepy
 ex-co-worker who I'd cross the street to avoid but who now wants to
-know, "Am I your friend?" yes or no, this instant, please.
+know, ``Am I your friend?'' yes or no, this instant, please.
 
-It's not just Facebook and it's not just me. Every "social
-networking service" has had this problem and every user I've spoken
+It's not just Facebook and it's not just me. Every ``social
+networking service'' has had this problem and every user I've spoken
 to has been frustrated by it. I think that's why these services are
 so volatile: why we're so willing to flee from Friendster and into
 MySpace's loving arms; from MySpace to Facebook. It's socially
@@ -5980,7 +6032,7 @@ precipitates your exodus will find you increases. Once that
 happens, poof, away you go -- and Facebook joins SixDegrees,
 Friendster and their pals on the scrapheap of net.history.
 
-\subsection{The Future of Internet Immune Systems}
+\section{The Future of Internet Immune Systems}
 
 (Originally published on InformationWeek's Internet Evolution,
 November 19, 2007)
@@ -6047,7 +6099,7 @@ optimist.
 The tripwire that locks you out was fired-and-forgotten two years
 ago by an anonymous sysadmin with root access on the whole network.
 The outsourced help-desk schlub who unlocks your account can’t even
-spell "tripwire." The same goes for the algorithm that cut off your
+spell ``tripwire.'' The same goes for the algorithm that cut off your
 credit card because you got on an airplane to a different part of
 the world and then had the audacity to spend your money. (I’ve
 resigned myself to spending \$50 on long-distance calls with
@@ -6072,7 +6124,7 @@ run 250,000-PC botnets). Still, there’s a terrible asymmetry in a
 world where defensive takedowns are automatic, but correcting
 mistaken takedowns is done by hand.
 
-\subsection{All Complex Ecosystems Have Parasites}
+\section{All Complex Ecosystems Have Parasites}
 
 (Paper delivered at the O'Reilly Emerging Technology Conference,
 San Diego, California, 16 March 2005)
@@ -6093,8 +6145,8 @@ Email is a sloppy, complicated ecosystem. It has organisms of
 sufficient diversity and sheer number as to beggar the imagination:
 thousands of SMTP agents, millions of mail-servers, hundreds of
 millions of users. That richness and diversity lets all kinds of
-innovative stuff happen: if you go to nytimes.com and "send a story
-to a friend," the NYT can convincingly spoof your return address on
+innovative stuff happen: if you go to nytimes.com and ``send a story
+to a friend,'' the NYT can convincingly spoof your return address on
 the email it sends to your friend, so that it appears that the
 email originated on your computer. Also: a spammer can harvest your
 email and use it as a fake return address on the spam he sends to
@@ -6170,7 +6222,7 @@ your phone, and you certainly can't lawfully make a
 hard-drive-based jukebox from your discs.
 
 The yearning for simple ecosystems is endemic among people who want
-to "fix" some problem of bad actors on the networks.
+to ``fix'' some problem of bad actors on the networks.
 
 Take interoperability: you might sell me a database in the
 expectation that I'll only communicate with it using your
@@ -6188,7 +6240,7 @@ different vendors. These companies produce software that lies --
 parasite software that fills niches left behind by other organisms,
 sometimes to those organisms' detriment.
 
-So we have "Trusted Computing," a system that's supposed to let
+So we have ``Trusted Computing,'' a system that's supposed to let
 software detect other programs' lies and refuse to play with them
 if they get caught out fibbing. It's a system that's based on
 torching the rainforest with all its glorious anarchy of tools and
@@ -6217,8 +6269,8 @@ no less than perfect compliance.
 
 The whole of DRM is a macrocosm for Trusted Computing. The DVB Copy
 Protection system relies on a set of rules for translating every
-one of its restriction states -- such as "copy once" and "copy
-never" -- to states in other DRM systems that are licensed to
+one of its restriction states -- such as ``copy once'' and ``copy
+never'' -- to states in other DRM systems that are licensed to
 receive its output. That means that they're signing up to review,
 approve and write special rules for every single entertainment
 technology now invented and every technology that will be invented
@@ -6239,8 +6291,8 @@ ago, I heard the VP of Technology for Warners give a presentation
 in Dublin on the need to adopt DRM for digital TV, and his
 money-shot, his big convincer of a slide went like this:
 
-"With advances in processing power, storage capacity and broadband
-access... EVERYBODY BECOMES A BROADCASTER!"
+``With advances in processing power, storage capacity and broadband
+access... EVERYBODY BECOMES A BROADCASTER!''
 
 Heaven forfend.
 
@@ -6256,10 +6308,10 @@ The razing of the rainforest has a cost. It's harder to send a
 legitimate email today than it ever was -- thanks to a world of
 closed SMTP relays. The cries for a mail-server monoculture grow
 more shrill with every passing moment. Just last week, it was a
-call for every mail-administrator to ban the "vacation" program
+call for every mail-administrator to ban the ``vacation'' program
 that sends out automatic responses informing senders that the
 recipient is away from email for a few days, because mailboxes that
-run vacation can cause "spam blowback" where accounts send their
+run vacation can cause ``spam blowback'' where accounts send their
 vacation notices to the hapless individuals whose email addresses
 the spammers have substituted on the email's Reply-To line.
 
@@ -6317,18 +6369,18 @@ You may succeed -- provided that your plans don't call for a simple
 ecosystem where only you get to provide value and no one else gets
 to play.
 
-\subsection{READ CAREFULLY}
+\section{READ CAREFULLY}
 
-(Originally published as "Shrinkwrap Licenses: An Epidemic Of
-Lawsuits Waiting To Happen" in InformationWeek, February 3, 2007)
-\emph{READ CAREFULLY. By reading this article, you agree, on behalf of your employer, to release me from all obligations and waivers arising from any and all NON-NEGOTIATED agreements, licenses, terms-of-service, shrinkwrap, clickwrap, browsewrap, confidentiality, non-disclosure, non-compete and acceptable use policies ("BOGUS AGREEMENTS") that I have entered into with your employer, its partners, licensors, agents and assigns, in perpetuity, without prejudice to my ongoing rights and privileges. You further represent that you have the authority to release me from any BOGUS AGREEMENTS on behalf of your employer.}
+(Originally published as ``Shrinkwrap Licenses: An Epidemic Of
+Lawsuits Waiting To Happen'' in InformationWeek, February 3, 2007)
+\emph{READ CAREFULLY. By reading this article, you agree, on behalf of your employer, to release me from all obligations and waivers arising from any and all NON-NEGOTIATED agreements, licenses, terms-of-service, shrinkwrap, clickwrap, browsewrap, confidentiality, non-disclosure, non-compete and acceptable use policies (``BOGUS AGREEMENTS'') that I have entered into with your employer, its partners, licensors, agents and assigns, in perpetuity, without prejudice to my ongoing rights and privileges. You further represent that you have the authority to release me from any BOGUS AGREEMENTS on behalf of your employer.}
 
-READ CAREFULLY -- all in caps, and what it means is, "IGNORE THIS."
+READ CAREFULLY -- all in caps, and what it means is, ``IGNORE THIS.''
 That's because the small print in the clickwrap, shrinkwrap,
 browsewrap and other non-negotiated agreements is both immutable
 and outrageous.
 
-Why read the "agreement" if you know that:
+Why read the ``agreement'' if you know that:
 
 1) No sane person would agree to its text, and
 
@@ -6339,7 +6391,7 @@ We seem to have sunk to a kind of playground system of forming
 contracts. There are those who will tell you that you can form a
 binding agreement just by following a link, stepping into a store,
 buying a product, or receiving an email. By standing there, shaking
-your head, shouting "NO NO NO I DO NOT AGREE," you agree to let me
+your head, shouting ``NO NO NO I DO NOT AGREE,'' you agree to let me
 come over to your house, clean out your fridge, wear your underwear
 and make some long-distance calls.
 
@@ -6354,13 +6406,13 @@ They're a close second to people who sell you software, or provide
 services over the Internet. There's a rubric to this -- you're
 getting a discount in exchange for signing onto an abusive
 agreement, but just try and find the software that \emph{doesn't}
-come with one of these "agreements" -- at any price.
+come with one of these ``agreements'' -- at any price.
 
 For example, Vista, Microsoft's new operating system, comes in a
 rainbow of flavors varying in price from \$99 to \$399, but all of
 them come with the same crummy terms of service, which state that
-"you may not work around any technical limitations in the
-software," and that Windows Defender, the bundled anti-malware
+``you may not work around any technical limitations in the
+software,'' and that Windows Defender, the bundled anti-malware
 program, can delete any program from your hard drive that Microsoft
 doesn't like, even if it breaks your computer.
 
@@ -6404,9 +6456,9 @@ every employee at your office from clicking on any link, installing
 any program, creating accounts, signing for parcels -- even doing a
 run to Best Buy for some CD blanks, have you \emph{seen} the
 fine-print on their credit-card slips? After all, these people are
-entering into "agreements" on behalf of their employer --
-agreements to allow spyware onto your network, to not "work around
-any technical limitations in their software," to let malicious
+entering into ``agreements'' on behalf of their employer --
+agreements to allow spyware onto your network, to not ``work around
+any technical limitations in their software,'' to let malicious
 software delete arbitrary files from their systems.
 
 So far, very few of us have been really bitten in the ass by EULAs,
@@ -6431,20 +6483,20 @@ destruction.
 
 If a shakedown artist can buy up some bogus patents and use them to
 put the screws to you, then it's only a matter of time until the
-same grifters latch onto the innumerable "agreements" that your
+same grifters latch onto the innumerable ``agreements'' that your
 company has formed with a desperate dot-bomb looking for an exit
 strategy.
 
-More importantly, these "agreements" make a mockery of the law and
+More importantly, these ``agreements'' make a mockery of the law and
 of the very \emph{idea} of forming agreements. Civilization
-starts with the idea of a real agreement -- for example, "We crap
-\emph{here} and we sleep \emph{there}, OK?" -- and if we reduce
+starts with the idea of a real agreement -- for example, ``We crap
+\emph{here} and we sleep \emph{there}, OK?'' -- and if we reduce
 the noble agreement to a schoolyard game of no-takebacks, we erode
 the bedrock of civilization itself.
 
-\subsection{World of Democracycraft}
+\section{World of Democracycraft}
 
-(Originally published as "Why Online Games Are Dictatorships,"
+(Originally published as ``Why Online Games Are Dictatorships,''
 InformationWeek, April 16, 2007)
 
 Can you be a citizen of a virtual world? That's the question that I
@@ -6463,7 +6515,7 @@ I spend a lot of time in Disney parks. I even own a share of Disney
 stock. But I don't flatter myself that I'm a citizen of Disney
 World. I know that when I go to Orlando, the Mouse is going to
 fingerprint me and search my bags, because the Fourth Amendment
-isn't a "Disney value."
+isn't a ``Disney value.''
 
 Disney even has its own virtual currency, symbolic tokens called
 Disney Dollars that you can spend or exchange at any Disney park.
@@ -6494,31 +6546,31 @@ Here are some examples of the difference between being a citizen
 and a customer:
 
 In January, 2006 a World of Warcraft moderator shut down an
-advertisement for a "GBLT-friendly" guild. This was a virtual club
-that players could join, whose mission was to be "friendly" to
-"Gay/Bi/Lesbian/Transgendered" players. The WoW moderator -- and
+advertisement for a ``GBLT-friendly'' guild. This was a virtual club
+that players could join, whose mission was to be ``friendly'' to
+``Gay/Bi/Lesbian/Transgendered'' players. The WoW moderator -- and
 Blizzard management -- cited a bizarre reason for the shut-down:
 
-"While we appreciate and understand your point of view, we do feel
+``While we appreciate and understand your point of view, we do feel
 that the advertisement of a 'GLBT friendly' guild is very likely to
 result in harassment for players that may not have existed
 otherwise. If you will look at our policy, you will notice the
 suggested penalty for violating the Sexual Orientation Harassment
 Policy is to 'be temporarily suspended from the game.' However, as
 there was clearly no malicious intent on your part, this penalty
-was reduced to a warning."
+was reduced to a warning.''
 
 Sara Andrews, the guild's creator, made a stink and embarrassed
 Blizzard (the game's parent company) into reversing the decision.
 
 In 2004, a player in the MMO EVE Online declared that the game's
-creators had stacked the deck against him, called EVE, "a poorly
+creators had stacked the deck against him, called EVE, ``a poorly
 designed game which rewards the greedy and violent, and punishes
-the hardworking and honest." He was upset over a change in the game
+the hardworking and honest.'' He was upset over a change in the game
 dynamics which made it easier to play a pirate and harder to play a
 merchant.
 
-The player, "Dentara Rask," wrote those words in the preamble to a
+The player, ``Dentara Rask,'' wrote those words in the preamble to a
 tell-all memoir detailing an elaborate Ponzi scheme that he and an
 accomplice had perpetrated in EVE. The two of them had bilked EVE's
 merchants out of a substantial fraction of the game's total GDP and
@@ -6534,14 +6586,14 @@ all else fails, we can withdraw all our money from the bank, sell
 our houses, and move to a different country.
 
 But in virtual worlds, these recourses are off-limits. Virtual
-worlds can and do freeze players' wealth for "cheating" (amassing
+worlds can and do freeze players' wealth for ``cheating'' (amassing
 gold by exploiting loopholes in the system), for participating in
 real-world gold-for-cash exchanges (eBay recently put an end to
 this practice on its service), or for violating some other rule.
 The rules of virtual worlds are embodied in EULAs, not
-Constitutions, and are always "subject to change without notice."
+Constitutions, and are always ``subject to change without notice.''
 
-So what does it mean to be "rich" in Second Life? Sure, you can
+So what does it mean to be ``rich'' in Second Life? Sure, you can
 have a thriving virtual penis business in game, one that returns a
 healthy sum of cash every month. You can even protect your profits
 by regularly converting them to real money. But if you lose an
@@ -6552,10 +6604,10 @@ contingent. Piss off the wrong exec at Linden Labs, Blizzard, Sony
 Online Entertainment, or Sularke and your little in-world business
 could disappear for good.
 
-Well, what of it? Why not just create a "democratic" game that has
+Well, what of it? Why not just create a ``democratic'' game that has
 a constitution, full citizenship for players, and all the
 prerequisites for stable wealth? Such a game would be open source
-(so that other, interoperable "nations" could be established for
+(so that other, interoperable ``nations'' could be established for
 you to emigrate to if you don't like the will of the majority in
 one game-world), and run by elected representatives who would
 instruct the administrators and programmers as to how to run the
@@ -6564,14 +6616,14 @@ aviation -- in a virtual world, the equivalent agency would
 determine the physics of flight.
 
 The question is, would this game be any \emph{fun}? Well,
-democracy itself is pretty fun -- where "fun" means "engrossing and
-engaging." Lots of people like to play the democracy game, whether
+democracy itself is pretty fun -- where ``fun'' means ``engrossing and
+engaging.'' Lots of people like to play the democracy game, whether
 by voting every four years or by moving to K Street and setting up
 a lobbying operation.
 
 But video games aren't quite the same thing. Gameplay conventions
-like "grinding" (repeating a task), "leveling up" (attaining a
-higher level of accomplishment), "questing" and so on are functions
+like ``grinding'' (repeating a task), ``leveling up'' (attaining a
+higher level of accomplishment), ``questing'' and so on are functions
 of artificial scarcity. The difference between a character with
 10,000,000 gold pieces and a giant, rare, terrifying crossbow and a
 newbie player is which pointers are associated with each
@@ -6625,7 +6677,7 @@ I sure hope so. These online worlds are endlessly diverting places.
 It'd be a shame if it turned out that cyberspace was a dictatorship
 -- benevolent or otherwise.
 
-\subsection{Snitchtown}
+\section{Snitchtown}
 
 (Originally published in Forbes.com, June 2007)
 
@@ -6678,8 +6730,8 @@ expression. To make it possible to see without seeing.
 There is one city dweller that doesn't respect this delicate social
 contract: the closed-circuit television camera. Ubiquitous and
 demanding, CCTVs don't have any visible owners. They ... occur.
-They exist in the passive voice, the "mistakes were made" voice:
-"The camera recorded you."
+They exist in the passive voice, the ``mistakes were made'' voice:
+``The camera recorded you.''
 
 They are like an emergent property of the system, of being afraid
 and looking for cheap answers. And they are everywhere: In London,
@@ -6708,8 +6760,8 @@ dark, just a CCTV to record the fare evaders.
 
 Now London city councils are installing new CCTVs with
 loudspeakers, operated by remote coppers who can lean in and make a
-speaker bark at you, "Citizen, pick up your litter." "Stop leering
-at that woman." "Move along."
+speaker bark at you, ``Citizen, pick up your litter.'' ``Stop leering
+at that woman.'' ``Move along.''
 
 Yeah, that'll work.
 
@@ -6748,17 +6800,7 @@ pockets.
 They're our cities and our institutions. And we choose the future
 we want to live in.
 
-\subsection{Hope you enjoyed it! The actual, physical object that corresponds to this book is superbly designed, portable, and makes a great gift:}
-
-\href{http://craphound.com/content/buy}{http://craphound.com/content/buy}
-
-If you would rather make a donation, you can buy a copy of the book
-for a worthy school, library or other institution of your
-choosing:
-
-\href{http://craphound.com/content/donate}{http://craphound.com/content/donate}
-
-\subsection{About the Author}
+\section{About the Author}
 
 Cory Doctorow (craphound.com) is an award-winning novelist,
 activist, blogger and journalist. He is the co-editor of Boing
@@ -6783,8 +6825,8 @@ standards-setting and regulatory and legal battles in countries all
 over the world. In 2006/2007, he was the inaugural Canada/US
 Fulbright Chair in Public Diplomacy at the Annenberg Center at the
 University of Southern California. In 2007, he was also named one
-of the World Economic Forum's "Young Global Leaders" and one of
-Forbes Magazine's top 25 "Web Celebrities."
+of the World Economic Forum's ``Young Global Leaders'' and one of
+Forbes Magazine's top 25 ``Web Celebrities.''
 
 Born in Toronto, Canada in 1971, he is a four-time university
 dropout. He now resides in London, England with his wife and baby
