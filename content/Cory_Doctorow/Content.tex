@@ -4,10 +4,19 @@
   \vrule width 0pt}
 \renewcommand{\chapter}[1]{}
 \renewcommand{\contentsname}{}
+
 \newenvironment{parlist}{
   \setlength{\parindent}{0pt}
   \setlength{\parskip}{0.5\baselineskip plus 0.2\baselineskip} 
 }{}
+
+\newenvironment{ibox}[1]{
+  \setlength{\parindent}{0pt}
+  \par
+  #1
+  \par
+  \addtolength{\leftskip}{\baselineskip}
+}{\par}
 
 \hyphenation{mo-no-poly car-ne-gie pro-ject pro-gress mo-dem rou-lette
   browse-wrap Use-net mon-as-tery mo-dems}
@@ -3484,33 +3493,38 @@ get in touch with her Buddha nature?
 In meta-utopia, the lab-coated guardians of epistemology sit down
 and rationally map out a hierarchy of ideas, something like this:
 
-Nothing:
+\begin{itemize}
+  \item Nothing:
+  \begin{itemize}
+    \item Black holes
+  \end{itemize}
+  \item Everything:
+  \begin{itemize}
+    \item Matter:
+    \begin{itemize}
+      \item Earth:
+      \begin{itemize}
+        \item Planets
 
-Black holes
+        \item Washing Machines
+      \end{itemize}
+      \item Wind:
+      \begin{itemize}
+        \item Oxygen
 
-Everything:
+        \item Poo-gas
+      \end{itemize}
+      \item Fire:
+      \begin{itemize}
+        \item Nuclear fission
 
-Matter:
+        \item Nuclear fusion
 
-Earth:
-
-Planets
-
-Washing Machines
-
-Wind:
-
-Oxygen
-
-Poo-gas
-
-Fire:
-
-Nuclear fission
-
-Nuclear fusion
-
-``Mean Devil Woman'' Louisiana Hot-Sauce
+        \item ``Mean Devil Woman'' Louisiana Hot-Sauce
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
 
 In a given sub-domain, say, Washing Machines, experts agree on
 sub-hierarchies, with classes for reliability, energy consumption,
@@ -3525,26 +3539,33 @@ necessarily implies the importance of some axes over others. A
 manufacturer of small, environmentally conscious washing machines
 would draw a hierarchy that looks like this:
 
-Energy consumption:
+\medskip
+\begin{ibox}{Energy consumption:}
+  \begin{ibox}{Water consumption:}
+    \begin{ibox}{Size:}
+      \begin{ibox}{Capacity:}
+        \begin{ibox}{Reliability}
+        \end{ibox}
+      \end{ibox}
+    \end{ibox}
+  \end{ibox}
+\end{ibox}
+\medskip
 
-Water consumption:
-
-Size:
-
-Capacity:
-
-Reliability
-
+\noindent
 While a manufacturer of glitzy, feature-laden washing machines
 would want something like this:
 
-Color:
-
-Size:
-
-Programmability:
-
-Reliability
+\medskip
+\begin{ibox}{Color:}
+  \begin{ibox}{Size:}
+    \begin{ibox}{Programmability:}
+      \begin{ibox}{Reliability}
+      \end{ibox}
+    \end{ibox}
+  \end{ibox}
+\end{ibox}
+\medskip
 
 The conceit that competing interests can come to easy accord on a
 common vocabulary totally ignores the power of organizing
