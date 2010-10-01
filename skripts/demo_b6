@@ -1,9 +1,11 @@
 #!/bin/sh
 
+bbox="0 0 596 842"  #A4
+
 if [ -z "$2" ]; then 
   output=demo_$(basename $1)
 else
   output=$2
 fi
 
-psselect -p 2-,1 $1 | pstops -pb5 "2:0L(1w,0)+1L(1w,0.5h)" | strippagesize >$output
+psselect -p 2-,1 $1 | pstops -pb5 "2:0L(1w,0)+1L(1w,0.5h)" | strippagesize "$bbox" a4 >$output

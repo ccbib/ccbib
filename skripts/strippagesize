@@ -1,7 +1,12 @@
 #!/bin/sh
 
-if [ -z "$1" ]; then
-  grep -v "BoundingBox\\|DocumentPaperSizes" 
+if [ $2 ]; then
+  sed -e "/^%%BoundingBox:/a\\%%DocumentPaperSizes: $2" \
+      -e "s/^%%BoundingBox: .*$/%%BoundingBox: $1/" \
+      -e "/^%%DocumentPaperSizes:/d"
+elif [ $1 ]; then
+  sed -e "s/^%%BoundingBox: .*$/%%BoundingBox: $1/" \
+      -e "/^%%DocumentPaperSizes:/d"
 else
-  sed -e "s/^%%BoundingBox: .*$/%%BoundingBox: $1/"
+  grep -v "BoundingBox\\|DocumentPaperSizes" 
 fi

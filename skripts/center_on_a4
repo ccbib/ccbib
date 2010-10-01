@@ -22,4 +22,4 @@ new_bb="0 0 $W $H"
 xoff=$((($W-$w)/2))
 yoff=$((($H-$h)/2))
 
-pstops "1:0($xoff,$yoff)" $1 | strippagesize "$new_bb" >$output
+pstops "1:0($xoff,$yoff)" $1 | strippagesize "$new_bb" a4 >$output
