@@ -1,39 +1,47 @@
-\documentclass{memoir}
-
-\usepackage[latin1]{inputenc}
+%\documentclass{memoir}
+%
+%\usepackage[latin1]{inputenc}
 \usepackage{url}
-\usepackage{hyperref}
-\usepackage{palatino}
-
-\maxsecnumdepth{part}
-\chapterstyle{demo}
-
-\setlength\parindent{0pt}
-\setlength\parskip{6pt}
-
-\setlength\epigraphwidth\textwidth
-
-%% Enable hyphenation and neat justification with typewriter fonts
-\renewcommand\texttt[1]{{\ttfamily\hyphenchar\font45%
-\fontdimen3\font=.167em\fontdimen4\font=.056em\relax #1}}
-%% Same, but with ragged justification
-%\renewcommand\texttt[1]{{\ttfamily\hyphenchar\font45\relax #1}}
-
-\makepagestyle{lbrother}
-\makerunningwidth{lbrother}{\textwidth}
-%\makeheadposition{lbrother}{flushright}{flushleft}{}{}
-\makeheadrule{lbrother}{\textwidth}{\normalrulethickness}
-\makeevenhead{lbrother}{\thepage}{}{Cory Doctorow}
-\makeoddhead{lbrother}{Little Brother}{}{\thepage}
-\pagestyle{lbrother}
+%\usepackage{hyperref}
+%\usepackage{palatino}
+%
+%\maxsecnumdepth{part}
+%\chapterstyle{demo}
+%
+%\setlength\parindent{0pt}
+%\setlength\parskip{6pt}
+%
+%\setlength\epigraphwidth\textwidth
+%
+%%% Enable hyphenation and neat justification with typewriter fonts
+%\renewcommand\texttt[1]{{\ttfamily\hyphenchar\font45%
+%\fontdimen3\font=.167em\fontdimen4\font=.056em\relax #1}}
+%%% Same, but with ragged justification
+%%\renewcommand\texttt[1]{{\ttfamily\hyphenchar\font45\relax #1}}
+%
+%\makepagestyle{lbrother}
+%\makerunningwidth{lbrother}{\textwidth}
+%%\makeheadposition{lbrother}{flushright}{flushleft}{}{}
+%\makeheadrule{lbrother}{\textwidth}{\normalrulethickness}
+%\makeevenhead{lbrother}{\thepage}{}{Cory Doctorow}
+%\makeoddhead{lbrother}{Little Brother}{}{\thepage}
+%\pagestyle{lbrother}
 
 \newcommand\edialog[1]{\textgreater \texttt{#1}}
+
+\newcommand{\fancybreak}[1]{
+\begin{center}
+#1
+\end{center}
+}
+
+\newcommand{\epigraph}[2]{\emph{#1}\smallskip \emph{#2}}
 
 \begin{document}
 
 \frontmatter
 
-\begin{titlingpage}
+%\begin{titlingpage}
 
 \title{Little Brother}
 \author{Cory Doctorow
@@ -41,7 +49,7 @@
 \date{}
 
 \maketitle
-\sloppy
+%\sloppy
 
 READ THIS FIRST
 
@@ -78,7 +86,7 @@ More info here: \\
 
 See the end of this file for the complete legalese.
 
-\end{titlingpage}
+%\end{titlingpage}
 
 \chapter{INTRODUCTION}
 
@@ -4762,7 +4770,7 @@ We were sitting in the grass in Dolores Park after school, watching
 the dogs chase frisbees.
 
 Van had stopped at home and changed into an old t-shirt for one of her
-favorite Brazilian tecno-brega bands, Carioca Proibid„o -- the
+favorite Brazilian tecno-brega bands, Carioca Proibid√£o -- the
 forbidden guy from Rio. She'd gotten the shirt at a live show we'd all
 gone to two years before, sneaking out for a grand adventure down at
 the Cow Palace, and she'd sprouted an inch or two since, so it was
@@ -13820,7 +13828,7 @@ against things the designers didn't think of.
 This means that all of us have to analyze the security that other
 people design.  And surprisingly often, one of us breaks it.  Marcus's
 exploits aren't far-fetched; that kind of thing happens all the time.
-Go onto the net and look up “bump key” or “Bic pen Kryptonite lock”;
+Go onto the net and look up ``bump key'' or ``Bic pen Kryptonite lock'';
 you'll find a couple of really interesting stories about seemingly
 strong security defeated by pretty basic technology.
 
