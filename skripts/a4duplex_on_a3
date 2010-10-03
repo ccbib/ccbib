@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#bbox="0 0 596 842"  #A4
+bbox="0 0 842 1191" #A3
+
+if [ -z "$2" ]; then 
+  output=A3_$(basename $1)
+else
+  output=$2
+fi
+
+pstops -pa3 "2:0L(1w,0)+1L(1w,0.5h)" $1 | strippagesize "$bbox" a3 >$output
+
