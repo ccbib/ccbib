@@ -27,7 +27,14 @@
 %\makeoddhead{lbrother}{Little Brother}{}{\thepage}
 %\pagestyle{lbrother}
 
-\newcommand\edialog[1]{\textgreater \texttt{#1}}
+\newcommand\edialog[1]{
+{
+  \setlength\parindent{0pt}
+  \setlength\hangindent{10pt}
+  \raggedright
+  \textgreater\ \texttt{#1}
+  \par
+}}
 
 \newcommand{\fancybreak}[1]{
 \begin{center}
@@ -35,10 +42,14 @@
 \end{center}
 }
 
-\newcommand{\epigraph}[2]{\emph{#1}\smallskip \emph{#2}}
+\newcommand{\epigraph}[2]{
+  \emph{#1}
+  \par\smallskip\noindent
+  \emph{#2}
+  \par\medskip\noindent}
 
 \begin{document}
-
+\raggedbottom
 \frontmatter
 
 %\begin{titlingpage}
@@ -51,11 +62,12 @@
 \maketitle
 %\sloppy
 
-READ THIS FIRST
+\section{READ THIS FIRST}
 
 This book is distributed under a Creative Commons
 Attribution-NonCommercial-ShareAlike 3.0 license. That means:
 
+\noindent
 You are free:
 
 \begin{itemize}
@@ -63,6 +75,7 @@ You are free:
 \item  to Remix -- to adapt the work
 \end{itemize}
 
+\noindent
 Under the following conditions:
 
 \begin{itemize}
@@ -81,14 +94,16 @@ Under the following conditions:
   permission
 \end{itemize}
 
+\noindent
 More info here: \\
 \url{http://creativecommons.org/licenses/by-nc-sa/3.0/}
 
+\noindent
 See the end of this file for the complete legalese.
 
 %\end{titlingpage}
 
-\chapter{INTRODUCTION}
+\section{INTRODUCTION}
 
 I wrote Little Brother in a white-hot fury between May 7, 2007 and
 July 2, 2007: exactly eight weeks from the day I thought it up to the
@@ -178,7 +193,7 @@ This book is meant to be part of the conversation about what an
 information society means: does it mean total control, or unheard-of
 liberty? It's not just a noun, it's a verb, it's something you do.
 
-\chapter{DO SOMETHING}
+\section{DO SOMETHING}
 
 This book is meant to be something you do, not just something you
 read. The technology in this book is either real or nearly real. You
@@ -211,7 +226,7 @@ UK edition (see below) of the book, and I'll be putting them online as
 well. Send me your stories at \url{doctorow@craphound.com}, with the subject
 line ``Abuses of Authority''.
 
-\chapter{GREAT BRITAIN}
+\section{GREAT BRITAIN}
 
 I'm a Canadian, and I've lived in lots of places (including San
 Francisco, the setting for Little Brother), and now I love in London,
@@ -255,7 +270,7 @@ to be notified when the book goes on sale, just drop me an email at
 \url{doctorow@craphound.com} with the subject line LITTLE BROTHER UK
 EDITION.
 
-\chapter{OTHER EDITIONS}
+\section{OTHER EDITIONS}
 
 My agent, Russell Galen (and his sub-agent Danny Baror) did an amazing
 job of pre-selling rights to Little Brother in many languages and
@@ -266,7 +281,8 @@ edition you're hoping to see, or see
 \url{http://craphound.com/littlebrother/buy/} for links to buy all the
 currently shipping editions.
 
-$\bullet$ Audiobook from Random House:
+\begin{itemize}
+\item Audiobook from Random House:
 \url{http://www.randomhouse.com/audio/littlebrotheraudiobook}
 
 A condition of my deal with Random House is that they're not allowed
@@ -278,8 +294,8 @@ and iTunes only carries Audible audiobooks. However, you can buy the
 MP3 file direct from RandomHouse or many other fine etailers, or
 through this widget:
 \url{http://www.zipidee.com/zipidAudioPreview.aspx?aid=c5a8e946-fd2c-4b9e-a748-f297bba17de8}
-
-$\bullet$ My foreign rights agent, Danny Baror, has presold a number of
+\end{itemize}
+My foreign rights agent, Danny Baror, has presold a number of
 foreign editions:
 \begin{itemize}
 \item Greece: Pataki
@@ -292,7 +308,7 @@ No publication dates yet for these, but I'll keep updating this file
 as more information is available. You can also subscribe to my mailing
 list for more info.
 
-\chapter{THE COPYRIGHT THING}
+\section{THE COPYRIGHT THING}
 
 The Creative Commons license at the top of this file probably tipped
 you off to the fact that I've got some pretty unorthodox views about
@@ -465,7 +481,7 @@ the swimming pool. If the choice is between allowing copying or being
 a frothing bully lashing out at anything he can reach, I choose the
 former.
 
-\chapter{DONATIONS AND A WORD TO TEACHERS AND LIBRARIANS}
+\section{DONATIONS AND A WORD TO TEACHERS AND LIBRARIANS}
 
 Every time I put a book online for free, I get emails from readers who
 want to send me donations for the book. I appreciate their generous
@@ -512,11 +528,11 @@ thank you on the donate page.
 I have no idea if this will end up with hundreds, dozens or just a few
 copies going out -- but I have high hopes!
 
-\chapter{DEDICATION}
+\section{DEDICATION}
 
 For Alice, who makes me whole
 
-\chapter{QUOTES}
+\section{QUOTES}
 
 ``A rousing tale of techno-geek rebellion, as necessary and dangerous
 as file sharing, free speech, and bottled water on a plane.''
@@ -612,7 +628,7 @@ world, I especially hope that teenagers and young adults will read it
 
 Dan Gillmor, author of WE, THE MEDIA
 
-\chapter{ABOUT THE BOOKSTORE DEDICATIONS}
+\section{ABOUT THE BOOKSTORE DEDICATIONS}
 
 Every chapter of this file has been dedicated to a different
 bookstore, and in each case, it's a store that I love, a store that's
@@ -13743,9 +13759,9 @@ hair.
 She kissed me then, and I kissed her back, and it was some time before
 we went out for that burrito.
 
-\chapter{Afterword} 
-
-by Bruce Schneier
+\backmatter
+\section{Afterword
+by Bruce Schneier}
 
 I'm a security technologist.  My job is making people secure.
 
@@ -13853,9 +13869,8 @@ Hack one of them.
 
 Bruce Schneier \url{http://www.schneier.com}
 
-\chapter{Afterword}
-
- by Andrew ``bunnie'' Huang, Xbox Hacker
+\section{Afterword
+by Andrew ``bunnie'' Huang, Xbox Hacker}
  
 Hackers are explorers, digital pioneers. It's in a hacker's nature to
 question conventions and be tempted by intricate problems. Any complex
@@ -13941,8 +13956,7 @@ society, no matter how great the threats are on the horizon.
 
 Be like M1k3y: step out the door and dare to be free.
 
-\chapter{Bibliography}
-
+\section{Bibliography}
 No writer creates from scratch -- we all engage in what Isaac Newton
 called ``standing on the shoulders of giants.'' We borrow, plunder and
 remix the art and culture created by those around us and by our
@@ -13955,6 +13969,9 @@ Hacking is a great subject. All science relies on telling other people
 what you've done so that they can verify it, learn from it, and
 improve on it, and hacking is all about that process, so there's
 plenty published on the subject.
+
+{
+\setlength{\parskip}{0.5\baselineskip plus 0.5\baselineskip}
 
 Start with Andrew ``Bunnie'' Huang's ``Hacking the Xbox,'' (No Starch
 Press, 2003) a wonderful book that tells the story of how Bunnie, then
@@ -14126,8 +14143,9 @@ Yesterday'' (Razorbill, 2004), which follows the adventures of cool
 hunters and counterculture jammers. Scott and his wife Justine
 Larbalestier were my partial inspiration to write a book for young
 adults -- as was Kathe Koja. Thanks, guys.
+}
 
-\chapter{Acknowledgments}
+\section{Acknowledgments}
 
 This book owes a tremendous debt to many writers, friends, mentors,
 and heroes who made it possible.
@@ -14157,7 +14175,7 @@ Jim Kelly, Damon Knight, Scott Edelman
 Thank you all for giving me the tools to think and write about these
 ideas.
 
-\chapter{Creative Commons}
+\section{Creative Commons}
 
 Creative Commons Legal Code
 
@@ -14576,17 +14594,13 @@ this trademark restriction does not form part of this License.
 
 
 Little Brother
-
 by
-
 Cory Doctorow
-
 is licensed under a 
-
 Creative Commons Attribution-Noncommercial-Share Alike 3.0 United
 States License.
 
-\LaTeX{} by Mikael Vejdemo Johansson.
+\LaTeX{} by Mikael Vejdemo Johansson. Reworked and adapted by Harald Geyer.
 
 
 \end{document}
