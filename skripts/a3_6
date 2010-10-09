@@ -10,7 +10,7 @@ fi
 
 v_posstring="6:0L(0.5w,0)+1L(0.5w,14cm)+2L(0.5w,28cm)+3L(1w,0)+4L(1w,14cm)+5L(1w,28cm)"
 
-h_posstring="6:0L(0.5w,0.5cm)+1L(0.5w,14.5cm)+2L(0.5w,28.5cm)+3L(1w,0.5cm)+4L(1w,14.5cm)+5L(1w,28.5cm)"
+h_posstring="6:2L(0.5w,0.5cm)+1L(0.5w,14.5cm)+0L(0.5w,28.5cm)+5L(1w,0.5cm)+4L(1w,14.5cm)+3L(1w,28.5cm)"
 
 pstops 2:0 $1 | mypsbook -g6 | pstops -pa3 "$v_posstring" | strippagesize "$bbox" a3 >v_$output
 pstops 2:1 $1 | mypsbook -g6 | pstops -pa3 "$h_posstring" | strippagesize "$bbox" a3 >h_$output
