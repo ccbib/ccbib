@@ -1,6 +1,6 @@
 # Was die Creative Commons Bibliothek ist
 
-Wir wollen Texte, die im Internet frei verfügbar sind weil sie entweder
+Wir wollen Texte, die im Internet frei verfügbar sind, weil sie entweder
 unter einer freien Lizenz stehen oder das Urheberrecht bereits
 verjährt ist, auch in gedruckter Form zugänglich machen.
 
