@@ -13,11 +13,11 @@ möglich zurück
 Es kann passieren, dass alle Exemplare verborgt sind, und wir wissen in
 diesem Fall auch nicht, wann wir das nächste Exemplar zurückbekommen. Es 
 ist deine Entscheidung, ob du warten willst oder ob du ein neues Exemplar
-drucken willst.
+druckst.
 
 Wenn du dich für das Drucken entscheidest, dann helfen wir dir natürlich
 beim Drucken und Binden. Besonders beim ersten Mal brauchst du also
-nichts außer das Interesse zu lernen wie Bücher hergestellt werden können.
+nichts außer das Interesse zu lernen, wie Bücher hergestellt werden können.
 Außerdem kannst du die Gestaltung des Buchs - also Format, Schriftgröße,
 Layout, Cover, etc. selbst bestimmen. Wir haben dafür auch schon einige
 Standardvorlagen vorbereitet. Ob du das Buch, das du produzierst, der
@@ -31,22 +31,24 @@ Druckerfarbe, etc.) ersetzt.
 
 ## Ein neues Buch in die CCBib aufnehmen
 
-Bevor ein Buch das erste Mal gedruckt werden kann, sind einige
+Bevor ein Buch das erste Mal gedruckt werden kann sind einige
 Vorbereitungsarbeiten nötig: Im Internet sind Texte typischerweise
-als HTML-Datei vorhanden. Um daraus einen Druck von hocher Qualität
-zu bekommen muss der Text in ein Dateiformat, das sich für Computersatz
-eignet, umgewandelt werden. Wir versuchen das, so gut es geht zu
+als HTML-Datei vorhanden. Um daraus einen Druck von hoher Qualität
+zu bekommen, muss der Text in ein Dateiformat, das sich für Computersatz
+eignet, umgewandelt werden. Wir versuchen das so gut es geht zu
 automatisieren, aber die Erfahrung zeigt, dass ein gewisses Maß an
 manueller Arbeit notwendig ist. Außerdem muss das Ergebnis dieses
 Umwandlungsprozess nocheinmal gesichtet werden bevor es Sinn macht
 zu drucken.
 
-Grundsätzlich können alle legal druckbaren Texte in die Bibliothek
+Grundsätzlich können alle legal (das bezieht sich primär auf unser extrem
+restriktives Urheberrecht) druckbaren Texte in die Bibliothek
 aufgenommen werden, sobald jemand die oben genannten Vorbereitungsarbeiten
 erledigt hat. Leider ist dafür ein gewisses Maß an Arbeit, Wissen
-und Erfahrung notwendig. Wir bemühen uns, dieses Wissen zu vermitteln,
+und Erfahrung notwendig. Wir bemühen uns dieses Wissen zu vermitteln,
 aber es ist klar, dass wir in den meisten Fällen helfen müssen. Wir
 versuchen diesen Prozess künftig einfacher und unkomplizierter zu machen.
 Es ist unser Anspruch, dass nicht wir entscheiden welche Texte
 durch die Bibliothek verfügbar sind, sondern jene, die diese
-Texte tatsächlich lesen bzw. drucken wollen.
+Texte tatsächlich lesen bzw. drucken wollen. -- Trotzdem entscheidet
+natürlich jeder selbst, welche Texte er mit der eigenen Arbeit unterstützt.

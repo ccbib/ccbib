@@ -1,19 +1,19 @@
 # Warum das Alles? Warum gerade in der Form?
 
 Das Konzept der Creative-Commons Bibliothek, wie wir es versuchen
-umzusetzen hat ein paar Eigenschaften, die uns mehr oder weniger gut
+umzusetzen, hat ein paar Eigenschaften, die uns mehr oder weniger gut
 gefallen:
 
 * Es gibt keine (zentrale) Instanz, die entscheidet welche Texte
   in die Bibliothek aufgenommen werden. 
-* Niemand kann die Aufname eines freien Textes blockieren.
+* Niemand kann die Aufnahme eines freien Textes blockieren.
 * Es gibt keinen Verwaltungsaufwand darüber wer wann welches Buch
-  ausgebort hat und ob es schon zurück ist oder nicht.
+  ausgeborgt hat und ob es schon zurück ist oder nicht.
 * Jeder entscheidet selbst wie und wieviel er mitarbeitet. Jeder kann
   über das Produkt seiner Arbeit frei bestimmen - sowohl was die Form
   betrifft wie auch die Verwendung.
-* Die klassische Arbeitsteilung (Autor - Verleger - Typograph - Setzer -
-  Drucker - Binder - Händler - Leser), wie sie für kapitalistische
+* Die klassische Arbeitsteilung (Autor - Verlegerin - Typograph - Setzerin -
+  Drucker - Binderin - Händler - Leser), wie sie für kapitalistische
   Produktionsverhältnisse typisch ist, wird durchbrochen. Stattdessen
   gibt es einen selbstregulierenden Prozess, der von den Interessen der
   Beteiligten ausgeht.
@@ -34,7 +34,7 @@ Freie Software ist ein beeindruckendes Beispiel dafür, was mit
 Solidarökonomie alles möglich ist. Dort aktiv mitzumachen ist eine
 große Erfahrung, die die Zuversicht erzeugt, dass eine andere
 Welt tatsächlich möglich ist. Leider stellt das dafür nötige Wissen
-doch eine schwere Anfangshürde dar - wir hoffen, die Bibliothek
+doch eine schwere Anfangshürde dar - wir hoffen, dass die Bibliothek
 ein ähnliches Gefühl vermitteln kann mit geringerem Lernaufwand.
 
 Natürlich hoffen wir, dass die Gesellschaft beginnt, das Urheberrecht
