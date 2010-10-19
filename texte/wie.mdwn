@@ -38,8 +38,7 @@ zu bekommen, muss der Text in ein Dateiformat, das sich für Computersatz
 eignet, umgewandelt werden. Wir versuchen das so gut es geht zu
 automatisieren, aber die Erfahrung zeigt, dass ein gewisses Maß an
 manueller Arbeit notwendig ist. Außerdem muss das Ergebnis dieses
-Umwandlungsprozess nocheinmal gesichtet werden bevor es Sinn macht
-zu drucken.
+Umwandlungsprozess vor dem Drucken nocheinmal gesichtet werden.
 
 Grundsätzlich können alle legal (das bezieht sich primär auf unser extrem
 restriktives Urheberrecht) druckbaren Texte in die Bibliothek

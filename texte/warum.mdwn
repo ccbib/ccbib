@@ -23,8 +23,12 @@ Konzepts beeinflusst haben:
 
 Es wäre sehr schön, wenn das Vorhandensein einer Creative-Commons
 Bibliothek mehr Autoren dazu anregt, ihre eigenen Texte unter einer
-freien Lizenz zu veröffentlichen. Sie sollen sich überlegen, ob
-sie schreiben um Geld zu erwerben oder weil sie etwas zu sagen haben.
+freien Lizenz zu veröffentlichen. Sie sollen erkennen, dass sie
+nicht länger ihre Rechte uneingeschränkt an einen großen Verlagskonzern
+abtreten müssen, um eine hohe Reichweite zu erzielen. Sie sollen
+überlegen, ob ihnen ungehinderter Zugang zu ihren Texten wichtig
+ist oder maximaler Profit.
+
 Leser finden vielleicht Projekte wie die "Distributed Proofreaders"
 http://www.pgdp.net/ interessant.
 
