@@ -1,10 +1,10 @@
 #!/bin/sh
 
-if [ $2 ]; then
+if [ "$2" ]; then
   sed -e "/^%%BoundingBox:/a\\%%DocumentPaperSizes: $2" \
       -e "s/^%%BoundingBox: .*$/%%BoundingBox: $1/" \
       -e "/^%%DocumentPaperSizes:/d"
-elif [ $1 ]; then
+elif [ "$1" ]; then
   sed -e "s/^%%BoundingBox: .*$/%%BoundingBox: $1/" \
       -e "/^%%DocumentPaperSizes:/d"
 else
