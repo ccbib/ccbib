@@ -2,6 +2,9 @@
 %
 %\usepackage[latin1]{inputenc}
 \usepackage{url}
+\DeclareUrlCommand\url{\def\UrlLeft{\hspace{0pt plus 2ex}}%
+        \def\UrlRight{\hspace{0pt plus 2ex}}%
+        \urlstyle{tt}}
 %\usepackage{hyperref}
 %\usepackage{palatino}
 %
@@ -63,7 +66,16 @@
   \setlength{\parskip}{1\baselineskip plus 0.5\baselineskip}
 }{\end{center}}
 
+\newenvironment{newsquote}{
+  \begin{quote}
+  \small
+%  \sffamily
+}{
+  \end{quote}
+}
+
 \input{common/hyp-en}
+\newcommand{\winston}{w1n\-5t0n}
 
 \begin{document}
 \raggedbottom
@@ -82,7 +94,7 @@
 \section{READ THIS FIRST}
 
 This book is distributed under a Creative Commons
-Attribution-NonCommercial-ShareAlike 3.0 license. That means:
+At\-trib\-u\-tion-Non\-Com\-mer\-cial-Share\-Alike 3.0 license. That means:
 
 \noindent
 You are free:
@@ -106,7 +118,8 @@ Under the following conditions:
   license to this one.
 \item For any reuse or distribution, you must make clear to others the
   license terms of this work. The best way to do this is with a link
-  \url{http://craphound.com/littlebrother}
+  \hspace{0pt plus 1fil}\mbox{}
+  \url{http://craphound.com/littlebrother}\hspace{0pt plus 1fill}\mbox{}
 \item Any of the above conditions can be waived if you get my
   permission
 \end{itemize}
@@ -293,7 +306,9 @@ My agent, Russell Galen (and his sub-agent Danny Baror) did an amazing
 job of pre-selling rights to Little Brother in many languages and
 formats. Here's the list as of today (May 4, 2008). I'll be updating
 it as more editions are sold, so feel free to grab another copy of
-this file (\url{http://craphound.com/littlebrother/download}) if there's an
+this file\footnote{
+  \url{http://craphound.com/littlebrother/download}}
+ if there's an
 edition you're hoping to see, or see
 \url{http://craphound.com/littlebrother/buy/} for links to buy all the
 currently shipping editions.
@@ -528,7 +543,7 @@ I'm proposing that we put them together.
 If you're a teacher or librarian and you want a free copy of Little
 Brother, email \url{freelittlebrother@gmail.com} with your name and
 the name and address of your school. It'll be posted to
-\url{http://craphound.com/littlebrother/category/donate/} \hfill
+\url{http://craphound.com/littlebrother/category/donate/} \hspace{0pt plus 10pt}
 by my fantastic
 helper, Olga Nunes, so that potential donors can see it.
 
@@ -677,7 +692,8 @@ years! For the 30th anniversary of the store, they put together an
 anthology of stories by Bakka writers than included work by Michelle
 Sagara (AKA Michelle West), Tanya Huff, Nalo Hopkinson, Tara Tallan
 --and me!)}
-{BakkaPhoenix Books: \url{http://www.bakkaphoenixbooks.com/} 697 Queen
+{BakkaPhoenix Books\footnote{\url{http://www.bakkaphoenixbooks.com/}}:
+697 Queen
 Street West, Toronto ON Canada M6J1E6, +1 416 963 9993}
 
 I'm a senior at Cesar Chavez high in San Francisco's sunny Mission
@@ -797,7 +813,7 @@ for her.
 
 ``And you think I'm involved in that?''
 
-``We have reliable intelligence indicating that you are w1n5t0n'' --
+``We have reliable intelligence indicating that you are \winston'' --
 again, he spelled it out, and I began to wonder if he hadn't figured
 out that the 1 was an I and the 5 was an S. ``We know that this w1n5t0n
 character is reponsible for the theft of last year's standardized
@@ -1167,7 +1183,7 @@ from Amazon approximately every \emph{six days}). Amazon's in the process
 of reinventing what it means to be a bookstore in the twenty-first
 century and I can't think of a better group of people to be facing
 down that thorny set of problems.}
-{Amazon:
+{Amazon: 
 \url{http://www.amazon.com/exec/obidos/ASIN/0765319853/downandoutint-20}}
 
 ``I'm thinking of majoring in physics when I go to Berkeley,'' Darryl
@@ -1848,7 +1864,7 @@ lift cars off your loved ones and leap over tall buildings, the
 payback's always a bitch.
 
 I woke up to someone pulling the hood off my head. They were neither
-rough nor careful -- just...impersonal. Like someone at McDonald's
+rough nor careful -- just \ldots impersonal. Like someone at McDonald's
 putting together burgers.
 
 The light in the room was so bright I had to squeeze my eyes shut, but
@@ -3067,7 +3083,7 @@ gardens with scented flowers and tall grasses. Housecats stare at you
 from hedges, and there are hardly any homeless.
 
 It was so quiet on those streets that it made me wish I'd taken the
-\emph{other} route, through the Mission, which is... \emph{raucous} is probably
+\emph{other} route, through the Mission, which is \ldots \emph{raucous} is probably
 the best word for it. Loud and vibrant. Lots of rowdy drunks and angry
 crack-heads and unconscious junkies, and also lots of families with
 strollers, old ladies gossiping on stoops, lowriders with boom-cars
@@ -4622,12 +4638,12 @@ goddamned genius, Jolu. I would be honored if you'd help me with
 this.''
 
 He drummed his fingers some more. ``It's just -- You know. You're the
-leader. Van's the smart one. Darryl was... He was your
+leader. Van's the smart one. Darryl was\ldots He was your
 second-in-command, the guy who had it all organized, who watched the
 details. Being the programmer, that was \emph{my} thing. It felt like you
 were saying you didn't need me.''
 
-``Oh man, I am such an idiot. Jolu, you're the best-qualified person I
+``Oh man, I am such an idiot. Jolu, you're the best-qual\-i\-fied person I
 know to do this. I'm really, really, really --''
 
 ``All right, already. Stop. Fine. I believe you. We're all really
@@ -4648,7 +4664,8 @@ marathon programming sessions. Once Jolu's family went to bed around
 11:30, we were able to kidnap the coffee-machine up to his room and go
 IV with our magic coffee bean supply.
 
-If you've never programmed a computer, you should. There's nothing
+If you've never programmed a computer, you should. 
+\discretionary{There}{is}{There's} nothing
 like it in the whole world. When you program a computer, it does
 \emph{exactly} what you tell it to do. It's like designing a machine -- any
 machine, like a car, like a faucet, like a gas-hinge for a door --
@@ -5130,7 +5147,7 @@ Twice!
   (and even critical) books about Disney, as well as a great variety
   of kids books and science fiction, and the cafe next door makes a
   mean cappuccino.}
-{Compass Books/Books Inc:\\
+{Compass Books/Books Inc:
 \url{http://www.booksinc.net/NASApp/store/Product;jsessionid=abcF-ch09-pbU6m7ZRrLr?s=showproduct&isbn=0765319853}}
 
 He was so angry I thought he was going to pop. You know I said I'd
@@ -5253,16 +5270,16 @@ Dad looked at me over the table the next morning and said, ``It looks
 like it's going to get better, at least.'' He handed me a copy of the
 \emph{Chronicle} open to the third page.
 
-\begin{quote}
+\begin{newsquote}
   A Department of Homeland Security spokesman has confirmed that the
   San Francisco office has requested a 300 percent budget and
   personnel increase from DC
-\end{quote}
+\end{newsquote}
 
 
 What?
 
-\begin{quote}
+\begin{newsquote}
   Major General Graeme Sutherland, the commanding officer for
   Northern California DHS operations, confirmed the request at a press
   conference yesterday, noting that a spike in suspicious activity in
@@ -5270,21 +5287,21 @@ What?
   underground chatter and activity and believe that saboteurs are
   deliberately manufacturing false security alerts to undermine our
   efforts.''
-\end{quote}
+\end{newsquote}
 
 My eyes crossed. No freaking way.
 
-\begin{quote}
+\begin{newsquote}
   ``These false alarms are potentially 'radar chaff' intended
     to disguise real attacks. The only effective way of combatting
     them is to step up staffing and analyst levels so that we can
     fully investigate every lead.''
-\end{quote}
+\end{newsquote}
 
-\begin{quote}
+\begin{newsquote}
   Sutherland noted the delays experienced all over the city were
   ``unfortunate'' and committed to eliminating them.
-\end{quote}
+\end{newsquote}
 
 I had a vision of the city with four or five times as many DHS
 enforcers, brought in to make up for my own stupid ideas. Van was
@@ -5769,7 +5786,7 @@ he typed.
   these is the store's mobile book-fairs, in which they ship huge,
   rolling bookcases, already stocked with excellent kids' books,
   direct to schools on trucks -- voila, instant book-fair!}
-{Anderson's Bookshops\hfill \url{http://www.andersonsbookshop.com/} 123 West
+{Anderson's Bookshops \url{http://www.andersonsbookshop.com/} 123 West
 Jefferson, Naperville, IL 60540 USA +1 630 355 2665}
 
 What would you do if you found out you had a spy in your midst? You
@@ -6013,7 +6030,7 @@ a spare chest for the empties.
 
 ``You kids play safe now,'' he said, tipping his cowboy hat. He was a
 fat Samoan guy with a huge smile, and a scary tank-top that you could
-see his armpit- and belly- and shoulder-hair escaping from. I peeled
+see his armpit- and belly- and shoul\-der-hair escaping from. I peeled
 twenties off my roll and handed them to him -- his markup was 150
 percent. Not a bad racket.
 
@@ -6867,7 +6884,7 @@ Several hands shot up. Ms Galvez called on them. Some people pointed
 out that the reason that the Vietnamese were shooting at Americans is
 that the Americans had flown to Vietnam and started running around the
 jungle with guns. Others thought that Charles had a point, that people
-shouldn't be allowed to do illegal things.
+\discretionary{should}{not}{shouldn't} be allowed to do illegal things.
 
 Everyone had a good debate except Charles, who just shouted at people,
 interrupting them when they tried to get their points out. Ms Galvez
@@ -7095,7 +7112,8 @@ spicy grilled meat, guacamole, salsa, tomatoes, refried beans, rice,
 onions and cilantro. It has the same relationship to Taco Bell that a
 Lamborghini has to a Hot Wheels car.
 
-There are about two hundred Mission burrito joints. They're all
+There are about two hundred Mission burrito joints. 
+\discretionary{They}{are}{They're} all
 heroically ugly, with uncomfortable seats, minimal decor -- faded
 Mexican tourist office posters and electrified framed Jesus and Mary
 holograms -- and loud mariachi music. The thing that distinguishes
@@ -7242,7 +7260,7 @@ mixers and keyboards and even a drum kit. Later, on Xnet, I found a
 Flickr stream of them smuggling all this stuff in, piece by piece, in
 gym bags and under their coats. Along with it all were huge speakers,
 the kind you see in automotive supply places, and among them, a stack
-of...car batteries. I laughed. Genius! That was how they were going to
+of \ldots car batteries. I laughed. Genius! That was how they were going to
 power their stacks. From where I stood, I could see that they were
 cells from a hybrid car, a Prius. Someone had gutted an eco-mobile to
 power the night's entertainment. The batteries continued outside the
@@ -8188,7 +8206,8 @@ got pamphlets.
 
 ``I want you to look at these for a moment. Let me read you their
 titles. WITHOUT THE CONSENT OF THE GOVERNED: A CITIZEN'S GUIDE TO
-OVERTHROWING THE STATE. Here's one, DID THE SEPTEMBER 11TH BOMBINGS
+OVERTHROWING THE STATE. 
+\discretionary{Here}{is}{Here's} one, DID THE SEPTEMBER 11TH BOMBINGS
 REALLY HAPPEN? And another, HOW TO USE THEIR SECURITY AGAINST
 THEM. This literature shows us the true purpose of the illegal
 gathering on Saturday night. This wasn't merely an unsafe gathering of
@@ -8306,7 +8325,7 @@ I was really excited at the prospect of seeing her again. Every night
 since the party, I'd gone to bed thinking of two things: the sight of
 the crowd charging the police lines and the feeling of the side of her
 breast under her shirt as we leaned against the pillar. She was
-amazing. I'd never been with a girl as...aggressive as her before. It
+amazing. I'd never been with a girl as \ldots aggressive as her before. It
 had always been me putting the moves on and them pushing me away. I
 got the feeling that Ange was as much of a horn-dog as I was. It was a
 tantalizing notion.
@@ -8322,7 +8341,7 @@ museum I've ever been to. I took a perverse satisfaction in the
 exhibits on soil liquefaction during big quakes. English? Jack London,
 Beat Poets, science fiction writers like Pat Murphy and Rudy
 Rucker. Social studies? The Free Speech Movement, Cesar Chavez, gay
-rights, feminism, anti-war movement...
+rights, feminism, anti-war movement\ldots
 
 I've always loved just learning stuff for its own sake. Just to be
 smarter about the world around me. I could do that just by walking
@@ -8332,6 +8351,9 @@ Alan Ginsberg and his buddies had created their radical druggy
 poetry. The one we'd read in English class was \emph{Howl} and I would
 never forget the opening lines, they gave me shivers down my back:
 
+\begin{flushleft}
+\itshape
+\setlength{\parskip}{.5\baselineskip}
 I saw the best minds of my generation destroyed by madness, starving
 hysterical naked,
 
@@ -8339,7 +8361,9 @@ dragging themselves through the negro streets at dawn looking for an
 angry fix,
 
 angelheaded hipsters burning for the ancient heavenly connection to
-the starry dynamo in the machinery of night...
+the starry dynamo in the machinery of night\ldots
+
+\end{flushleft}
 
 I liked the way he ran those words all together, ``starving hysterical
 naked.'' I knew how that felt. And ``best minds of my generation'' made
@@ -8733,7 +8757,7 @@ I didn't get much Kerouac read that day.
 
 \fancybreak{\#}
 
-``Hold a press-conference,'' is what Ange said, as we sat in the cafe
+``Hold a \erratum{press-conference}{press conference},'' is what Ange said, as we sat in the cafe
 near her place that evening. I wasn't keen on going out to her school
 anymore, getting stuck on a bus with Van again.
 
@@ -8745,7 +8769,7 @@ PvP allowed and name a time. You can login from here.''
 PvP is player-versus-player combat. Parts of Clockwork Plunder were
 neutral ground, which meant that we could theoretically bring in a ton
 of noob reporters without worrying about gamers killing them in the
-middle of the press-conference.
+middle of the \erratum{press-conference}{press conference}.
 
 ``I don't know anything about press conferences.''
 
@@ -8776,7 +8800,7 @@ We ordered more coffee.
 {Chapters/Indigo:
 \url{http://www.chapters.indigo.ca/books/Little-Brother-Cory-Doctorow/9780765319852-item.html}}
 
-I blogged the press-conference even before I'd sent out the
+I blogged the \erratum{press-conference}{press conference} even before I'd sent out the
 invitations to the press. I could tell that all these writers wanted
 to make me into a leader or a general or a supreme guerrilla
 commandant, and I figured one way of solving that would be to have a
@@ -8852,7 +8876,7 @@ inches. I knew that she'd do that. I'd known since the night in the
 park. Maybe that's why we hadn't gone farther -- I knew I couldn't
 rely on her to back off, which scared me a little.
 
-But I wasn't scared then. The impending press-conference, the fights
+But I wasn't scared then. The impending \erratum{press-conference}{press conference}, the fights
 with my parents, the international attention, the sense that there was
 a movement that was careening around the city like a wild pinball --
 it made my skin tingle and my blood sing.
@@ -9111,7 +9135,7 @@ she smiled broadly and gave me a brief hug.
 
 ``You're very welcome,'' she said.
 
-The whole bus ride home, I thought over the press-conference, thought
+The whole bus ride home, I thought over the \erratum{press-conference}{press conference}, thought
 about Ange naked and writhing with me on her bed, thought about her
 mother smiling and showing me the door.
 
@@ -9119,7 +9143,7 @@ My mom was waiting up for me. She asked me about the movie and I gave
 her the response I'd worked out in advance, cribbing from the review
 it had gotten in the \emph{Bay Guardian}.
 
-As I fell asleep, the press-conference came back. I was really proud
+As I fell asleep, the \erratum{press-conference}{press conference} came back. I was really proud
 of it. It had been so cool, to have all these big-shot journos show up
 in the game, to have them listen to me and to have them listen to all
 the people who believed in the same things as me. I dropped off with a
@@ -9157,7 +9181,7 @@ Leaders of the anti-war movement denounced us as fringe elements. One
 guy went on TV to say that he believed we had been fabricated by the
 DHS to discredit them.
 
-The DHS had their own press-conference announcing that they would
+The DHS had their own \erratum{press-conference}{press conference} announcing that they would
 double the security in San Francisco. They held up an arphid cloner
 they'd found somewhere and demonstrated it in action, using it to
 stage a car-theft, and warned everyone to be on their alert for young
@@ -9416,7 +9440,7 @@ I took off my watch and the chunky silver two-finger ring that showed
 a monkey and a ninja squaring off to fight and dropped them into the
 little box I used for all the crap I load into my pockets and around
 my neck before stepping out for the day: phone, wallet, keys,
-wifinder, change, batteries, retractable cables... I dumped it all out
+wifinder, change, batteries, retractable cables\ldots I dumped it all out
 into the box, and found myself holding something I didn't remember
 putting in there in the first place.
 
@@ -9773,7 +9797,7 @@ He stuffed his fist in his mouth and made a horrible groaning sound.
 ``We have a friend,'' my father said. ``She writes for the \emph{Bay
 Guardian}. An investigative reporter.''
 
-That's where I knew the name from. The free weekly \emph{Guardian} often
+That's where I knew the name from. The free weekly \emph{Guard\-ian} often
 lost its reporters to bigger daily papers and the Internet, but
 Barbara Stratford had been there forever. I had a dim memory of having
 dinner with her when I was a kid.
@@ -10559,9 +10583,16 @@ important servers on the net under his desk at the University of
 Southern California, back in the paleolithic era.
 
 Now, imagine that you hooked up a mail-server to an IM session. You
-could send an IM to the server that said ``HELO littlebrother.com.se''
-and it would reply with ``250 mail.pirateparty.org.se Hello
-mail.pirateparty.org.se, pleased to meet you.'' In other words, you
+could send an IM to the server that said 
+
+\edialog{HELO littlebrother.com.se}
+
+and it would reply with 
+
+\edialog{250 mail.pirateparty.org.se Hello
+mail.pirateparty.org.se, pleased to meet you.}
+
+In other words, you
 could have the same conversation over IM as you do over SMTP. With the
 right tweaks, the whole mail-server business could take place inside
 of a chat. Or a web-session. Or anything else.
@@ -10578,9 +10609,9 @@ dozens of protocols -- over it.
 
 Domain Name Service is an interesting and ancient Internet protocol,
 dating back to 1983. It's the way that your computer converts a
-computer's name -- like pirateparty.org.se -- to the IP number that
+computer's name -- like \url{pirateparty.org.se} -- to the IP number that
 computers actually use to talk to each other over the net, like
-204.11.50.136. It generally works like magic, even though it's got
+\url{204.11.50.136.} It generally works like magic, even though it's got
 millions of moving parts -- every ISP runs a DNS server, as do most
 governments and lots of private operators. These DNS boxes all talk to
 each other all the time, making and filling requests to each other so
@@ -11391,7 +11422,8 @@ Once it was packed and under my bed, we both sat down.
 The plan was to get messages out with a bunch of fake VampMob
 locations tomorrow, sending people out to secluded spots within a few
 minutes' walk of Civic Center. We'd cut out a spray-paint stencil that
-just said VAMPMOB CIVIC CENTER -\textgreater -\textgreater that I we would spray-paint at
+just said VAMPMOB CIVIC CENTER -\textgreater -\textgreater{} that
+I we would spray-paint at
 those spots around 5AM. That would keep the DHS from locking down the
 Civic Center before we got there. I had the mailbot ready to send out
 the messages at 7AM -- I'd just leave my Xbox running when I went out.
@@ -11537,7 +11569,7 @@ the benches. The district is empty by 6PM except for drunks and
 druggies, because with only one kind of building there, there's no
 legit reason for people to hang around after the sun goes down. It's
 more like a mall than a neighborhood, and the only businesses there
-are bail-bondsmen and liquor stores, places that cater to the families
+are bail-bonds\-men and liquor stores, places that cater to the families
 of crooks on trial and the bums who make it their nighttime home.
 
 I really came to understand all of this when I read an interview with
@@ -11874,7 +11906,7 @@ minute later, I was clean.
 I had my student card, my ATM card, my Fast Pass. They all went into a
 silvered bag she held out, which I recognized as a radio-proof Faraday
 pouch. But as she put them in her pocket, I realized I'd just turned
-my ID over to her. If she was on the other side...
+my ID over to her. If she was on the other side\ldots
 
 The magnitude of what had just happened began to sink in. In my mind,
 I'd pictured having Ange with me at this point. Ange would make it two
@@ -12277,7 +12309,7 @@ remains are presumed to be resting in the city's harbor.
 was arrested by the DHS minutes after the explosion suggests that our
 own government has illegally held many of those thought dead on
 Treasure Island, which had been evacuated and declared off-limits to
-civilians shortly after the bombing...''
+civilians shortly after the bombing\ldots''
 
 I sat down on a bench -- the same bench, I noted with a prickly
 hair-up-the-neck feeling, where we'd rested Darryl after escaping from
@@ -12307,7 +12339,7 @@ What I really, really needed was the Xnet.
 How the hell was I going to get online? My phone's wifinder was
 blinking like crazy -- there was wireless all around me, but I didn't
 have an Xbox and a TV and a ParanoidXbox DVD to boot from. WiFi, WiFi
-everywhere...
+everywhere\ldots
 
 That's when I spotted them. Two kids, about my age, moving among the
 crowd at the top of the stairs down into the BART.
@@ -12446,7 +12478,7 @@ chance.
 
 I was an idiot to even hope. There was nothing from her. I started
 going through the mail as fast as I could, picking apart the press
-requests, the fan mail, the hate mail, the spam...
+requests, the fan mail, the hate mail, the spam\ldots
 
 And that's when I found it: a letter from Zeb.
 
@@ -12949,7 +12981,7 @@ happy place that she'd just gone away.
 mess with us. We've had an eye on you since the day you walked out. We
 would have caught you even if you hadn't gone crying to your lesbo
 journalist traitor. I just don't get it -- we had an understanding,
-you and me...''
+you and me\ldots''
 
 We rumbled over a metal plate, the van's shocks rocking, and then the
 rocking changed. We were on water. Heading to Treasure Island. Hey,
@@ -13254,7 +13286,7 @@ I pounded on the other doors. ``Darryl! Darryl, are you here?''
 ``I'm here.'' The voice was very small, and very hoarse. ``I'm here. I'm
 very, very sorry. Please. I'm very sorry.''
 
-He sounded... broken. Shattered.
+He sounded\ldots broken. Shattered.
 
 ``It's me, D,'' I said, leaning on his door. ``It's Marcus. It's over --
 they arrested the guards. They kicked the Department of Homeland
@@ -13442,7 +13474,7 @@ stopped. ``They say he'll be OK,'' he said. His voice was choked.
 
 ``How about Ange?''
 
-``Her mother took her home. She wanted to wait here for you, but...''
+``Her mother took her home. She wanted to wait here for you, but\ldots''
 
 I understood. I felt full of understanding now, for how all the
 families of all the people who'd been locked away must feel. The
@@ -13551,7 +13583,7 @@ Gitmo-by-the-Bay.
 
 Then, one day, there was no statement from the White House, nothing
 from the state capitol. And the next day, there was a dry, tense
-press-conference held jointly on the steps of the Governor's mansion,
+\erratum{press-conference}{press conference} held jointly on the steps of the Governor's mansion,
 where the head of the DHS and the governor announced their
 ``understanding.''
 
@@ -14018,7 +14050,7 @@ Bruce Schneier's ``Secrets and Lies'' (Wiley, 2000) and ``Beyond Fear''
 understanding security and thinking critically about it, while his
 ``Applied Cryptography'' (Wiley, 1995) remains the authoritative source
 for understanding crypto. Bruce maintains an excellent blog and
-mailing list at schneier.com/blog. Crypto and security are the realm
+mailing list at \url{schneier.com/blog.} Crypto and security are the realm
 of the talented amateur, and the ``cypherpunk'' movement is full of
 kids, home-makers, parents, lawyers, and every other stripe of person,
 hammering away on security protocols and ciphers.
