@@ -23,10 +23,10 @@ Konzepts beeinflusst haben:
 
 Es wäre sehr schön, wenn das Vorhandensein einer Creative-Commons
 Bibliothek mehr Autoren dazu anregt, ihre eigenen Texte unter einer
-freien Lizenz zu veröffentlichen. Sie sollen erkennen, dass sie
+freien Lizenz zu veröffentlichen. Wir wollen zeigen, dass sie
 nicht länger ihre Rechte uneingeschränkt an einen großen Verlagskonzern
-abtreten müssen, um eine hohe Reichweite zu erzielen. Sie sollen
-überlegen, ob ihnen ungehinderter Zugang zu ihren Texten wichtig
+abtreten müssen, um eine hohe Reichweite zu erzielen. Es ist ihre
+Entscheidung, ob ihnen ungehinderter Zugang zu ihren Texten wichtig
 ist oder maximaler Profit.
 
 Leser finden vielleicht Projekte wie die "Distributed Proofreaders"
