@@ -5,7 +5,7 @@ uns im Regal. Du kannst es sofort ausborgen.
 Wir erwarten dafür keine Spende und du musst auch
 keine Daten hergeben. Du bekommst also einen großen Vertrauensvorschuss,
 bitte geh' damit verantwortungsvoll um und bring' das Buch sobald wie
-möglich zurück
+möglich zurück.
 
 
 ## Wenn alle Exemplare entlehnt sind oder du das Buch selbst drucken willst
@@ -17,9 +17,9 @@ druckst.
 
 Wenn du dich für das Drucken entscheidest, dann helfen wir dir natürlich
 beim Drucken und Binden. Besonders beim ersten Mal brauchst du also
-nichts außer das Interesse zu lernen, wie Bücher hergestellt werden können.
+nichts außer dem Interesse zu lernen, wie Bücher hergestellt werden können.
 Außerdem kannst du die Gestaltung des Buchs - also Format, Schriftgröße,
-Layout, Cover, etc. selbst bestimmen. Wir haben dafür auch schon einige
+Layout, Cover, etc. - selbst bestimmen. Wir haben dafür auch schon einige
 Standardvorlagen vorbereitet. Ob du das Buch, das du produzierst, der
 Creative Commons Bibliothek gibst oder lieber ins eigene Regal stellst,
 bleibt natürlich dir überlassen.
@@ -35,7 +35,7 @@ Bevor ein Buch das erste Mal gedruckt werden kann sind einige
 Vorbereitungsarbeiten nötig: Im Internet sind Texte typischerweise
 als HTML-Datei vorhanden. Um daraus einen Druck von hoher Qualität
 zu bekommen, muss der Text in ein Dateiformat, das sich für Computersatz
-eignet, umgewandelt werden. Wir versuchen das so gut es geht zu
+eignet, umgewandelt werden. Wir versuchen das (so gut es geht) zu
 automatisieren, aber die Erfahrung zeigt, dass ein gewisses Maß an
 manueller Arbeit notwendig ist. Außerdem muss das Ergebnis dieses
 Umwandlungsprozess vor dem Drucken nocheinmal gesichtet werden.
@@ -49,5 +49,5 @@ aber es ist klar, dass wir in den meisten Fällen helfen müssen. Wir
 versuchen diesen Prozess künftig einfacher und unkomplizierter zu machen.
 Es ist unser Anspruch, dass nicht wir entscheiden welche Texte
 durch die Bibliothek verfügbar sind, sondern jene, die diese
-Texte tatsächlich lesen bzw. drucken wollen. -- Trotzdem entscheidet
+Texte tatsächlich lesen bzw. drucken wollen. - Trotzdem entscheidet
 natürlich jeder selbst, welche Texte er mit der eigenen Arbeit unterstützt.
