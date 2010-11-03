@@ -5,3 +5,6 @@
 % Provides a default implementation of \verb"\erratum", that just
 % typesets the new text without doing anything else.
 \newcommand{\erratum}[2]{#2}
+
+% Macro to adjust the spacing for all UPPERCASE text.
+\newcommand{\textuppercase}[1]{{\spaceskip=1.5\fontdimen2\font plus 1.5\fontdimen3\font minus \fontdimen4\font #1}}
