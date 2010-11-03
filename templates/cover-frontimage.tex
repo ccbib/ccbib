@@ -1,0 +1,68 @@
+% This file probably should get convertet into some kind of 
+% custom document class.
+%
+\documentclass{minimal}
+
+\newlength{\coverheight}
+\newlength{\coverwidth}
+\newlength{\coverthickness}
+\newlength{\realtextwidth}
+\newlength{\realtextheight}
+
+\setlength{\coverheight}{148mm}
+\setlength{\coverwidth}{123mm}
+\setlength{\coverthickness}{10mm}
+\setlength{\realtextwidth}{95mm}
+\setlength{\realtextheight}{100mm}
+
+\usepackage[pagesize]{typearea}
+\setlength{\paperwidth}{\coverthickness}
+\addtolength{\paperwidth}{2\coverwidth}
+\addtolength{\paperwidth}{1pt}
+\setlength{\paperheight}{\coverheight}
+\areaset{\paperwidth}{\paperheight}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{common/ccbib}
+
+\setlength{\parskip}{\baselineskip}
+
+\begin{document}
+\noindent
+\parbox[b][\coverheight][c]{\coverwidth}{
+\hfill
+\parbox[c][\realtextheight][c]{\realtextwidth}{
+\setlength{\parskip}{\baselineskip}
+
+  \input{texte/backcover.tex}
+
+  \vfill
+
+  \begin{center}
+    \includegraphics[scale=0.5]{logo}
+  \end{center}
+}
+\hfill\mbox{}
+}%End of backcover
+\rule{1pt}{\coverheight}%
+\parbox[b][\coverheight][c]{\coverthickness}{
+\vfill
+\begin{center}
+\rotatebox{90}{Autor: Titel}
+\end{center}
+\vfill
+\begin{center}
+\rotatebox{90}{
+  \includegraphics[totalheight=.8\coverthickness]{logos/license}
+}
+\end{center}
+\quad
+}%Ende des Mittelteils
+\parbox[b][\coverheight][c]{\coverwidth}{
+\rule{1pt}{\coverheight}\hfill\rule{1mm}{\coverheight}
+\includegraphics[height=\coverheight]{front-cover-image}
+}
+\end{document}
+
