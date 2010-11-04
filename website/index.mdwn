@@ -10,9 +10,9 @@ Translators are very much welcome!
 Die Creative Commons Bibliothek ist ein Experiment. Wir wissen auch noch
 nicht, wie man so ein Projekt richtig macht. Aber dem Motto 
 
-Release early, release often!
+> Release early, release often!
 
-folgend versuchen wir, das was wir schon haben, zugänglich zu machen.
+folgend versuchen wir, das was wir schon haben, [[zugänglich|Code]] zu machen.
 Nach-Machen, Mit-Machen, Besser-Machen erwünscht.
 
 Viel Spaß!

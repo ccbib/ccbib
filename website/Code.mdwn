@@ -1,0 +1,21 @@
+Alle unsere digitalen Arbeiten für die Bibliothek
+(Programme, Skripts, LaTeX-Pakete, Texte für diese Website, und &ndash; am
+aller wichtigsten &ndash; der LaTeX-Code für unsere Druckvorlagen)
+werden in einem
+[git](http://git-scm.com/)-Repository gesammelt:
+
+> git://git.42.lefant.net/ccbib
+
+Das Repository kann auch im Webbrowser angesehen werden:
+
+> <http://git.42.lefant.net/cgi-bin/gitweb.cgi/ccbib.git>
+
+Die meisten Dateien haben wir aus verschiedenen Online-Quellen
+heruntergeladen und unseren Anforderungen angepasst. Unsere Änderungen
+haben natürlich immer unter der selben allgemeine Lizenz,
+unter der die Originaldatei steht.
+
+Die kleinen selbstgeschriebenen Skripts, etwa zum Ausschießen von mehreren
+Seiten auf einem Bogen, haben ohnehin nicht die Schaffenshöhe, um unter
+das Urheberrecht zu fallen. Jedenfalls überlassen wir sie gerne 
+uneingeschränkt der Allgemeinheit.

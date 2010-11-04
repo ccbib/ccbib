@@ -10,10 +10,11 @@ gefallen:
 * Es gibt keinen Verwaltungsaufwand darüber wer wann welches Buch
   ausgeborgt hat und ob es schon zurück ist oder nicht.
 * Jeder entscheidet selbst wie und wieviel er mitarbeitet. Jeder kann
-  über das Produkt seiner Arbeit frei bestimmen - sowohl was die Form
+  über das Produkt seiner Arbeit frei bestimmen &ndash; sowohl was die Form
   betrifft wie auch die Verwendung.
-* Die klassische Arbeitsteilung (Autor - Verlegerin - Typograph - Setzerin -
-  Drucker - Binderin - Händler - Leser), wie sie für kapitalistische
+* Die klassische Arbeitsteilung (Autor &ndash; Verlegerin &ndash; 
+  Typograph &ndash; Setzerin &ndash; Drucker &ndash; Binderin &ndash; 
+  Händler &ndash; Leser), wie sie für kapitalistische
   Produktionsverhältnisse typisch ist, wird durchbrochen. Stattdessen
   gibt es einen selbstregulierenden Prozess, der von den Interessen der
   Beteiligten ausgeht.
@@ -38,10 +39,10 @@ Freie Software ist ein beeindruckendes Beispiel dafür, was mit
 Solidarökonomie alles möglich ist. Dort aktiv mitzumachen ist eine
 große Erfahrung, die die Zuversicht erzeugt, dass eine andere
 Welt tatsächlich möglich ist. Leider stellt das dafür nötige Wissen
-doch eine schwere Anfangshürde dar - wir hoffen, dass die Bibliothek
+doch eine schwere Anfangshürde dar &ndash; wir hoffen, dass die Bibliothek
 ein ähnliches Gefühl vermitteln kann mit geringerem Lernaufwand.
 
 Natürlich hoffen wir, dass die Gesellschaft beginnt, das Urheberrecht
-in seiner aktuellen Form - noch dazu seit einigen Jahren zeitlich
-massiv verlängert - in Frage zu stellen und über Alternativen
+in seiner aktuellen Form &ndash; noch dazu seit einigen Jahren zeitlich
+massiv verlängert &ndash; in Frage zu stellen und über Alternativen
 nachzudenken.
