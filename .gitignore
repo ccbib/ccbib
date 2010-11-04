@@ -1,6 +1,9 @@
 *.dvi
 *.aux
 *.log
+*.toc
 *.out
 *.ps
 *.pdf
+*.raw
+*.o
