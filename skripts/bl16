@@ -1,0 +1,21 @@
+#!/bin/sh
+
+if [ -z "$2" ]; then 
+  output=$(basename $1)
+else
+  output=$2
+fi
+
+bbox () {
+  x=$1
+  y=$2
+  w=$3
+  h=$4
+}
+
+bbox $(sed -n -e "s/^%%BoundingBox: //p" $1) 
+
+new_bb="0 0 $((2*$h)) $((4*$w))"
+
+pstops -w $w -h $h "16:8R(0,1w)+7R(0,2w)+4R(0,3w)+11R(0,4w)+15L(2h,0)+0L(2h,1w)+3L(2h,2w)+12L(2h,3w)" $1 | strippagesize "$new_bb" >v_$output
+pstops -w $w -h $h "16:10R(0,1w)+5R(0,2w)+6R(0,3w)+9R(0,4w)+13L(2h,0)+2L(2h,1w)+1L(2h,2w)+14L(2h,3w)" $1 | strippagesize "$new_bb" >h_$output
