@@ -1,0 +1,6 @@
+input Andas_Game.html
+report1 anda.r1
+output anda.html
+report2 anda.r2
+ignore       <font size="5">
+remove <style type="text/css">
