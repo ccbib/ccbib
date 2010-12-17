@@ -1,0 +1,6 @@
+input When_Sysadmins_Ruled_the_Earth.html
+report1 sysadmin.r1
+output sysadmin.html
+report2 sysadmin.r2
+ignore       <font size="5">
+remove <style type="text/css">
