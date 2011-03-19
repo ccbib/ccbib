@@ -9,8 +9,12 @@ import Data.Maybe
 import Control.Monad
 import Text.HTML.TagSoup
 import Text.HTML.TagSoup.Tree
+import Char
 import System.IO
 import System.Environment (getArgs)
+
+opendoublequote = 
+closingdoublequote =
 
 data Setup = Setup {
 	input :: Maybe String,
@@ -33,11 +37,29 @@ parseSetup ("output":file:_) s = s {output = Just file}
 parseSetup ("input":file:_) s  = s {input = Just file}
 parseSetup ("report1":file:_) s = s {report1 = Just file}
 parseSetup ("report2":file:_) s = s {report2 = Just file }
+parseSetup ("fixquotes":_) s = s {rules = (textfilter fixquotes : rules s)}
 parseSetup ("ignore":tag) s = s {rules = (ignore tag : rules s)}
 parseSetup ("remove":tag) s = s {rules = (remove tag : rules s)}
 parseSetup ("replace":sel:templ:_) s = s {rules = (replace sel templ : rules s)}
 parseSetup ("killattr":sel:attr) s = s {rules = (killattr sel attr : rules s)}
 parseSetup line _ = error ("Can't parse: " ++ (unwords line))
+
+textfilter :: (String -> String) -> TagTree String -> [TagTree String]
+textfilter f (TagLeaf (TagText s)) = [TagLeaf (TagText (f s))]
+textfilter _ t = [t]
+
+fixquotes :: String -> String
+fixquotes ('"' : c : s) 
+	| or [isSpace c, elem c ").,;"] = closingdoublequote : c : fixquotes s
+	| isAlpha c 			= opendoublequote : c : fixquotes s
+	| otherwise			= '"' : c : fixquotes s
+fixquotes (c : '"' : s) 
+	| or [isSpace c, c == '('] 	= c : opendoublequote : fixquotes s
+	| and [isAlpha c, not . isAlpha . head s] =
+			 c : closingdoublequote : fixquotes s
+	| otherwise = c : '"' : fixquotes s
+fisquotes (c : s) = c : fixquotes s
+fixquotes []      = []
 
 ignore :: [String] -> TagTree String -> [TagTree String]
 ignore s t = if match t s
