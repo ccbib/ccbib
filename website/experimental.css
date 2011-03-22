@@ -196,7 +196,7 @@ div.recentchanges {
 #sidebar {
 	line-height: 3ex;
 	width: 16ex;
-	position: absolute;
+	position: fixed;
 	padding: 2ex 2ex;
 }
 
