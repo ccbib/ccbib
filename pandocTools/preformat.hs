@@ -13,8 +13,8 @@ import Char
 import System.IO
 import System.Environment (getArgs)
 
-opendoublequote = 
-closingdoublequote =
+opendoublequote = '\x8220'
+closingdoublequote = '\x8221'
 
 data Setup = Setup {
 	input :: Maybe String,
@@ -55,11 +55,11 @@ fixquotes ('"' : c : s)
 	| otherwise			= '"' : c : fixquotes s
 fixquotes (c : '"' : s) 
 	| or [isSpace c, c == '('] 	= c : opendoublequote : fixquotes s
-	| and [isAlpha c, not . isAlpha . head s] =
+	| and [isAlpha c, (not . isAlpha . head) s] =
 			 c : closingdoublequote : fixquotes s
 	| otherwise = c : '"' : fixquotes s
 fisquotes (c : s) = c : fixquotes s
-fixquotes []      = []
+--fixquotes ""      = ""
 
 ignore :: [String] -> TagTree String -> [TagTree String]
 ignore s t = if match t s
