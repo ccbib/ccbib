@@ -197,13 +197,17 @@ div.recentchanges {
 	line-height: 3ex;
 	width: 16ex;
 	position: absolute;
-	padding: 2ex 2ex;
+	padding: 1ex 1ex;
 }
 
 #content {
 	position: relative;
 	left: 16ex;
 	max-width: 68ex;
+}
+
+#footer {
+	visibility: hidden;
 }
 
 /* outlines */
