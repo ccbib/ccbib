@@ -1,3 +1,5 @@
+[[!inline pages="lang_Links" raw="yes"]]
+
 # Externe Ressourcen
 
 Noch nicht geschrieben, aber wir sollten wirklich dokumentieren, wer

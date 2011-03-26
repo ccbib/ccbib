@@ -1,3 +1,5 @@
+[[!inline pages="lang_Warum" raw="yes"]]
+
 # Por qué ésto? Por qué en esta forma?
 
 El concepto de la Creative Commons Biblioteca, en esta forma queremos 

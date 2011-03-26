@@ -1,3 +1,5 @@
+[[!inline pages="lang_Code" raw="yes"]]
+
 Alle unsere digitalen Arbeiten für die Bibliothek
 (Programme, Skripts, LaTeX-Pakete, Texte für diese Website, und &ndash; am
 aller wichtigsten &ndash; der LaTeX-Code für unsere Druckvorlagen)

@@ -1,3 +1,5 @@
+[[!inline pages="lang_Wie" raw="yes"]]
+
 # Cómo funciona la Creative Commons Biblioteca?
 
 En el caso más simple el libro que quieres leer está a nuestra estante. 

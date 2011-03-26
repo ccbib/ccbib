@@ -1,3 +1,5 @@
+[[!inline pages="lang_Code" raw="yes"]]
+
 Todos de nuestros trabajos digitalos para la Biblioteca (programas, 
 guiónes, paquetes de LaTeX, textos de este sitio, y – lo principal – el 
 código de LaTeX para nuestros originales) están en una 

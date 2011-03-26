@@ -1,3 +1,5 @@
+[[!inline pages="lang_index" raw="yes"]]
+
 # E-books are there to keep, paper books are there to pass around
 
 ## Note for non-german readers:

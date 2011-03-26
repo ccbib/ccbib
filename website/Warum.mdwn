@@ -1,3 +1,5 @@
+[[!inline pages="lang_Warum" raw="yes"]]
+
 # Warum das Alles? Warum gerade in der Form?
 
 Das Konzept der Creative-Commons Bibliothek, wie wir es versuchen

@@ -1,3 +1,5 @@
+[[!inline pages="lang_Was" raw="yes"]]
+
 # Que es la Creative Commons Biblioteca
 
 Queremos publicar textos que son disponible libre en el internet - porque

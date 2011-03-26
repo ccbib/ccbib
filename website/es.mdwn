@@ -1,3 +1,5 @@
+[[!inline pages="lang_index" raw="yes"]]
+
 # E-books son ahí para guardar, libros son ahí para pasar.
 
 ## Un mensaje para non-aleman lectores/lectoras:
