@@ -1,0 +1,13 @@
+input Die_Stadt_ohne_Juden.html
+report1 dsoj.r1
+output dsoj.html
+report2 dsoj.r2
+remove <style type="text/css">
+remove <div id="tnote-bottom">
+replace tag=img tag=todelete
+replace tag=a;class=pagenum tag=latex;command=pagenum;title
+replace tag=span;lang=la tag=latex;command=latein
+replace tag=ins;title tag=latex;command=erratum;title
+replace tag=pre tag=latex;command=pglicensestuff
+replace tag=div;class=right tag=latex;command=unterschrift
+remove <todelete>
