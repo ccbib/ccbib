@@ -11,7 +11,8 @@ readDoc = readHtml defaultParserState{
                         stateParseRaw=True
                    }
 
-writeDoc = writeNative defaultWriterOptions
+--writeDoc = writeNative defaultWriterOptions
+writeDoc = prettyPandoc
 
 main = interact (writeDoc . processWith discardText . readDoc)
 
