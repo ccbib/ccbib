@@ -9,5 +9,5 @@ else
 fi
 
 pstops 2:0 $1 | mypsbook -g4 | psnup -s1.0 $SIZES -4 >v_$output
-pstops 2:1 -e $1 | mypsbook -g4 | pstops "2:1,0" | psnup -s1.0 $SIZES -4 >h_$output
+pstops 2:1 $1 | mypsbook -g4 | pstops "2:1,0" | psnup -s1.0 $SIZES -4 >h_$output
 
