@@ -1,0 +1,15 @@
+#Downloaded from http://nemesis.marxists.org/
+#Non-commercial use is ok
+input Wir.html
+report1 w.r1
+output w.html
+report2 w.r2
+ignore       <font size="5">
+remove <style type="text/css">
+remove <link rel="stylesheet" href="stylesheet.css" type="text/css">
+remove <noscript>
+replace tag=script tag=todelete
+replace class=statcounter tag=todelete
+remove <todelete>
+replace tag=h3 tag=h2
+
