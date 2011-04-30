@@ -12,4 +12,5 @@ replace tag=script tag=todelete
 replace class=statcounter tag=todelete
 remove <todelete>
 replace tag=h3 tag=h2
+replace tag=p;ccbib=uebersicht tag=latex;command=uebersicht
 
