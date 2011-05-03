@@ -1,5 +1,8 @@
 [[!inline pages="lang_Code" raw="yes"]]
 
+Direkter Link zur:
+[Liste der Autoren/Bücher.](http://git.42.lefant.net/gitweb/ccbib.git/tree/HEAD:/content)
+
 Alle unsere digitalen Arbeiten für die Bibliothek
 (Programme, Skripts, LaTeX-Pakete, Texte für diese Website, und &ndash; am
 aller wichtigsten &ndash; der LaTeX-Code für unsere Druckvorlagen)
@@ -10,7 +13,7 @@ werden in einem
 
 Das Repository kann auch im Webbrowser angesehen werden:
 
-> <http://git.42.lefant.net/cgi-bin/gitweb.cgi/ccbib.git>
+> <http://git.42.lefant.net/gitweb/ccbib.git>
 
 Die meisten Dateien haben wir aus verschiedenen Online-Quellen
 heruntergeladen und unseren Anforderungen angepasst. Unsere Änderungen
