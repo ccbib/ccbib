@@ -10,3 +10,13 @@
 *.hi
 *.r1
 *.r2
+.ikiwiki
+*.setup
+content.tex
+pandocTools/convert
+pandocTools/discardText
+pandocTools/extractByTag
+pandocTools/preformat
+pandocTools/tagsummary
+psutils/psbook
+
