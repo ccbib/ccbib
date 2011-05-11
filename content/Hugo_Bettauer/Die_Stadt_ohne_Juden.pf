@@ -4,6 +4,7 @@ output dsoj.html
 report2 dsoj.r2
 remove <style type="text/css">
 remove <div id="tnote-bottom">
+ignore <span class="screen">
 replace tag=img tag=todelete
 replace tag=a;class=pagenum tag=latex;command=pagenum;title
 replace tag=span;lang=la tag=latex;command=latein
@@ -12,4 +13,5 @@ replace tag=ins;title tag=latex;command=erratum;title
 replace tag=div;class=right tag=latex;command=unterschrift
 replace tag=div;class=center tag=envcenter
 replace tag=span;class=gesperrt tag=latex;command=textit
+replace tag=p;class=asterisk-break tag=latex;command=tb
 remove <todelete>
