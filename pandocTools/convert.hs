@@ -3,6 +3,7 @@ import Text.Pandoc
 import Text.HTML.TagSoup
 import System.IO
 import System.Environment (getArgs)
+import Data.List.Utils
 
 readDoc :: String -> Pandoc
 readDoc = readHtml defaultParserState{
@@ -28,9 +29,12 @@ convertInline x = x
 tag2latex :: [Tag String] -> Inline
 tag2latex [TagOpen str attr] 
 	| str == "latex" = TeX (attr2latex attr)
+	| startswith "env" str = TeX 
+		("\\begin{" ++ (drop 3 str) ++ "}" ++ (attr2latex attr))
 	| otherwise = TeX ""
 tag2latex [TagClose str] 
 	| str == "latex" = TeX "}"
+	| startswith "env" str = TeX ("\\end{" ++ (drop 3 str) ++ "}")
 	| otherwise = TeX ""
 tag2latex (t:ts) = TeX (strTex (tag2latex [t]) ++ strTex (tag2latex ts))
 	where strTex (TeX s) = s
