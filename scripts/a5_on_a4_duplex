@@ -1,0 +1,12 @@
+#!/bin/sh
+
+bbox="0 0 596 842"  #A4
+
+if [ -z "$2" ]; then 
+  output=$(basename $1)
+else
+  output=$2
+fi
+
+mypsbook -g2 $1 | pstops -pa4 "4:0L(1w,0)+1L(1w,0.5h),2L(1w,0)+3L(1w,0.5h)" | strippagesize "$bbox" a4 >d_$output
+
