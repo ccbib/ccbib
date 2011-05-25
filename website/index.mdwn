@@ -3,10 +3,9 @@
 # "E-books to keep, paper books to pass around"
 
 ## Note for non-german readers:
-Currently we are mostly a local group from vienna. Thus most of this
-website is written in german. Still we hope that our idea will spread.
-
-Translators are very much welcome!
+Currently we are a group based in vienna. This ist why most of this
+website is written in german, so far. Still we hope our idea to be
+copied and CCbib to be translated and spread!
 
 ## Disclaimer:
 Die Creative Commons Bibliothek ist ein Experiment. Wir wissen auch noch
