@@ -1,6 +1,6 @@
 [[!inline pages="lang_index" raw="yes"]]
 
-# E-books are there to keep, paper books are there to pass around
+# "E-books to keep, paper books to pass around"
 
 ## Note for non-german readers:
 Currently we are mostly a local group from vienna. Thus most of this
