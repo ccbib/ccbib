@@ -1,0 +1,10 @@
+input War_of_the_Worlds.html
+report1 war.r1
+output war.html
+report2 war.r2
+remove <style type="text/css">
+replace tag=blockquote tag=latex;command=headline
+replace tag=h2;class=booknum tag=latex;command=Book
+replace tag=h2 tag=latex;command=Booktitle
+replace tag=h3;class=chapnum tag=latex;command=Chapter
+replace tag=h3;class=chaptitle tag=latex;command=Chaptertitle
