@@ -2,5 +2,18 @@
 
 # Externe Ressourcen
 
+## Quellen für freie Texte
+
+* Projekt Gutenberg: [http://www.gutenberg.org/]
+* Distributed Proofreaders: [http://www.pgdp.net/]
+* [Text Archive](http://www.archive.org/details/texts) von The Internet Archive
+
+## Autoren, die selber CC-Lizenzen verwenden
+
+* Cory Doctorow: [http://craphound.com/]
+* Liste bei Wikipedia: [http://en.wikipedia.org/wiki/Category:Creative_Commons-licensed_works]
+
+
+
 Noch nicht geschrieben, aber wir sollten wirklich dokumentieren, wer
 die Giganten sind, auf deren Schultern wir stehen ... ;)
