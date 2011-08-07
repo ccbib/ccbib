@@ -1,19 +1,21 @@
 [[!inline pages="lang_index" raw="yes"]]
 
-# "E-books to keep, paper books to pass around"
+# Creative Commons Bibliothek
+
+Wir haben:
+
+* nur [[freie|Was]] Bücher/Texte
+* für jeden Text eine digitale Druckvorlage [[online|Code]]
+* die Infrastruktur um verlorene Bücher vor Ort nachzuproduzieren
+* regelmäßige [[Treffen/Öffnungszeiten|Orte]]
+* einen [Newsletter](https://lists.ccbib.org/wws/subscribe/de-news)
+* mehr Ideen als wir umsetzen können
+* Interesse an deinen Ideen und Projekten :)
+
+Nach-Machen, Mit-Machen, Besser-Machen erwünscht.
 
 ## Note for non-german readers:
-Currently we are a group based in vienna. This ist why most of this
+Currently we are a group based in vienna. This is why most of this
 website is written in german, so far. Still we hope our idea to be
 copied and CCbib to be translated and spread!
 
-## Disclaimer:
-Die Creative Commons Bibliothek ist ein Experiment. Wir wissen auch noch
-nicht, wie man so ein Projekt richtig macht. Aber dem Motto 
-
-> Release early, release often!
-
-folgend versuchen wir, das was wir schon haben, [[zugänglich|Code]] zu machen.
-Nach-Machen, Mit-Machen, Besser-Machen erwünscht.
-
-Viel Spaß!
