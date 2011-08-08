@@ -1,0 +1,7 @@
+#Downloaded from http://digbib.org
+input Auf_zwei_Planeten.html
+report1 planeten.r1
+output planeten.html
+report2 planeten.r2
+replace tag=br tag=latex;command=tb
+replace tag=h2 tag=h1
