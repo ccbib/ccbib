@@ -1,0 +1,11 @@
+The following packages need to be installed on a Debian System (squeeze),
+to be able to compile at least 'convert' and 'preformat':
+
+ghc6
+libghc6-pandoc-dev
+libghc6-tagsoup-dev
+libghc6-missingh-dev
+
+Probably also needed:
+libghc6-utility-ht-dev
+libghc6-split-dev
