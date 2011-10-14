@@ -5,7 +5,7 @@ ghc6
 libghc6-pandoc-dev
 libghc6-tagsoup-dev
 libghc6-missingh-dev
+libghc6-split-dev
 
 Probably also needed:
 libghc6-utility-ht-dev
-libghc6-split-dev
