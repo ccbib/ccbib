@@ -13,3 +13,6 @@
 * Cory Doctorow: <http://craphound.com/>
 * Liste bei Wikipedia: <http://en.wikipedia.org/wiki/Category:Creative_Commons-licensed_works>
 
+## Ähnliche Projekte
+* [The Book Builder](http://bookshelf.theanarchistlibrary.org/The%20Book%20Builder)
+* <http://www.offener-buecherschrank.at/>
