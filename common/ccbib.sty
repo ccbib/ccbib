@@ -6,6 +6,12 @@
 % typesets the new text without doing anything else.
 \newcommand{\erratum}[2]{#2}
 
+% \syntax{\modernize{original text}{improved text}}
+% Provides a default implementation of \verb"\modernize", that just
+% typesets the original text without doing anything else.
+\newcommand{\modernize}[2]{#1}
+
+
 % Macro to adjust the spacing for all UPPERCASE text.
 \newcommand{\textuppercase}[1]{{\spaceskip=1.5\fontdimen2\font plus 1.5\fontdimen3\font minus \fontdimen4\font #1}}
 
