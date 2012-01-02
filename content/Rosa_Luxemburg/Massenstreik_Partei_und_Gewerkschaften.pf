@@ -1,0 +1,20 @@
+input Massenstreik_Partei_und_Gewerkschaften.html
+report1 mpg.r1
+output mpg.html
+report2 mpg.r2
+remove <style type="text/css">
+remove <hr style="width: 65%;">
+remove <br />
+remove <table>
+#remove <div id="tnote-bottom">
+#ignore <span class="screen">
+#replace tag=a;class=pagenum tag=latex;command=pagenum;title
+replace tag=span;class=pagenum tag=latex;command=pagenum
+replace tag=a;id;name tag=toignore
+replace tag=div;class=footnote tag=latex;command=footnotentext
+replace tag=span;class=label tag=todelete
+replace tag=ins;title tag=latex;command=erratum;title
+#replace tag=pre tag=latex;command=pglicensestuff
+replace tag=div;class=center tag=envcenter
+remove <todelete>
+ignore <toignore>
