@@ -1,0 +1,20 @@
+input 27446.html
+report1 27446.r1
+output 27446-pf.html
+report2 27446.r2
+remove <style type="text/css">
+remove <div id="tnote-bottom">
+#ignore <span class="screen">
+replace tag=span;class=pagenum tag=latex;command=pagenum;title
+#replace tag=ins;title tag=latex;command=erratum;title
+remove <pre>
+remove <table id="inhalt" summary="Inhalt">
+remove <p class="center margin">
+remove <p class="center margin" style="line-height: 1.6em;">
+remove <h2 class="margin">
+replace tag=a;name tag=toignore
+replace tag=p;class=center tag=envcenter
+replace tag=span;class=gesperrt tag=latex;command=textit
+replace tag=p;class=asterisk-break tag=latex;command=tb
+#remove <todelete>
+ignore <toignore>
