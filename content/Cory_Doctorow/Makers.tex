@@ -7,6 +7,11 @@
 %% extra fexibility
 \newenvironment{blog}{\sffamily}{}
 
+\newenvironment{email}{%
+  \begin{flushleft}%
+  \setlength{\parindent}{0pt}%
+  \setlength{\parskip}{\baselineskip}}{\end{flushleft}}
+
 \begin{document}
 \raggedbottom
 
@@ -673,10 +678,9 @@ signed off on her column.
 She was getting ready to shut the lid and head for bed, so she
 pulled her mail once more.
 
-From: kettlewell-l@skunkworks.kodacell.com
-
-To: schurch@sjmercury.com
-
+\begin{email}
+From: kettlewell-l@skunkworks.kodacell.com\\
+To: schurch@sjmercury.com\\
 Subject: Embedded journalist?
 
 Thanks for keeping me honest today, Suzanne. It’s the hardest
@@ -703,6 +707,7 @@ access, no oversight? Say you will. Please.
 Your pal,
 
 Kettlebelly
+\end{email}
 
 She stared at her screen. It was like a work of art; just look at
 that return address, “kettlewell-l@skunkworks.kodacell.com”—for
@@ -745,10 +750,9 @@ them.
 She turned on her heel and stalked back to her computer and thumped
 the spacebar until the thing woke from sleep.
 
-From: schurch@sjmercury.com
-
-To: kettlewell-l@skunkworks.kodacell.com
-
+\begin{email}
+From: schurch@sjmercury.com\\
+To: kettlewell-l@skunkworks.kodacell.com\\
 Subject: Re: Embedded journalist?
 
 Kettlebelly: that is one dumb nickname. I couldn’t possibly
@@ -758,6 +762,7 @@ So stop calling yourself Kettlebelly, immediately. If you can do
 that, we’ve got a deal.
 
 Suzanne
+\end{email}
 
 There had come a day when her readers acquired email and the paper
 ran her address with her byline, and her readers had begun to write
@@ -774,10 +779,9 @@ She needed to pee, and apparently had done for some time, without
 realizing it. She was on the toilet when she heard the ping of new
 incoming mail.
 
-From: kettlewell-l@skunkworks.kodacell.com
-
-To: schurch@sjmercury.com
-
+\begin{email}
+From: kettlewell-l@skunkworks.kodacell.com\\
+To: schurch@sjmercury.com\\
 Subject: Re: Embedded journalist?
 
 I will never call myself Kettlebelly again.
@@ -785,6 +789,7 @@ I will never call myself Kettlebelly again.
 Your pal,
 
 Kettledrum.
+\end{email}
 
 Oh-shit-oh-shit-oh-shit. She did a little two-step at her bed’s
 edge. Tomorrow she’d go see her editor about this, but it just felt
@@ -2307,10 +2312,9 @@ point and grew by an order of magnitude or so, and then all the
 server-provisioning—calculated to survive the old
 slashdottings—shredded like wet kleenex.
 
-From: kettlewell-l@skunkworks.kodacell.com
-
-To: schurch@sjmercury.com
-
+\begin{email}
+From: kettlewell-l@skunkworks.kodacell.com\\
+To: schurch@sjmercury.com\\
 Subject: Re: Embedded journalist?
 
 This stuff is amazing. Amazing! Christ, I should put you on the
@@ -2320,6 +2324,7 @@ this moment. Not to mention proud! Proud—you’ve made me so proud of
 the work these guys are doing, proud to have some role in it.
 
 Kettlebelly
+\end{email}
 
 She read it sitting up in her coffin, just one of several hundred
 emails from that day’s blog-posts and column. She laughed and
@@ -16676,8 +16681,10 @@ It was dumb to even think about phoning him, he barely knew him,
 and no one liked to get calls at four am. Besides—he’d
 checked—Perry’s number was unlisted.
 
-From: deathw@deathwait.er To: pgibbons@hollywood.ride Subject:
-What’s your phone number?
+\begin{email}
+From: deathw@deathwait.er\\
+To: pgibbons@hollywood.ride\\
+Subject: What’s your phone number?
 
 Perry, I know that it’s presumptuous, but I’d really like to talk
 to you v2v about something important that I’d prefer not to put in
@@ -16689,6 +16696,7 @@ Alternatively, please call me on my enum—1800DEATHWAITS-GGFSAH.
 Your admirer,
 
 Death Waits
+\end{email}
 
 It was five minutes later when his laptop rang. It was unnaturally
 loud on the ward, and he heard his roommates stir when the tone
