@@ -1,7 +1,7 @@
 \input{common/hyp-en}
 
 %% Traditional Layout: lines start with :: and have hard lineends
-%\newenvironment{blog}...
+%\newenvironment{blog}{\renewcommand{\\}{\newline{}:\,}:\,}{}
 
 %% Recommended layout, use distinct font but no hard lineends for
 %% extra fexibility
@@ -10,23 +10,30 @@
 \newenvironment{email}{%
   \begin{flushleft}%
   \setlength{\parindent}{0pt}%
-  \setlength{\parskip}{\baselineskip}}{\end{flushleft}}
+  \setlength{\parskip}{0.5\baselineskip}}{\end{flushleft}\medskip}
+
+\newenvironment{projection}{%
+  \begin{flushleft}%
+  \spaceskip=1.5\fontdimen2\font plus 1.5\fontdimen3\font minus \fontdimen4\font%
+  }{\end{flushleft}}
+
+\newenvironment{speaker}{%
+  \spaceskip=1.5\fontdimen2\font plus 1.5\fontdimen3\font minus \fontdimen4\font}{}
+
+\newcommand{\headline}[1]{\smallskip\textuppercase{#1}\smallskip}
+
+\newcommand\megaphone\relax
 
 \begin{document}
 \raggedbottom
 
 
 \title{Makers}
-
-\author{Cory Doctorow}
-
-\thanks{doctorow@craphound.com}
-
+\author{Cory Doctorow
+  \thanks{doctorow@craphound.com}}
 \lowertitleback{Tor Books: 978-0765312792\\HarperCollins UK/Voyager:
 978-0007325221}
-
 \date{Based on Version from 24 Jan 2012}
-
 \maketitle
 
 \subsection{About this download}
@@ -390,23 +397,31 @@ laser-light lit up the wall.
 
 “Now, watch this,” Kettlewell said.
 
+\begin{projection}
 NOW WATCH THIS
+\end{projection}
 
 The words materialized in the middle of the rectangle on the
 distant wall.
 
 “Testing one two three,” Kettlewell said.
 
+\begin{projection}
 TESTING ONE TWO THREE
+\end{projection}
 
 “Donde esta el bano?”
 
+\begin{projection}
 WHERE IS THE BATHROOM
+\end{projection}
 
 “What is it?” said Suzanne. Her hand wobbled a little and the
 distant letters danced.
 
+\begin{projection}
 WHAT IS IT
+\end{projection}
 
 “This is a new artifact designed and executed by five previously
 out-of-work engineers in Athens, Georgia. They’ve mated a tiny
@@ -490,7 +505,7 @@ something at Kettlewell, but it was lost in the din. The
 journalists took a lot of pictures.
 
 Suzanne closed her computer’s lid and snatched a leaflet out of the
-air. WHAT ABOUT US? it began, and talked about the workers who’d
+air. \textuppercase{WHAT ABOUT US?} it began, and talked about the workers who’d
 been at Kodak and Duracell for twenty, thirty, even forty years,
 who had been conspicuously absent from Kettlewell’s stated plans to
 date.
@@ -499,14 +514,16 @@ She twisted the laser-pointer to life and pointed it back at the
 wall. Leaning in very close, she said, “What are your plans for
 your existing workforce, Mr Kettlewell?”
 
+\begin{projection}
 WHAT ARE YOUR PLANS FOR YOUR EXISTING WORKFORCE MR KETTLEWELL
+\end{projection}
 
 She repeated the question several times, refreshing the text so
 that it scrolled like a stock ticker across that upholstered wall,
 an illuminated focus that gradually drew all the attention in the
 room. The protestors saw it and began to laugh, then they read it
-aloud in ragged unison, until it became a chant: WHAT ARE YOUR
-PLANS—\emph{thump} of the big drum—FOR YOUR EXISTING WORKFORCE
+aloud in ragged unison, until it became a chant: \textuppercase{WHAT ARE YOUR
+PLANS}—\emph{thump} of the big drum—\textuppercase{FOR YOUR EXISTING WORKFORCE}
 \emph{thump} MR \emph{thump} KETTLEWELL?
 
 Suzanne felt her cheeks warm. Kettlewell was looking at her with
@@ -524,7 +541,9 @@ light beside Suzanne’s.
 “I’m glad you asked that, Suzanne,” he said, his voice barely
 audible.
 
+\begin{projection}
 I’M GLAD YOU ASKED THAT SUZANNE
+\end{projection}
 
 The journalists chuckled. Even the chanters laughed a little. They
 quieted down.
@@ -536,7 +555,9 @@ institutions to keep pace with the changes in the world.”
 Freddy leaned over her shoulder, blowing shit-breath in her ear.
 “Translation: you’re ass-fucked, the lot of you.”
 
+\begin{projection}
 TRANSLATION YOUR ASS FUCKED THE LOT OF YOU
+\end{projection}
 
 Suzanne yelped as the words appeared on the wall and reflexively
 swung the pointer around, painting them on the ceiling, the
@@ -551,6 +572,7 @@ the jeering from the protestors now, even though it had grown so
 loud that he could no longer be heard over it. He kept on talking,
 and the words scrolled over the far wall.
 
+\begin{projection}
 THERE IS NO WORLD IN WHICH KODAK AND DURACELL GO ON MAKING FILM AND
 BATTERIES
 
@@ -561,6 +583,7 @@ WE ARE MAKING THINGS THAT NO ONE WANTS TO BUY
 
 THIS PLAN INCLUDES A GENEROUS SEVERANCE FOR THOSE STAFFERS WORKING
 IN THE PARTS OF THE BUSINESS THAT WILL CLOSE DOWN
+\end{projection}
 
 —Suzanne admired the twisted, long-way-around way of saying, “the
 people we’re firing.” Pure CEO passive voice. She couldn’t type
@@ -568,6 +591,7 @@ notes and read off the wall at the same time. She whipped out her
 little snapshot and monkeyed with it until it was in video mode and
 then started shooting the ticker.
 
+\begin{projection}
 BUT IF WE ARE TO MAKE GOOD ON THAT SEVERANCE WE NEED TO BE IN
 BUSINESS
 
@@ -591,6 +615,7 @@ EXISTING WORKFORCE
 I SAY THIS TO OUR EMPLOYEES IF YOU HAVE EVER DREAMED OF STRIKING
 OUT ON YOUR OWN EXECUTING ON SOME AMAZING IDEA AND NEVER FOUND THE
 MEANS TO DO IT NOW IS THE TIME AND WE ARE THE PEOPLE TO HELP
+\end{projection}
 
 Suzanne couldn’t help but admire the pluck it took to keep speaking
 into the pointer, despite the howls and bangs.
@@ -889,6 +914,7 @@ imagine.”
 
 “And then some.” This was spoken by another man, one who puffed
 heavily up from behind her. He was enormous, not just tall but fat,
+%TODO: Decide on markup for uppercase
 as big around as a barrel. His green tee-shirt read IT’S FUN TO USE
 LEARNING FOR EVIL! in blocky, pixelated letters. He took her hand
 and shook it. “I love your blog,” he said. “I read it all the
@@ -913,6 +939,7 @@ as we go.” He stuck his hand through the unglazed window of a
 never-built shop and plucked out a toy in a battered box. “I love
 these things,” he said, handing it to her.
 
+%TODO: Markup
 She took it. It was a Sesame Street Elmo doll, labeled BOOGIE
 WOOGIE ELMO.
 
@@ -1488,6 +1515,7 @@ never wavered.
 The afternoon passed quickly and enchantingly. Perry was working on
 a knee-high, articulated Frankenstein monster built out of
 hand-painted seashells from a beach-side kitsch market. They said
+%TODO: Markup
 GOD BLESS AMERICA and SOUVENIR OF FLORIDA and CONCH REPUBLIC and
 each had to be fitted out for a motor custom built to conform to
 its contours.
@@ -1508,6 +1536,7 @@ Perry. Why? Why build a toast-robot?”
 Perry stopped working and dusted his hands off. He was really
 built, and his shaggy hair made him look younger than his
 crows-feet suggested. He turned a seashell with a half-built motor
+%TODO: Markup
 in it over and spun it like a top on the hand-painted WEATHER IS
 HERE/WISH YOU WERE BEAUTIFUL legend.
 
@@ -2190,8 +2219,8 @@ somersault. “I should have them build some of those,” Tjan said,
 watching the crowd turn to regard it. It hopped onto and off of the
 curb, expertly steered around the wandering couples and the
 occasional homeless person. It had a banner it streamed out behind
-it: CAP’N JACKS PAINTBALL AND FANBOAT TOURS GET SHOT AND GET WET
-MIAMI KEY WEST LAUDERDALE.
+it: \textuppercase{CAP’N JACKS PAINTBALL AND FANBOAT TOURS GET SHOT AND GET WET
+MIAMI KEY WEST LAUDERDALE.}
 
 “You think they can?”
 
@@ -3072,7 +3101,7 @@ table.
 
 “Watch this,” he said. He unvelcroed a wireless keyboard from the
 side of the TV and began to type: T-H-E C-O. . . The field
-autocompleted itself: THE COUNT OF MONTE CRISTO, and brought up a
+autocompleted itself: \textuppercase{THE COUNT OF MONTE CRISTO}, and brought up a
 picture of a beaten-up paperback along with links to web-stores,
 reviews, and the full text. Tjan gestured with his chin and she saw
 that the front of one of the tubs was pulsing with a soft blue
@@ -3462,7 +3491,7 @@ steadily until it was actually uncomfortable in her pocket.
 Irritated, she yanked it out and was about to switch it off when
 the lead article caught her eye.
 
-KODACELL LOSES TJAN TO WESTINGHOUSE
+\headline{KODACELL LOSES TJAN TO WESTINGHOUSE}
 
 The by-line was Freddy. Feeling like a character in a horror movie
 who can’t resist the compulsion to look under the bed, Suzanne
@@ -4743,25 +4772,25 @@ throb with a white glow.
 
 He pulled out the megaphone and went to his window.
 
-“ATTENTION POLICE,” he said. “THIS IS THE LEASEHOLDER FOR THIS
+\megaphone{“ATTENTION POLICE,”} he said. \megaphone{“THIS IS THE LEASEHOLDER FOR THIS
 PROPERTY. WHY ARE YOU RUNNING AROUND WITH YOUR GUNS DRAWN? WHAT IS
-GOING ON?”
+GOING ON?”}
 
 The police at the cars looked toward the workshop, then back to the
 shantytown, then back to the workshop.
 
-“SERIOUSLY. THIS IS NOT COOL. WHAT ARE YOU DOING HERE?”
+\megaphone{“SERIOUSLY. THIS IS NOT COOL. WHAT ARE YOU DOING HERE?”}
 
-One of the cops grabbed the mic for his own loudhailer. “THIS IS
+One of the cops grabbed the mic for his own loudhailer. \megaphone{“THIS IS
 THE BROWARD COUNTY SHERIFF’S DEPARTMENT. WE HAVE RECEIVED
 INTELLIGENCE THAT AN ARMED FUGITIVE IS ON THESE PREMISES. WE HAVE
-COME TO RETRIEVE HIM.”
+COME TO RETRIEVE HIM.”}
 
-“WELL, THAT’S WEIRD. NONE OF THE CHILDREN, CIVILIANS AND
+\megaphone{“WELL, THAT’S WEIRD. NONE OF THE CHILDREN, CIVILIANS AND
 HARDWORKING PEOPLE HERE ARE FUGITIVES AS FAR AS I KNOW. CERTAINLY
 THERE’S NO ONE ARMED AROUND HERE. WHY DON’T YOU GET BACK IN YOUR
 CARS AND I’LL COME OUT AND WE’LL RESOLVE THIS LIKE CIVILIZED
-PEOPLE, OK?”
+PEOPLE, OK?”}
 
 The cop shook his head and reached for his mic again, and then
 there were two gunshots, a scream, and a third.
@@ -4936,7 +4965,7 @@ printers. Teach a man to fish, Francis, teach a man to fucking
 research’”—his finger-quotes oozed sarcasm—“the thing that we need
 to do is make these people the authors of their own destiny.”
 
-They put up the sign that night: AUTHOR OF YOUR OWN DESTINY, hung
+They put up the sign that night: \textuppercase{AUTHOR OF YOUR OWN DESTINY}, hung
 over the workshop door. Suzanne trailed after Perry transcribing
 the rants that spilled out of his mouth as he explained it to
 Lester and Francis, and then to Kettlewell when he called, and then
@@ -6387,6 +6416,7 @@ shaft as he settled into the chair and did up his lap-belt. The
 little LCD set into the control panel lit up and started to play
 the standard video spiel, narrated in grizzled voice-over.
 
+\begin{speaker}
 WELCOME TO THE CABINET OF WONDERS
 
 THERE WAS A TIME WHEN AMERICA HELD OUT THE PROMISE OF A NEW WAY OF
@@ -6424,6 +6454,7 @@ THE RIDE LASTS BETWEEN TEN MINUTES AND AN HOUR, DEPENDING ON HOW
 OFTEN YOU PAUSE.
 
 PLEASE ENJOY YOURSELF, AND REMEMBER WHEN WE WERE GOLDEN.
+\end{speaker}
 
 This plus-one/minus-one business was new to him. It had been a mere
 four days since he’d been up here, but like so many other of his
@@ -7751,11 +7782,13 @@ Behind the curtain, it was dim and spotlit, almost identical to
 Florida, and half a dozen vehicles waited. Sammy slid into one and
 let the spiel wash over him.
 
+\begin{speaker}
 THERE WAS A TIME WHEN AMERICA HELD OUT THE PROMISE OF A NEW WAY OF
 LIVING AND WORKING. THE NEW WORK BOOM OF THE TEENS WAS A PERIOD OF
 UNPARALLELED INVENTION, A CAMBRIAN EXPLOSION OF CREATIVITY NOT SEEN
 SINCE THE TIME OF EDISON—AND UNLIKE EDISON, THE PEOPLE WHO INVENTED
 THE NEW WORK REVOLUTION WEREN’T RIP-OFF ARTISTS AND FRAUDS.
+\end{speaker}
 
 The layout was slightly different due to the support pillars, but
 as similar to the Florida version as geography allowed. Robots
@@ -13748,7 +13781,7 @@ hardcopy of a chic little investment newsletter that was so
 expensive to subscribe to that he’d suspected until now that it
 might just be a rumor.
 
-HOW DO YOU GET RID(E) OF A BILLION?
+\headline{HOW DO YOU GET RID(E) OF A BILLION?}
 
 The Kodacell experiment recognized one fundamental truth: it’s easy
 to turn ten thousand into two hundred thousand, but much harder to
@@ -15775,7 +15808,7 @@ that bed for a long time yet. He had time to rewrite.
 
 \begin{center}\rule{3in}{0.4pt}\end{center}
 
-IF YOU CAN’T BEAT THEM, RIP THEM OFF
+\headline{IF YOU CAN’T BEAT THEM, RIP THEM OFF}
 
 A new initiative from the troubled Disney Parks corporation shows
 how a little imagination can catapult an ambitious exec to the top
@@ -16070,7 +16103,7 @@ asleep.
 
 \begin{center}\rule{3in}{0.4pt}\end{center}
 
-A GAME OF CATCH
+\headline{A GAME OF CATCH}
 
 Pop-quiz: Your empire is crumbling around your ears. Your
 supporters are hospitalized by jackboot thugs for sticking up for
