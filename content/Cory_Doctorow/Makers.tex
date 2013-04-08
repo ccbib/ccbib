@@ -1,11 +1,11 @@
 \input{common/hyp-en}
 
 %% Traditional Layout: lines start with :: and have hard lineends
-%\newenvironment{blog}{\renewcommand{\\}{\newline{}:\,}:\,}{}
+%\newenvironment{blog}{\renewcommand{\\}{\newline{}:\,}\newcommand\blogpar{\\}:\,}{}
 
 %% Recommended layout, use distinct font but no hard lineends for
 %% extra fexibility
-\newenvironment{blog}{\sffamily}{}
+\newenvironment{blog}{\renewcommand{\\}{ }\newcommand\blogpar\par\sffamily}{}
 
 \newenvironment{email}{%
   \begin{flushleft}%
@@ -3520,10 +3520,10 @@ She forced herself to re-open it.
 
 \begin{blog}
 has been hired to head up a new business unit on behalf of
-the\\:: multinational giant Westinghouse. The appointment stands as
-more\\:: proof of Church’s power to cloud men’s minds with pretty
-empty\\:: words about the half-baked dot-com schemes that have
-oozed out of\\:: Silicon Valley and into every empty and dead
+the\\ multinational giant Westinghouse. The appointment stands as
+more\\ proof of Church’s power to cloud men’s minds with pretty
+empty\\ words about the half-baked dot-com schemes that have
+oozed out of\\ Silicon Valley and into every empty and dead
 American suburb.
 \end{blog}
 
@@ -3752,18 +3752,18 @@ thousand foot bell going off and then she slipped away into sleep.
 \begin{center}\rule{3in}{0.4pt}\end{center}
 
 \begin{blog}
-:: Perry thought that they’d sell a million Home Awares in six\\::
+Perry thought that they’d sell a million Home Awares in six\\
 months. Lester thought he was nuts, that number was too
-high.\\::\\:: “Please,” he said, “I \emph{invented} these things
-but there aren’t a\\:: million roommate households in all of
-America. We’ll sell half\\:: a million tops, total.
+high.\blogpar{} “Please,” he said, “I \emph{invented} these things
+but there aren’t a\\ million roommate households in all of
+America. We’ll sell half\\ a million tops, total.
 \end{blog}
 
 Lester always complained when she quoted him directly in her blog
 posts, but she thought he secretly enjoyed it.
 
 \begin{blog}
-:: Today the boys shipped their millionth unit. It took six weeks.
+Today the boys shipped their millionth unit. It took six weeks.
 \end{blog}
 
 They’d uncorked a bottle of champagne when unit one million
@@ -3774,13 +3774,13 @@ re-hired half the workers they’d laid off the year before, and had
 them all working overtime to meet demand.
 
 \begin{blog}
-:: What’s exciting about this isn’t just the money that these
-guys\\:: have made off of it, or the money that Kodacell will
-return to\\:: its shareholders, it’s the ecosystem that these
-things have\\:: enabled. There’re at least ten competing commercial
-systems for\\:: organizing, tagging, sharing, and describing Home
-Aware objects.\\:: Parents love them for their kids. School
-teachers love them.\\:: Seniors’ homes.
+What’s exciting about this isn’t just the money that these
+guys\\ have made off of it, or the money that Kodacell will
+return to\\ its shareholders, it’s the ecosystem that these
+things have\\ enabled. There’re at least ten competing commercial
+systems for\\ organizing, tagging, sharing, and describing Home
+Aware objects.\\ Parents love them for their kids. School
+teachers love them.\\ Seniors’ homes.
 \end{blog}
 
 The seniors’ homes had been Francis’s idea. They’d brought him in
@@ -3791,13 +3791,13 @@ he’d join the guys and Suzanne up on the roof of the workshop on
 folding chairs, with beers, watching the sweaty sunset.
 
 \begin{blog}
-:: They’re not the sole supplier. That’s what an ecosystem is
-all\\:: about, creating value for a lot of players. All this
-competition\\:: is great news for you and me, because it’s already
-driven the\\:: price of Home Aware goods down by forty percent.
-That means that\\:: Lester and Perry are going to have to invent
-something new, soon,\\:: before the margin disappears
-altogether\dash{}and that’s also good\\:: news for you and me.
+They’re not the sole supplier. That’s what an ecosystem is
+all\\ about, creating value for a lot of players. All this
+competition\\ is great news for you and me, because it’s already
+driven the\\ price of Home Aware goods down by forty percent.
+That means that\\ Lester and Perry are going to have to invent
+something new, soon,\\ before the margin disappears
+altogether\dash{}and that’s also good\\ news for you and me.
 \end{blog}
 
 “Are you coming?” Lester had dated a girl for a while, someone he
@@ -4370,86 +4370,86 @@ fuse, trying to do too much, and she regretted having brought it
 up. “You do what you have to do,” he said.
 
 \begin{blog}
-:: The original shantytown was astonishing. Built around a nexus
-of\\:: trailers and RVs that didn’t look in the least roadworthy,
-the\\:: settlers had added dwelling on dwelling to their little
-patch of\\:: land. They started with plastic sheeting and poles,
-and when they\\:: could afford it, they replaced the sheets, one at
-a time, with\\:: bricks or poured concrete and re-bar. They
-thatched their roofs\\:: with palm-leaves, shingles, linoleum,
-corrugated tin\dash{}even\\:: plywood with flattened beer-cans. Some
-walls were wood. Some had\\:: windows. Some were made from old
-car-doors, with hand-cranked\\:: handles to lower them in the day,
-then roll them up again at\\:: night when the mosquitoes came out.
-Most of the settlers slept on\\:: nets.\\::\\:: A second wave had
-moved into the settlement, just as I arrived,\\:: and rather than
-building out\dash{}and farther away from their\\:: neighbors’ latrines,
-water-pump and mysterious sources of\\:: electrical power\dash{}they
-built \emph{up}, on top of the existing\\:: structures, shoring up
-the walls where necessary. It wasn’t\\:: hurricane proof, but
-neither are the cracker-box condos that\\:: “property owners”
-occupy. They made contractual arrangements with\\:: the dwellers of
-the first stories, paid them rent. A couple with\\:: second-story
-rooms opposite one another in one of the narrow\\:: “streets”
-consummated their relationship by building a sky-bridge\\:: between
-their rooms, paying joint rent to two landlords.\\::\\:: The thing
-these motley houses had in common, all of them, was\\:: ingenuity
-and pride of work. They had neat vegetable gardens,\\::
-flower-boxes, and fresh paint. They had kids’ bikes leaned up\\::
-against their walls, and the smell of good cooking in the air.\\::
-They were homely homes.\\::\\:: Many of the people who lived in
-these houses worked regular\\:: service jobs, walking three miles
-to the nearest city bus stop\\:: every morning and three miles back
-every evening. They sent\\:: their kids to school, faking local
-addresses with PO boxes. Some\\:: were retired. Some were just down
-on their luck.\\::\\:: They helped each other. When something
-precious was stolen, the\\:: community pitched in to find the
-thieves. When one of them\\:: started a little business selling
-sodas or sandwiches out of her\\:: shanty, the others patronized
-her. When someone needed medical\\:: care, they chipped in for a
-taxi to the free clinic, or someone\\:: with a working car drove
-them. They were like the neighbors of\\:: the long-lamented
-American town, an ideal of civic virtue that is\\:: so remote in
-our ancestry as to have become mythical. There were\\:: eyes on the
-street here, proud residents who knew what everyone\\:: was about
-and saw to it that bad behavior was curbed before it\\:: could get
-started.\\::\\:: Somehow, it burned down. The fire department won’t
-investigate,\\:: because this was an illegal homestead, so they
-don’t much care\\:: about how the fire started. It took most of the
-homes, and most\\:: of their meager possessions. The water got the
-rest. The fire\\:: department wouldn’t fight the fire at first,
-because someone at\\:: city hall said that the land’s owner
-wouldn’t let them on the\\:: property. As it turns out, the owner
-of that sad strip of land\\:: between an orange grove and the side
-of a four-lane highway is\\:: unknown\dash{}a decades-old dispute over
-title has left it in legal\\:: limbo that let the squatters settle
-there. It’s suspicious all\\:: right\dash{}various entities had tried to
-evict the squatters\\:: before, but the legal hassles left them in
-happy limbo. What the\\:: law couldn’t accomplish, the fire
-did.\\::\\:: The story has a happy ending. The boys have moved the
-squatters\\:: into their factory, and now they have “live-work”
-condos that\\:: look like something Dr Seuss designed [photo
-gallery]. Like the\\:: Central Park shantytown of the last century,
-these look like they\\:: were “constructed by crazy poets and
-distributed by a whirlwind\\:: that had been drinking,” as a press
-account of the day had it.\\::\\:: Last year, the city completed a
-new housing project nearby to\\:: here, and social workers
-descended on the shantytowners to get\\:: them to pick up and move
-to these low-rent high-rises. The\\:: shantytowners wouldn’t go:
-“It was too expensive,” said Mrs X,\\:: who doesn’t want her family
-back in Oklahoma to know she’s\\:: squatting with her husband and
-their young daughter. “We can’t\\:: afford \emph{any} rent, not if
-we want to put food on the table on\\:: what we earn.”\\::\\:: She
-made the right decision: the housing project is an urban\\::
-renewal nightmare, filled with crime and junkies, the kind of\\::
+The original shantytown was astonishing. Built around a nexus
+of\\ trailers and RVs that didn’t look in the least roadworthy,
+the\\ settlers had added dwelling on dwelling to their little
+patch of\\ land. They started with plastic sheeting and poles,
+and when they\\ could afford it, they replaced the sheets, one at
+a time, with\\ bricks or poured concrete and re-bar. They
+thatched their roofs\\ with palm-leaves, shingles, linoleum,
+corrugated tin\dash{}even\\ plywood with flattened beer-cans. Some
+walls were wood. Some had\\ windows. Some were made from old
+car-doors, with hand-cranked\\ handles to lower them in the day,
+then roll them up again at\\ night when the mosquitoes came out.
+Most of the settlers slept on\\ nets.\blogpar{} A second wave had
+moved into the settlement, just as I arrived,\\ and rather than
+building out\dash{}and farther away from their\\ neighbors’ latrines,
+water-pump and mysterious sources of\\ electrical power\dash{}they
+built \emph{up}, on top of the existing\\ structures, shoring up
+the walls where necessary. It wasn’t\\ hurricane proof, but
+neither are the cracker-box condos that\\ “property owners”
+occupy. They made contractual arrangements with\\ the dwellers of
+the first stories, paid them rent. A couple with\\ second-story
+rooms opposite one another in one of the narrow\\ “streets”
+consummated their relationship by building a sky-bridge\\ between
+their rooms, paying joint rent to two landlords.\blogpar{} The thing
+these motley houses had in common, all of them, was\\ ingenuity
+and pride of work. They had neat vegetable gardens,\\
+flower-boxes, and fresh paint. They had kids’ bikes leaned up\\
+against their walls, and the smell of good cooking in the air.\\
+They were homely homes.\blogpar{} Many of the people who lived in
+these houses worked regular\\ service jobs, walking three miles
+to the nearest city bus stop\\ every morning and three miles back
+every evening. They sent\\ their kids to school, faking local
+addresses with PO boxes. Some\\ were retired. Some were just down
+on their luck.\blogpar{} They helped each other. When something
+precious was stolen, the\\ community pitched in to find the
+thieves. When one of them\\ started a little business selling
+sodas or sandwiches out of her\\ shanty, the others patronized
+her. When someone needed medical\\ care, they chipped in for a
+taxi to the free clinic, or someone\\ with a working car drove
+them. They were like the neighbors of\\ the long-lamented
+American town, an ideal of civic virtue that is\\ so remote in
+our ancestry as to have become mythical. There were\\ eyes on the
+street here, proud residents who knew what everyone\\ was about
+and saw to it that bad behavior was curbed before it\\ could get
+started.\blogpar{} Somehow, it burned down. The fire department won’t
+investigate,\\ because this was an illegal homestead, so they
+don’t much care\\ about how the fire started. It took most of the
+homes, and most\\ of their meager possessions. The water got the
+rest. The fire\\ department wouldn’t fight the fire at first,
+because someone at\\ city hall said that the land’s owner
+wouldn’t let them on the\\ property. As it turns out, the owner
+of that sad strip of land\\ between an orange grove and the side
+of a four-lane highway is\\ unknown\dash{}a decades-old dispute over
+title has left it in legal\\ limbo that let the squatters settle
+there. It’s suspicious all\\ right\dash{}various entities had tried to
+evict the squatters\\ before, but the legal hassles left them in
+happy limbo. What the\\ law couldn’t accomplish, the fire
+did.\blogpar{} The story has a happy ending. The boys have moved the
+squatters\\ into their factory, and now they have “live-work”
+condos that\\ look like something Dr Seuss designed [photo
+gallery]. Like the\\ Central Park shantytown of the last century,
+these look like they\\ were “constructed by crazy poets and
+distributed by a whirlwind\\ that had been drinking,” as a press
+account of the day had it.\blogpar{} Last year, the city completed a
+new housing project nearby to\\ here, and social workers
+descended on the shantytowners to get\\ them to pick up and move
+to these low-rent high-rises. The\\ shantytowners wouldn’t go:
+“It was too expensive,” said Mrs X,\\ who doesn’t want her family
+back in Oklahoma to know she’s\\ squatting with her husband and
+their young daughter. “We can’t\\ afford \emph{any} rent, not if
+we want to put food on the table on\\ what we earn.”\blogpar{} She
+made the right decision: the housing project is an urban\\
+renewal nightmare, filled with crime and junkies, the kind of\\
 place where little old ladies triple-chain their doors and
-order\\:: in groceries that they pay for with direct debit,
-unwilling to\\:: keep any cash around.\\::\\:: The squatter village
-was a shantytown, but it was no slum. It was\\:: a neighborhood
-that could be improved. And the boys are doing\\:: that: having
-relocated the village to their grounds, they’re\\:: inventing and
-remixing new techniques for building cheap and\\:: homey shelter
-fast. [profile: ten shanties and the technology\\:: inside them]
+order\\ in groceries that they pay for with direct debit,
+unwilling to\\ keep any cash around.\blogpar{} The squatter village
+was a shantytown, but it was no slum. It was\\ a neighborhood
+that could be improved. And the boys are doing\\ that: having
+relocated the village to their grounds, they’re\\ inventing and
+remixing new techniques for building cheap and\\ homey shelter
+fast. [profile: ten shanties and the technology\\ inside them]
 \end{blog}
 
 The response was enormous and passionate. Dozens of readers wrote
@@ -4494,35 +4494,35 @@ usually helps.”
 \begin{center}\rule{3in}{0.4pt}\end{center}
 
 \begin{blog}
-:: Kodacell is supposed to be a new way of doing business.\\::
-Decentralized, net-savvy, really twenty-first century. The\\::
+Kodacell is supposed to be a new way of doing business.\\
+Decentralized, net-savvy, really twenty-first century. The\\
 suck-up tech press and tech-addled bloggers have been
-trumpeting\\:: its triumph over all other modes of
-commerce.\\::\\:: But what does decentralization really mean? On
-her “blog” this\\:: week, former journalist Suzanne Church reports
-that the inmates\\:: running the flagship Kodacell asylum in
-suburban Florida have\\:: invited an entire village of homeless
-squatters to take up\\:: residence at their factory
-premises.\\::\\:: Describing their illegal homesteading as
-“live-work” condos that\\:: Dr Seuss might have designed, Kodacell
-shill Church goes on to\\:: describe how this captive, live-in
-audience has been converted to\\:: a workforce for Kodacell’s most
-profitable unit (“most\\:: profitable” is a relative term: to date,
-this unit has turned a\\:: profit of about 1.5 million, per the
-last quarterly report; by\\:: contrast the old Kodak’s most
-profitable unit made twenty times\\:: that in its last quarter of
-operation).\\::\\:: America has a grand tradition of this kind of
-indentured living:\\:: the coal-barons’ company towns of the 19th
-century are the\\:: original model for this kind of industrial
-practice in the USA.\\:: Substandard housing and only one employer
-in town\dash{}that’s the\\:: kind of brave new world that Church’s
-boyfriend Kettlewell has\\:: created.\\::\\:: A reader writes: “I
-live near the shantytown that was relocated\\:: to the Kodacell
-factory in Florida. It was a dangerous slum full\\:: of drug
-dealers. None of the parents in my neighborhood let their\\:: kids
-ride their bikes along the road that passed it by\dash{}it was\\:: a
-haven for all kinds of down-and-out trash.”\\::\\:: There you have
-it, the future of the American workforce:\\:: down-and-out junkie
+trumpeting\\ its triumph over all other modes of
+commerce.\blogpar{} But what does decentralization really mean? On
+her “blog” this\\ week, former journalist Suzanne Church reports
+that the inmates\\ running the flagship Kodacell asylum in
+suburban Florida have\\ invited an entire village of homeless
+squatters to take up\\ residence at their factory
+premises.\blogpar{} Describing their illegal homesteading as
+“live-work” condos that\\ Dr Seuss might have designed, Kodacell
+shill Church goes on to\\ describe how this captive, live-in
+audience has been converted to\\ a workforce for Kodacell’s most
+profitable unit (“most\\ profitable” is a relative term: to date,
+this unit has turned a\\ profit of about 1.5 million, per the
+last quarterly report; by\\ contrast the old Kodak’s most
+profitable unit made twenty times\\ that in its last quarter of
+operation).\blogpar{} America has a grand tradition of this kind of
+indentured living:\\ the coal-barons’ company towns of the 19th
+century are the\\ original model for this kind of industrial
+practice in the USA.\\ Substandard housing and only one employer
+in town\dash{}that’s the\\ kind of brave new world that Church’s
+boyfriend Kettlewell has\\ created.\blogpar{} A reader writes: “I
+live near the shantytown that was relocated\\ to the Kodacell
+factory in Florida. It was a dangerous slum full\\ of drug
+dealers. None of the parents in my neighborhood let their\\ kids
+ride their bikes along the road that passed it by\dash{}it was\\ a
+haven for all kinds of down-and-out trash.”\blogpar{} There you have
+it, the future of the American workforce:\\ down-and-out junkie
 squatters working for starvation wages.
 \end{blog}
 
@@ -11698,11 +11698,11 @@ little green. Perry slowed down the back-channel a little and
 skimmed it:
 
 \begin{blog}%TODO
-:: No way could we bring in enough, that’s like 30 grand each I get
+No way could we bring in enough, that’s like 30 grand each I get
 a couple hundred people here in the morning and that would mean a
 hundred and fifty bucks each
 
-:: No no it’s totally do-able we can raise that easy just set up
+No no it’s totally do-able we can raise that easy just set up
 some paypals and publicize the shit out of it
 \end{blog}
 
@@ -21511,7 +21511,7 @@ between a migraine and the feeling after you bang your head against
 the corner of a table.
 
 \begin{blog}
-:: Sammy, I’m disappointed in you. I thought we were friends. Why
+Sammy, I’m disappointed in you. I thought we were friends. Why
 do I have to learn about your bizarre plan to buy out Gibbons and
 Banks from strangers. I do hope you’ll give me a comment on the
 story?
