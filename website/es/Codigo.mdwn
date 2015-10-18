@@ -5,11 +5,11 @@ guiónes, paquetes de LaTeX, textos de este sitio, y – lo principal – el
 código de LaTeX para nuestros originales) están en una 
 [git](http://git-scm.com/)-repository:
 
-> git://git.42.lefant.net/ccbib
+> git://repo.or.cz/ccbib.git
 
 Se puede ver el repository en el browser:
 
-> <http://git.42.lefant.net/gitweb/ccbib.git>
+> <http://repo.or.cz/ccbib.git>
 
 Mayoritariamente los Datos descargábamos de origines on-lines diferentes
 y adaptábamos de nuestras demandas. Nuestras alteraciónes ya tienen la 
